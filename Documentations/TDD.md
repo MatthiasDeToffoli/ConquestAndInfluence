@@ -107,7 +107,7 @@ Unity 3D 2019
 ### Language
 C# with .Net 4.6
 ### Libraries
-will use my global project code and global unity project code's libraries
+will use my [global project code](https://github.com/MatthiasDeToffoli/GlobalUnityProjectLibrary "global project code") and [global unity project code](https://github.com/MatthiasDeToffoli/GlobalUnityProjectLibrary "global unity project code")'s libraries
 
 ## Project
 ### Model
