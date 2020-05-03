@@ -1,0 +1,341 @@
+# Technical Design Document
+
+## Contents
+**I** *- Versions*
+
+**II** *- About it*
+* **A** *- Why this ?*
+* **B** *- What is it ?*
+	* *Victory condition*
+	* *Defeat condition*
+* **C** *- Platform target*
+* **D** *- 3C*
+	* *Camera*
+	* *Controls*
+	* *Character*
+
+**III** *- Tools*
+* **A** *- Research*
+* **B** *- Software*
+* **C** *- Language*
+* **D** *- Libraries*
+
+**IV** *- Project*
+* **A** *- Model*
+	* *Legend*
+	* *Diagram*
+* **B** *- Project structur*
+	* *Legend*
+	* *Diagrams*
+		* *Assets*
+		* *Scripts*
+* **C** *- Namespaces*
+* **D** *- Coding rules*
+	* *Using*
+	* *Structure of a class or a struct*
+	* *Singletons*
+	* *Brackets*
+	* *Regions*
+	* *Methods*
+	* *Comments*
+	* *Variables*
+	* *Strings*
+	* *Values*
+	* *Condition*
+	* *Loops*
+	* *Nomenclature*
+		* *Namespace*
+		* *Classes / Structs*
+		* *Metodes*
+		* *Properties*
+		* *Fields*
+		* *Variables*
+		* *Parameter*
+		* *List, Array, Dictionary Etc*
+		* *Enum*
+
+**V** *- Hard points of the project*
+* **A** *-Graphism and songs*
+* **B** *-Unity 2D*
+* **C** *-How to resolved this problems ?*
+	* *Graphism and songs*
+	* *Unity 2D*
+	
+## Versions
+| VX.X | Date       | Title  													  | Comments																	 								     | Author              |
+| ---- | ---------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------- |
+| V0.0 | 03/22/2020 | Creation of the documentation 							  | Create the document and add the summary, the coding, commit rules and about it parts							 | Matthias de Toffoli |
+| V0.1 | 03/28/2020 | Add tools part			    							  | Add tools part and indicate researche, software, language and libraries subparts		   						 | Matthias de Toffoli |
+| V0.2 | 04/04/2020 | Add Hard points, Model, Project structur and Namespaces part| Add Hard points, Model, Project structur and Namespaces part, adding diagrams and legends for the three last part| Matthias de Toffoli |
+| V0.3 | 04/19/2020 | Modifications for correspond to the GDD					  | Modify the 3C parts and the conditions for win / lose (rename them Victory/Defeat conditions)					 | Matthias de Toffoli |
+
+## About it
+### Why this ?
+For improve my skills with unity 2D and made a game on my own.
+### What is it ?
+It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same for conquer the all map.
+#### Victory condition
+The player conquer the all map or beat the opponent hero
+#### Defeat condition
+The opponent conquere the all map or beat the player hero
+### Platform target
+Android
+### 3C
+#### Camera
+Fix 2D top-down
+#### Control
+Touch only
+#### Character
+* Conquer an empty square
+* attack a square or the opponent's hero
+* Buy a square or the opponent's hero
+* Convince peoples in a square for make them work for him
+* Convince the opponent's hero to give up
+* build a simple village on an empty square for food
+* build a woodcutter village on an empty square for wood
+* build a mining village on an empty square for gold
+* build a war village on an empty square for have soldiers
+* Destroy a village for have an empty square
+* send messages for do the previous actions.
+* go to a village for increase his position in it
+
+## Tools
+### Research
+No tool researchs was make for this project beause the goal is to improve my skills with Unity.
+### Software
+Unity 3D 2019
+### Language
+C# with .Net 4.6
+### Libraries
+will use my global project code and global unity project code's libraries
+
+## Project
+### Model
+Will use managers, they will manage their part and single objects will be managed only by them, a manager can communicate with another but never with objects which is manage by another manager.
+#### Legend
+![Legend of the project communications diagram](./pictures/TDD/Communication/Legend.png "Legend")
+#### Diagram
+![Show the communication between elements of the project](./pictures/TDD/Communication/Diagram.png "Communication")
+### Project structur
+#### Legend
+![Legend of the folders diagram](./pictures/TDD/Folders/Legend.png "Legend")
+#### Diagrams
+##### Assets
+![Assets folder diagram](./pictures/TDD/Folders/Assets.png "Assets folder")
+##### Scripts
+![Scripts folder diagram](./pictures/TDD/Folders/Scripts.png "Scripts folder")
+### Namespaces
+![Namespaces diagram](./pictures/TDD/Namespaces.png "Namespaces")
+### Coding rules
+The main language of the project is english so all things has to be write in english (comments, names, classes, etc...)
+#### Using
+All usings are at top of the document and sorte by alphabetic order.
+*It's more legible.*
+
+#### Namespaces
+One namespace by documents, the namespace start with fr.matthiasdetoffoli.ConquestAndInfluence and use folders name
+without assets and scripts folders.
+*With this type of namespace it will be easyer to find files.*
+
+#### Structurs of a class
+In the class write first the constants followed by the events, the fields,  the properties, after that the constructors the methods and finally the classes/structs. 
+```C#
+MyClass {
+#region EVENTS
+#region FIELDS
+#region PROPERTIES
+#region CONSTRUCTORS
+#region METHODS
+#region OBJECTS
+}
+```
+*more legible*
+
+### Singletons
+use it less as possible.
+*use too much singletons is not a good practice*
+
+#### Brackets
+Open the Bracket at the right of the instruction and start a new line for close it, let one space before open a bracket.
+
+```C#
+Instruction() {
+…
+}
+```
+If it's empty between the two brackets let them side by side
+```C#
+Instruction() { }
+```
+*More legible*
+
+#### Regions
+Only in a class, 7 principal regions :
+* CONSTANTS : used for all the constant
+* EVENTS : used for all the event
+* FIELDS : used for all private and protected fields
+* PROPERTIES : used for all public properties (also if it have a private set)
+* CONSTRUCTORS : used for all the constructors
+* METHODS : used for all methods, it will contained one subregion (the other methods will not be in another regions) :
+	* UNITY : used for all Unity's methods, 
+* OBJECTS : used for all classes and structures created in the current class
+if you have nothing to put in the region don't write it, it's used only if you need it for exemple if you have methods used the region METHODS but if you don't have property don't used the region PROPERTIES
+
+*More easier for find something in a class.*
+
+#### Methods
+Write in order of calling most as possible. Unity's methods are always after the personal methods.
+*Easier to read and understand*
+
+#### Comments
+Comment most as possible,
+for classes, metodes and properties use the summary
+```C#
+/// <summary>
+/// ...
+/// </summary>
+///<param name="pName">...</param>
+///<return>...</return>
+```
+complet all parts even if it's obvious (maybe it's not for others)
+For comments in metodes use simple comments with //
+don't write comments at the left of a line all comments has to be in it own line, let a blank line
+before write a comment but not after.
+```C#
+code
+
+//comments
+code
+```
+*More legible*
+
+#### Variables
+All variables has to be create at the start of the function even for loop's variables don't let blank line
+between two variable declaration (except if you have a comments before one of them) but let one
+after all variables declarations.
+You can declar some variables in the same line if no one is initialized in the declarations, always go to the
+next line after an initizialition.
+```C#
+private void MyFunction () {
+int i,j = 0 ;
+int k ;
+string str ;
+//comments
+float l ;
+object obj ;
+l = 0,5f;
+}
+```
+Never use var
+*More legible*
+
+#### Strings
+Use strings metodes more than possible (string.format is better than str + str2)
+*More performant*
+
+#### Values
+Never write a value directly like 
+```C# if(lifeAnswer == 42)```
+always write values in constant or variable
+like 
+```C# 
+TRUE_ANSWER = 42; 
+if (lifeAnswer == TRUE_ANSWER)
+```
+*More legible and efficiant if you have to change the value*
+
+#### Condition
+You can don't use brackets with a if, only if it's a value to set in the same line or before a loop like :
+
+```C#
+if(lMyInt == 17) lMyIntIsSeventeen = true;
+if(lCanUseLoop)
+	for(i = 0, l = 3; i < l; i++) {
+	...
+	}
+```
+Go to the next line before write else
+It's possible to use ? But just one per line and for short conditions. (don't do var = test ? A : test2 ? B : C) use space around ? And around :
+*More legible*
+
+#### Loops
+Use most as possible for loops, always use brackets with it
+```C#
+int i,l ;
+for (i = 0, l = 3 ; i < l ; i++) {
+}
+```
+it's more easyer for make a reverse for loop
+```C#
+int i,l ;
+for (i = 0, l = 3 ; i < l ; l--) {
+}
+```
+*More legible*
+
+#### NOMENCLATURE
+##### Folder
+Upper camel case
+*More legible.*
+##### Namespace
+Like folders except fr.matthiasdetoffoli
+*More legible*
+##### Classes / Structs
+Upper camel case
+*More legible.*
+##### Metodes
+Upper camel case
+*More legible.*
+##### Properties
+Lower camelcase
+*More legible*
+##### Fields
+mMyField
+*More legible*
+##### Variables
+lMyVar;
+*More legible*
+##### Parameter
+pMyParameter
+*More legible*
+##### List, Array, Dictionary Etc
+Clarify list or array or what is it at the fine of the name
+```C#
+private List<int> mIntList ;
+```
+*More legible*
+##### Enum
+Write the name of the Enum  with upper camel case, all values will be wrote with majuscules
+```C#
+MyEnum {
+VAL1,
+VAL2,
+VAL3
+}
+```
+*More legible*
+
+### Commit Rules
+
+#### Commit keys
+For this project I will use a key word between *[]* followed by a short description 
+
+* [ADD] for all commit conserning the adding of a new feature. *I will not use it inevitably when I add a new element in my project (scripts or stuff)*
+* [UPDATE]  for all commit conserning the updating of an existing feature
+* [FIX] for all commit conserning the fix of a feature
+
+I can add *.WIP* after the key for say it's not finished. If I do that the commit used when the featur will be finished will be the same without a WIP. That's mean a commit with the key *[ADD.WIP]* will be followed by a commit *[ADD]* when the feature will be finished.
+
+#### master
+I will push on master only finished features. The project have to always work on master. I will use other branches for my devellopments.
+
+## Hard points of the project
+### Graphism and songs 
+I will do everything at first for improve my skills but I have not good skills with drawing and songs so it will be hard for me.
+### Unity 2D
+I didn't really used the 2D part of unity it will be a first time
+### How to resolved this problems ?
+#### Graphism and songs
+Work hard and ask advice to artist friends
+#### Unity 2D
+tutorials and some research

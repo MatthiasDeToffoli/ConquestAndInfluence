@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# personal and work files
+Documentations/IHM.psd
+**/Thumbs.db
