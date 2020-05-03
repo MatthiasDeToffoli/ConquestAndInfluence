@@ -92,14 +92,12 @@ Touch only
 ![IHM](./pictures/GDD/IHM.png "IHM")
 ### Level design
 #### LD Bricks
+Square took by no side :
 ![neutral square](./pictures/GDD/neutral_square.png "neutral square")
 
-square took by no side
-
+Square took by the player :
 ![ally square](./pictures/GDD/ally_square.png "ally square")
 
-square took by the player
-
+Square took by the oponent :
 ![enemy square](./pictures/GDD/enemy_square.png "enemy square")
 
-square took by the oponent
