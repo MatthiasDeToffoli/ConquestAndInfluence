@@ -93,11 +93,14 @@ Touch only
 ### Level design
 #### LD Bricks
 Square took by no side :
+
 ![neutral square](./pictures/GDD/neutral_square.png "neutral square")
 
 Square took by the player :
+
 ![ally square](./pictures/GDD/ally_square.png "ally square")
 
 Square took by the oponent :
+
 ![enemy square](./pictures/GDD/enemy_square.png "enemy square")
 
