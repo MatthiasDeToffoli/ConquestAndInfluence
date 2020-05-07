@@ -323,6 +323,7 @@ For this project I will use a key word between *[]* followed by a short descript
 * [ADD] for all commit conserning the adding of a new feature. *I will not use it inevitably when I add a new element in my project (scripts or stuff)*
 * [UPDATE]  for all commit conserning the updating of an existing feature
 * [FIX] for all commit conserning the fix of a feature
+* [QUALITY] for all commit conserning quality (add a missing files, delete a useless file etc...)
 
 I can add *.WIP* after the key for say it's not finished. If I do that the commit used when the featur will be finished will be the same without a WIP. That's mean a commit with the key *[ADD.WIP]* will be followed by a commit *[ADD]* when the feature will be finished.
 
