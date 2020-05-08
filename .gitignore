@@ -60,6 +60,12 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#useless meta
+Assets/External_Libraries.meta
+Assets/Scenes.meta
+Assets/Scripts.meta
+Assets/Scenes/SampleScene.unity.meta
+
 # personal and work files
 Documentations/IHM.psd
 **/Thumbs.db
