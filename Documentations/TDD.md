@@ -43,11 +43,13 @@
 	* *Values*
 	* *Condition*
 	* *Loops*
+	* *Events*
 	* *Nomenclature*
 		* *Namespace*
 		* *Classes / Structs*
 		* *Metodes*
 		* *Properties*
+		* *Events*
 		* *Fields*
 		* *Variables*
 		* *Parameter*
@@ -68,7 +70,7 @@
 | V0.1 | 03/28/2020 | Add tools part			    							  | Add tools part and indicate researche, software, language and libraries subparts		   						 | Matthias de Toffoli |
 | V0.2 | 04/04/2020 | Add Hard points, Model, Project structur and Namespaces part| Add Hard points, Model, Project structur and Namespaces part, adding diagrams and legends for the three last part| Matthias de Toffoli |
 | V0.3 | 04/19/2020 | Modifications for correspond to the GDD					  | Modify the 3C parts and the conditions for win / lose (rename them Victory/Defeat conditions)					 | Matthias de Toffoli |
-| V0.4 | 05/09/2020 | Change regions											  | Write regions name in upper camelcase																			 | Matthias de Toffoli |
+| V0.4 | 05/09/2020 | Change regions and add events parts						  | Write regions name in upper camelcase, and add events in codding rules											 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -274,6 +276,17 @@ for (i = 0, l = 3 ; i < l ; l--) {
 ```
 *More legible*
 
+#### Events
+Use .Invoke for call the event
+```C#
+public event Action MyEvent;
+
+public FireMyEvent()
+{
+if(MyEvent != null) MyEvent.Invoke();
+}
+```
+
 #### NOMENCLATURE
 ##### Folder
 Upper camel case
@@ -290,6 +303,9 @@ Upper camel case
 ##### Properties
 Lower camelcase
 *More legible*
+##### Events
+Upper camel case
+*More legible.*
 ##### Fields
 mMyField
 *More legible*
