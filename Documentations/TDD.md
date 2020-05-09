@@ -68,6 +68,7 @@
 | V0.1 | 03/28/2020 | Add tools part			    							  | Add tools part and indicate researche, software, language and libraries subparts		   						 | Matthias de Toffoli |
 | V0.2 | 04/04/2020 | Add Hard points, Model, Project structur and Namespaces part| Add Hard points, Model, Project structur and Namespaces part, adding diagrams and legends for the three last part| Matthias de Toffoli |
 | V0.3 | 04/19/2020 | Modifications for correspond to the GDD					  | Modify the 3C parts and the conditions for win / lose (rename them Victory/Defeat conditions)					 | Matthias de Toffoli |
+| V0.4 | 05/09/2020 | Change regions											  | Write regions name in upper camelcase																			 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -141,12 +142,12 @@ without assets and scripts folders.
 In the class write first the constants followed by the events, the fields,  the properties, after that the constructors the methods and finally the classes/structs. 
 ```C#
 MyClass {
-#region EVENTS
-#region FIELDS
-#region PROPERTIES
-#region CONSTRUCTORS
-#region METHODS
-#region OBJECTS
+#region Events
+#region Fields
+#region Properties
+#region Constructors
+#region Methods
+#region Objects
 }
 ```
 *more legible*
@@ -171,15 +172,15 @@ Instruction() { }
 
 #### Regions
 Only in a class, 7 principal regions :
-* CONSTANTS : used for all the constant
-* EVENTS : used for all the event
-* FIELDS : used for all private and protected fields
-* PROPERTIES : used for all public properties (also if it have a private set)
-* CONSTRUCTORS : used for all the constructors
-* METHODS : used for all methods, it will contained one subregion (the other methods will not be in another regions) :
-	* UNITY : used for all Unity's methods, 
-* OBJECTS : used for all classes and structures created in the current class
-if you have nothing to put in the region don't write it, it's used only if you need it for exemple if you have methods used the region METHODS but if you don't have property don't used the region PROPERTIES
+* Constants : used for all the constant
+* Events : used for all the event
+* Fields : used for all private and protected fields
+* Properties : used for all public properties (also if it have a private set)
+* Constructors : used for all the constructors
+* Methods : used for all methods, it will contained one subregion (the other methods will not be in another regions) :
+	* Unity : used for all Unity's methods, 
+* Objects : used for all classes and structures created in the current class
+if you have nothing to put in the region don't write it, it's used only if you need it for exemple if you have methods used the region Methods but if you don't have property don't used the region Properties.
 
 *More easier for find something in a class.*
 
