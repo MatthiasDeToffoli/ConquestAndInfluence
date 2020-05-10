@@ -48,6 +48,7 @@
 		* *Namespace*
 		* *Classes / Structs*
 		* *Metodes*
+		* *Constants*
 		* *Properties*
 		* *Events*
 		* *Fields*
@@ -71,6 +72,7 @@
 | V0.2 | 04/04/2020 | Add Hard points, Model, Project structur and Namespaces part| Add Hard points, Model, Project structur and Namespaces part, adding diagrams and legends for the three last part| Matthias de Toffoli |
 | V0.3 | 04/19/2020 | Modifications for correspond to the GDD					  | Modify the 3C parts and the conditions for win / lose (rename them Victory/Defeat conditions)					 | Matthias de Toffoli |
 | V0.4 | 05/09/2020 | Change regions and add events parts						  | Write regions name in upper camelcase, and add events in codding rules											 | Matthias de Toffoli |
+| V0.5 | 05/10/2020 | Update regions part and add constants region in it		  | Add rules for constants regions and update regions for allow subregions											 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -144,6 +146,7 @@ without assets and scripts folders.
 In the class write first the constants followed by the events, the fields,  the properties, after that the constructors the methods and finally the classes/structs. 
 ```C#
 MyClass {
+#region Constants
 #region Events
 #region Fields
 #region Properties
@@ -183,7 +186,7 @@ Only in a class, 7 principal regions :
 	* Unity : used for all Unity's methods, 
 * Objects : used for all classes and structures created in the current class
 if you have nothing to put in the region don't write it, it's used only if you need it for exemple if you have methods used the region Methods but if you don't have property don't used the region Properties.
-
+If you have many of methods link to a feature, you can add a subregion but only if it make your class more legible.
 *More easier for find something in a class.*
 
 #### Methods
@@ -299,6 +302,9 @@ Upper camel case
 *More legible.*
 ##### Metodes
 Upper camel case
+*More legible.*
+##### Constants
+Write with capitale and every words separate with an underscore
 *More legible.*
 ##### Properties
 Lower camelcase
