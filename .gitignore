@@ -64,7 +64,7 @@ crashlytics-build.properties
 Assets/External_Libraries.meta
 Assets/Scenes.meta
 Assets/Scripts.meta
-Assets/Scenes/SampleScene.unity.meta
+Assets/Scenes/**/*.meta
 Assets/Scripts/**/*.meta
 
 # personal and work files

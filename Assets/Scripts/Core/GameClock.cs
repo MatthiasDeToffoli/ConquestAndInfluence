@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.ComponentModel;
 using UnityEngine;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
@@ -6,25 +8,97 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
     /// <summary>
     /// Implement the clock of a game
     /// </summary>
-    public class GameClock
+    public class GameClock : INotifyPropertyChanged
     {
+        #region Constants
+        /// <summary>
+        /// the number max of step when the step is equal to it we add one day
+        /// </summary>
+        private const int MAX_STEP = 120;
+        #endregion Constants
+
+        #region Events
+        /// <summary>
+        /// Fire when a property changed
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+        #endregion Events
+
         #region Fields
         /// <summary>
         /// The number of frame counted in the coroutine
         /// </summary>
-        private int mFrame;
+        private float mStep;
+
+        /// <summary>
+        /// The speed of the clock
+        /// </summary>
+        private float mSpeed;
+
+        /// <summary>
+        /// if the timer is started or paused
+        /// </summary>
+        private bool mIsStarted;
+
+        /// <summary>
+        /// the number of day passed until the start of the clock
+        /// </summary>
+        private int mDays;
+
+        /// <summary>
+        /// the possible speeds
+        /// </summary>
+        private readonly float[] mPossibleSpeeds = new float[5] { 0.25f, 0.5f, 1, 2, 4 };
         #endregion Fields
 
         #region Properties
         /// <summary>
         /// if the timer is started or paused
         /// </summary>
-        public bool isStarted;
+        public bool isStarted
+        {
+            get
+            {
+                return mIsStarted;
+            }
+            set
+            {
+                mIsStarted = value;
+                NotifyPropertyChanged("isStarted");
+            }
+        }
 
         /// <summary>
         /// the number of day passed until the start of the clock
         /// </summary>
-        public int days;
+        public int days
+        {
+            get
+            {
+                return mDays;
+            }
+            set
+            {
+                mDays = value;
+                NotifyPropertyChanged("days");
+            }
+        }
+
+        /// <summary>
+        /// The speed of the clock
+        /// </summary>
+        public float speed
+        {
+            get
+            {
+                return mSpeed;
+            }
+            set
+            {
+                mSpeed = value;
+                NotifyPropertyChanged("speed");
+            }
+        }
         #endregion Properties
 
         #region Constructors
@@ -47,17 +121,34 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
             while (isStarted)
             {
                 yield return new WaitForEndOfFrame();
-                mFrame++;
-                //60 frame is one day
-                if (mFrame % 60 == 0)
+                mStep+= 1 * speed;
+                
+                if (mStep >= MAX_STEP)
                 {
                     days++;
-                    //reset the frame for not keep a big number
-                    mFrame = 0;
+                    //keep the excess
+                    mStep -= MAX_STEP;
                 }
             }
 
             yield return null;
+        }
+
+        /// <summary>
+        /// change the speed of the clock
+        /// </summary>
+        public void ChangeSpeed()
+        {
+            int lIndex = Array.IndexOf(mPossibleSpeeds, speed);
+
+            if(lIndex < mPossibleSpeeds.Length - 1)
+            {
+                speed = mPossibleSpeeds[lIndex + 1];
+            }
+            else
+            {
+                speed = mPossibleSpeeds[0];
+            }
         }
 
         /// <summary>
@@ -67,7 +158,20 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         {
             isStarted = false;
             days = 0;
-            mFrame = 0;
+            mStep = 0;
+            mSpeed = 1;
+        }
+
+        /// <summary>
+        /// Fire the property changed event
+        /// </summary>
+        /// <param name="pPropertyName">the name of the property</param>
+        public void NotifyPropertyChanged(string pPropertyName)
+        {
+            if(PropertyChanged != null)
+            {
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(pPropertyName));
+            }
         }
         #endregion Methods
     }
