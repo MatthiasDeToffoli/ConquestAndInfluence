@@ -73,7 +73,7 @@
 | V0.3 | 04/19/2020 | Modifications for correspond to the GDD					  | Modify the 3C parts and the conditions for win / lose (rename them Victory/Defeat conditions)					 | Matthias de Toffoli |
 | V0.4 | 05/09/2020 | Change regions and add events parts						  | Write regions name in upper camelcase, and add events in codding rules											 | Matthias de Toffoli |
 | V0.5 | 05/10/2020 | Update regions part and add constants region in it		  | Add rules for constants regions and update regions for allow subregions											 | Matthias de Toffoli |
-| V0.6 | 05/16/2020 | Update Namespace part										  | Add an exception for Editor folder in namespace part															 | Matthias de Toffoli |
+| V0.6 | 05/16/2020 | Update Namespace part, and the coding rules				  | Add an exception for Editor folder in namespace part, and change some syntaxes in coding rules					 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -147,14 +147,15 @@ One exception for the folder Editor the namespace will finish by PersonalEditor,
 #### Structurs of a class
 In the class write first the constants followed by the events, the fields,  the properties, after that the constructors the methods and finally the classes/structs. 
 ```C#
-MyClass {
-#region Constants
-#region Events
-#region Fields
-#region Properties
-#region Constructors
-#region Methods
-#region Objects
+MyClass 
+{
+	#region Constants
+	#region Events
+	#region Fields
+	#region Properties
+	#region Constructors
+	#region Methods
+	#region Objects
 }
 ```
 *more legible*
@@ -164,11 +165,12 @@ use it less as possible.
 *use too much singletons is not a good practice*
 
 #### Brackets
-Open the Bracket at the right of the instruction and start a new line for close it, let one space before open a bracket.
+Open the Bracket at the bottom of the instruction and start a new line for close it.
 
 ```C#
-Instruction() {
-…
+Instruction() 
+{
+	…
 }
 ```
 If it's empty between the two brackets let them side by side
@@ -224,14 +226,15 @@ after all variables declarations.
 You can declar some variables in the same line if no one is initialized in the declarations, always go to the
 next line after an initizialition.
 ```C#
-private void MyFunction () {
-int i,j = 0 ;
-int k ;
-string str ;
-//comments
-float l ;
-object obj ;
-l = 0,5f;
+private void MyFunction () 
+{
+	int i,j = 0 ;
+	int k ;
+	string str ;
+	//comments
+	float l ;
+	object obj ;
+	l = 0,5f;
 }
 ```
 Never use var
@@ -256,10 +259,13 @@ if (lifeAnswer == TRUE_ANSWER)
 You can don't use brackets with a if, only if it's a value to set in the same line or before a loop like :
 
 ```C#
-if(lMyInt == 17) lMyIntIsSeventeen = true;
+if(lMyInt == 17) 
+	lMyIntIsSeventeen = true;
+	
 if(lCanUseLoop)
-	for(i = 0, l = 3; i < l; i++) {
-	...
+	for(i = 0, l = 3; i < l; i++) 
+	{
+		...
 	}
 ```
 Go to the next line before write else
@@ -270,13 +276,17 @@ It's possible to use ? But just one per line and for short conditions. (don't do
 Use most as possible for loops, always use brackets with it
 ```C#
 int i,l ;
-for (i = 0, l = 3 ; i < l ; i++) {
+for (i = 0, l = 3 ; i < l ; i++) 
+{
+	...
 }
 ```
 it's more easyer for make a reverse for loop
 ```C#
 int i,l ;
-for (i = 0, l = 3 ; i < l ; l--) {
+for (i = 0, l = 3 ; i < l ; l--) 
+{
+	...
 }
 ```
 *More legible*
@@ -288,7 +298,8 @@ public event Action MyEvent;
 
 public FireMyEvent()
 {
-if(MyEvent != null) MyEvent.Invoke();
+	if(MyEvent != null) 
+		MyEvent.Invoke();
 }
 ```
 
@@ -330,12 +341,13 @@ private List<int> mIntList ;
 ```
 *More legible*
 ##### Enum
-Write the name of the Enum  with upper camel case, all values will be wrote with majuscules
+Write the name of the Enum  with upper camel case, all values will be wrote with majuscules and if it contain many words every words are seperate by an underscore.
 ```C#
-MyEnum {
-VAL1,
-VAL2,
-VAL3
+MyEnum 
+{
+	VAL_1,
+	VAL_2,
+	VAL_3
 }
 ```
 *More legible*
