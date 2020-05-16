@@ -73,6 +73,7 @@
 | V0.3 | 04/19/2020 | Modifications for correspond to the GDD					  | Modify the 3C parts and the conditions for win / lose (rename them Victory/Defeat conditions)					 | Matthias de Toffoli |
 | V0.4 | 05/09/2020 | Change regions and add events parts						  | Write regions name in upper camelcase, and add events in codding rules											 | Matthias de Toffoli |
 | V0.5 | 05/10/2020 | Update regions part and add constants region in it		  | Add rules for constants regions and update regions for allow subregions											 | Matthias de Toffoli |
+| V0.6 | 05/16/2020 | Update Namespace part										  | Add an exception for Editor folder in namespace part															 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -140,6 +141,7 @@ All usings are at top of the document and sorte by alphabetic order.
 #### Namespaces
 One namespace by documents, the namespace start with fr.matthiasdetoffoli.ConquestAndInfluence and use folders name
 without assets and scripts folders.
+One exception for the folder Editor the namespace will finish by PersonalEditor, for not have conflict with UnityEngine.Editor.
 *With this type of namespace it will be easyer to find files.*
 
 #### Structurs of a class
