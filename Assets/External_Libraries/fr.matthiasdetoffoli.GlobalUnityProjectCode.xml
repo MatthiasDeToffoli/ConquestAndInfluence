@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>fr.matthiasdetoffoli.GlobalUnityProjectCode</name>
+    </assembly>
+    <members>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.GuiStyles">
+            <summary>
+            Static class for implement default GUI styles used in editor
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.GuiStyles.mTitleStyle">
+            <summary>
+            the style for a title in gui
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.GuiStyles.titleStyle">
+            <summary>
+            the style for a title in gui
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor">
+            <summary>
+            Custom Editor for the switch menu button listener class
+            </summary>
+            <seealso cref="T:UnityEditor.Editor"/> 
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_OPEN">
+            <summary>
+            string of the variale mScreenToOpen
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_OPEN_TITLE">
+            <summary>
+            the title show in inspector for the screen to open property
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT">
+            <summary>
+            string of the variale mScreenToCloseIsParent
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT_TITLE">
+            <summary>
+            the title show in inspector for the screen to close is parent property
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE">
+            <summary>
+            string of the variale screenToClose
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_TITLE">
+            <summary>
+            the title show in inspector for the screen to close property
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.mScreenToCloseIsParentProperty">
+            <summary>
+            The screen to close is parent serialized property
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.mScreenToCloseProperty">
+            <summary>
+            The screen to close serialized property
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.mScreenToOpenProperty">
+            <summary>
+            The screen to open serialized property
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.OnEnable">
+            <summary>
+            When the GUI is enable
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.OnInspectorGUI">
+            <summary>
+            When the inspector is updated
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1">
+            <summary>
+            The main manager will managed all the manager
+            </summary>
+            <typeparam name="TMain">the type of the main manager use for the singleton instance</typeparam>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.managers">
+            <summary>
+            All managers managed by the main manager
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.currentGameState">
+            <summary>
+            the current state of the game
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+            <remarks>Init all the properties and Fields here</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.AddManagedManager(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
+            <summary>
+            Add the manager in the current list
+            </summary>
+            <param name="pManager">the manager to add</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.AfterStart">
+            <summary>
+            Call the frame after the start
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.SortByInitOrder(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
+            <summary>
+            Function used for sort the managers by they init order
+            </summary>
+            <param name="pElemA">the first element to compare</param>
+            <param name="pElemB">the second element to compare</param>
+            <returns><c>-1</c> if element A have to have an index smaller than Elem B, <c>0</c> if element A and B have the same init order, <c>1</c> otherwhise</returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Init">
+            <summary>
+            init the manager, this function is called by the main manager
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.GetFirstManager">
+            <summary>
+            Get the first manager
+            </summary>
+            <returns>the first manager</returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.GetFirstManager``1">
+            <summary>
+            get the first manager of a specified type
+            </summary>
+            <typeparam name="TMangaged">the type of the manager we want</typeparam>
+            <returns>the first manager of the type set</returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Clear">
+            <summary>
+            Clear the Manager properties
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager">
+            <summary>
+            Abstract class for all managers managed by the <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1" />
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.initOrder">
+            <summary>
+            The order the main manager will call the init method
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Start">
+            <summary>
+            Start of the behaviour
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Init">
+            <summary>
+            init the manager, this function is called by the main manager
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Clear">
+            <summary>
+            Clear the manager
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1">
+            <summary>
+            Parent of all manager wich manage an objects array
+            </summary>
+            <typeparam name="T">the type of the object managed by the manager</typeparam>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.objects">
+            <summary>
+            the list of object managed by the manager
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager">
+            <summary>
+            the parent of all menu manager
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/> 
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen"/>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+            <remarks>Init all the properties and Fields here</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.Init">
+            <summary>
+            init the manager, this function is called by the main manager
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen">
+            <summary>
+            Parent of all menu screen, implement methods for open and close
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen.Open">
+            <summary>
+            show the screen
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen.Close">
+            <summary>
+            unshow the screen
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener">
+            <summary>
+            Class listen button click
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
+            <seealso cref="T:UnityEngine.UI.Button"/>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.ListenToEvents">
+            <summary>
+            Listen all events here
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.OnButtonClicked">
+            <summary>
+            call when we click on the button
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.UnlistenToEvents">
+            <summary>
+            unlisten all events here
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener">
+            <summary>
+            Component used for make a button close the app
+            </summary> 
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener.OnButtonClicked">
+            <summary>
+            call when we click on the button
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener">
+            <summary>
+            Class used for make a button close a screen and open another one
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener.mScreenToOpen">
+            <summary>
+            The new screen to open
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener.mScreenToCloseIsParent">
+            <summary>
+            If the screen to close is the parent of the button or another screen
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener.screenToClose">
+            <summary>
+            the screen to close
+            </summary>
+            <remarks>if it's the parent the property is not used</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener.OnButtonClicked">
+            <summary>
+            call when we click on the button
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour">
+            <summary>
+            Abstract class implement some functions of MonoBehaviour
+            </summary>
+            <seealso cref="T:UnityEngine.MonoBehaviour"/>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.Start">
+            <summary>
+            Start of the behaviour
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.OnDestroy">
+            <summary>
+            Destroy of the behaviour
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.ListenToEvents">
+            <summary>
+            Listen all events here
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStart">
+            <summary>
+            Call the frame after the start
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStartCoroutine">
+            <summary>
+            Wait one frame before fire the after start
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.UnlistenToEvents">
+            <summary>
+            unlisten all events here
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1">
+            <summary>
+            Singleton implementing mono behaviour methods
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.mInstance">
+            <summary>
+            unique instance of the class
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.instance">
+            <summary>
+            unique instance of the class
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.replaceIfAlreadyExist">
+            <summary>
+            If it's true the old value of the singleton will be replaced
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.dontDestroyGameObjectOnLoad">
+            <summary>
+            if it's true the gameobject will not be destroy when we will change the scene
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.uniqueId">
+            <summary>
+            The unique id of the singleton
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+            <remarks>Init all the properties and Fields here</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Replace(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
+            <summary>
+            Remove the current instance of the singleton and Replace it by another one
+            </summary>
+            <param name="pNewInstance">the new isntance to set</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Remove">
+            <summary>
+            remove the current instance of the singleton
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.SetInstance(`0)">
+            <summary>
+            set the instance of the singleton if it not have another instance
+            </summary>
+            <param name="pInstance">the instance to set</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState">
+            <summary>
+            Enum used for know the game state
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.MENU">
+            <summary>
+            In menu state
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.LOADING">
+            <summary>
+            Loading state
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.IN_GAME">
+            <summary>
+            In game state
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.PAUSE">
+            <summary>
+            Pause state
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler">
+            <summary>
+            Static class keep all global static events wich can be called in the project
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler.Manager">
+            <summary>
+            All global static event used in the managers
+            </summary>
+        </member>
+        <member name="E:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler.Manager.ManagedManagerCreatedEvent">
+            <summary>
+            event fired for tell a managed manager is created (it will be used for add the managed manager in main manager)
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler.Manager.NotifyManagedManagerCreated(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
+            <summary>
+            Fire the ManagedManagerCreated Event
+            </summary>
+            <param name="pManager">the manager created</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants">
+            <summary>
+            All project global constants
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor">
+            <summary>
+            All constants used in the custom editor
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor.SEPARATOR">
+            <summary>
+            Line for separate elements in inspector 
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor.ARRAY_SIZE">
+            <summary>
+            the array size word (used for the title of array side)
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor.ARRAY_ELEMENT">
+            <summary>
+            The array element words (used the title of array elements)
+            </summary>
+            <remarks>used that with string.Format and put the index of the element at first parameter</remarks>
+        </member>
+    </members>
+</doc>

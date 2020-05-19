@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>fr.matthiasdetoffoli.GlobalProjectCode</name>
+    </assembly>
+    <members>
+        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1">
+            <summary>
+            Abstract class preparing the instance of the singleton
+            </summary>
+            <typeparam name="T">The new singleton</typeparam>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.mInstance">
+            <summary>
+            Private instance of the singleton
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.instance">
+            <summary>
+            public instance of the singleton
+            </summary>
+            <remarks>it return the private instance mIntance</remarks>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.uniqueId">
+            <summary>
+            The unique id of the singleton
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.#ctor">
+            <summary>
+            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1"/>
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.Replace(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
+            <summary>
+            Remove the current instance of the singleton and Replace it by another one
+            </summary>
+            <param name="pNewInstance">the new isntance to set</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.Remove">
+            <summary>
+            remove the current instance of the singleton
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.SetInstance(`0)">
+            <summary>
+            set the instance of the singleton if it not have another instance
+            </summary>
+            <param name="pInstance">the instance to set</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.RemoveInstance(System.String)">
+            <summary>
+            Remove the current instance of the singleton
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager">
+            <summary>
+            Interface used for all Managers
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Init">
+            <summary>
+            Call after the Start in a chosen order for init elements
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Clear">
+            <summary>
+            Clear the Manager properties
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton">
+            <summary>
+            Singleton Interface
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.uniqueId">
+            <summary>
+            The unique id of the singleton
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.Replace(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
+            <summary>
+            Remove the current instance of the singleton and Replace it by another one
+            </summary>
+            <param name="pNewInstance"></param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.Remove">
+            <summary>
+            remove the current instance of the singleton
+            </summary>
+        </member>
+    </members>
+</doc>
