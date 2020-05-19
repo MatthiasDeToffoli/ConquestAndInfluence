@@ -67,6 +67,8 @@ Assets/Scripts.meta
 Assets/Scenes/**/*.meta
 Assets/Scripts/**/*.meta
 Assets/Resources.meta
+Assets/Resources/Sprites.meta
+Assets/Resources/Sprites/Roads.meta
 
 # personal and work files
 Documentations/IHM.psd
