@@ -1,5 +1,7 @@
 ﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares;
+using fr.matthiasdetoffoli.ConquestAndInfluence.Utils;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor;
+using fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,12 +17,31 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
     {
         #region Constants
         /// <summary>
-        /// string of the variale mLevel
+        /// the title sprites part
         /// </summary>
-        private const string SPRITE_PREFIX = "mSpritePrefix";
+        private const string SPRITES_PART = "Sprites part :";
+        /// <summary>
+        /// the title Datas part
+        /// </summary>
+        private const string DATAS_PART = "Datas part :";
 
         /// <summary>
-        /// the title show in inspector for the level property
+        /// string of the variale mSpritePathIndex
+        /// </summary>
+        private const string SPRITE_PATH = "mSpritePathIndex";
+
+        /// <summary>
+        /// the title show in inspector for the SpritePath property
+        /// </summary>
+        private const string SPRITE_PATH_TITLE = "Path of the sprite";
+
+        /// <summary>
+        /// string of the variale mSpritePrefixIndex
+        /// </summary>
+        private const string SPRITE_PREFIX = "mSpritePrefixIndex";
+
+        /// <summary>
+        /// the title show in inspector for the SpritePrefix property
         /// </summary>
         private const string SPRITE_PREFIX_TITLE = "Sprite prefix";
 
@@ -43,6 +64,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
         /// the title show in inspector for the side property
         /// </summary>
         private const string SIDE_TITLE = "Side";
+
         /// <summary>
         /// string of the variale CanMoveOn
         /// </summary>
@@ -59,6 +81,12 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
         /// The sprite prefix is parent serialized property
         /// </summary>
         private SerializedProperty mSpritePrefixProperty;
+
+        /// <summary>
+        /// The sprite path serialized property
+        /// </summary>
+        private SerializedProperty mSpritePathProperty;
+
         /// <summary>
         /// The level is parent serialized property
         /// </summary>
@@ -82,6 +110,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
         private void OnEnable()
         {
             //we get the property
+            mSpritePathProperty = serializedObject.FindProperty(SPRITE_PATH);
             mSpritePrefixProperty = serializedObject.FindProperty(SPRITE_PREFIX);
             mLevelProperty = serializedObject.FindProperty(LEVEL);
             mSideProperty = serializedObject.FindProperty(SIDE);
@@ -92,29 +121,47 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
         /// </summary>
         public override void OnInspectorGUI()
         {
-            EditorGUILayout.LabelField("Graphics :",GuiStyles.titleStyle);
-            EditorGUILayout.PropertyField(mSpritePrefixProperty, new GUIContent(SPRITE_PREFIX_TITLE));
-            EditorGUILayout.LabelField("___________________");
-            EditorGUILayout.LabelField("");
-            EditorGUILayout.LabelField("Datas :", GuiStyles.titleStyle);
-            EditorGUILayout.PropertyField(mCanMoveOnProperty, new GUIContent(CAN_MOVE_ON_TITLE));
-
             EditorGUI.BeginChangeCheck();
 
-            //we show the screen to close in function of the boolean value
+            EditorGUILayout.PropertyField(mCanMoveOnProperty, new GUIContent(CAN_MOVE_ON_TITLE));
+
+            //if we can't move on so we keep the current sprite and don't need to change the datas
             if (mCanMoveOnProperty.boolValue)
             {
+                //let a blank
+                EditorGUILayout.LabelField(string.Empty);
+
+                //The sprites part
+                EditorGUILayout.LabelField(SPRITES_PART, GuiStyles.titleStyle);
+                //the dropdown for the sprites paths
+                mSpritePathProperty.intValue = 
+                    EditorGUILayout.Popup(SPRITE_PATH_TITLE, mSpritePathProperty.intValue,SpriteNameBuilder.resourcesSquarePaths);
+                //The dropdown for the UI paths
+                mSpritePrefixProperty.intValue =
+                    EditorGUILayout.Popup(SPRITE_PREFIX_TITLE, mSpritePrefixProperty.intValue, SpriteNameBuilder.squaresSpritesPrefix);
+                //Separate the two parts
+                EditorGUILayout.LabelField(Constants.CustomEditor.SEPARATOR);
+
+                //let a blank
+                EditorGUILayout.LabelField(string.Empty);
+                //The datas part
+                EditorGUILayout.LabelField(DATAS_PART, GuiStyles.titleStyle);
+
                 mLevelProperty.intValue = EditorGUILayout.IntSlider(LEVEL_TITLE,mLevelProperty.intValue, 0, 3);
 
+                //At level 0 the side is always neutral
                 if(mLevelProperty.intValue > 0)
                 {
                     mSideProperty.enumValueIndex = (int)(SquareSide)EditorGUILayout.EnumPopup(SIDE_TITLE, (SquareSide)mSideProperty.enumValueIndex);
                 }
+                else
+                {
+                    mSideProperty.enumValueIndex = (int)SquareSide.NEUTRAL;
+                }
             }
 
-            serializedObject.ApplyModifiedProperties();
-
-
+            if (EditorGUI.EndChangeCheck())
+                serializedObject.ApplyModifiedProperties();
         }
         #endregion Methods
     }

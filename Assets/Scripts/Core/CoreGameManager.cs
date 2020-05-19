@@ -1,6 +1,7 @@
 ﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
 using System.ComponentModel;
+using UnityEngine;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
 {
@@ -45,11 +46,17 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         #endregion Fields
 
         #region Methods
+
+        #region Unity
+        /// <summary>
+        /// Awake of the behaviour
+        /// </summary>
         protected override void Awake()
         {
             base.Awake();
             mClock = new GameClock();
         }
+        #endregion Unity
 
         #region Clock
         /// <summary>

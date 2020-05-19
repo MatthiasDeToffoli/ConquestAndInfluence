@@ -151,10 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mSpritePrefix: 
-  mLevel: 1
-  mSide: 2
-  CanMoveOn: 0
+  mLevel: 0
+  mSide: 0
+  mSpritePathIndex: 0
+  mSpritePrefixIndex: 0
+  CanMoveOn: 1
 --- !u!212 &1545499385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -214,7 +215,7 @@ Transform:
   m_GameObject: {fileID: 1545499383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
