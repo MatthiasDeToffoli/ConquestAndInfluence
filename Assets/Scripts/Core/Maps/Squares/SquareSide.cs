@@ -16,7 +16,7 @@
         /// <summary>
         /// Squares took by the opponent
         /// </summary>
-        ENEMY = 2
+        ENEMY = -1
     }
 }
 

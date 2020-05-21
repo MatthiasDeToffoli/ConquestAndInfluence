@@ -61,14 +61,19 @@ sysinfo.txt
 crashlytics-build.properties
 
 #useless meta
+Assets/Animations.meta
+Assets/Animations/Animators.meta
+Assets/Animations/Animators/Square.meta
+Assets/Animations/Clips.meta
+Assets/Animations/Clips/Square.meta
+Assets/Animations/Clips/Square/Road.meta
 Assets/External_Libraries.meta
 Assets/Scenes.meta
 Assets/Scripts.meta
 Assets/Scenes/**/*.meta
 Assets/Scripts/**/*.meta
-Assets/Resources.meta
-Assets/Resources/Sprites.meta
-Assets/Resources/Sprites/Roads.meta
+Assets/Sprites.meta
+Assets/Sprites/Roads.meta
 
 # personal and work files
 Documentations/IHM.psd

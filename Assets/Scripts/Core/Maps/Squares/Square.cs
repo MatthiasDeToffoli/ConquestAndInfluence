@@ -1,5 +1,4 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Utils;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using UnityEngine;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares
@@ -7,32 +6,36 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares
     /// <summary>
     /// the square behaviour
     /// </summary>
-    [RequireComponent(typeof(SpriteRenderer))]
+    [RequireComponent(typeof(Animator))]
     public class Square : AMonoBehaviour
     {
+        #region Constants
+        /// <summary>
+        /// The name of the property side in the animator
+        /// </summary>
+        private string ANIMATOR_SIDE_PROPERTY = "Side";
+
+        /// <summary>
+        /// The name of the property level in the animator
+        /// </summary>
+        private string ANIMATOR_LEVEL_PROPERTY = "Level";
+        #endregion Constants
+
         #region Fields
         /// <summary>
         /// the level of the square
         /// </summary>
-        [SerializeField]
         private int mLevel;
+
         /// <summary>
         /// the side of the square
         /// </summary>
-        [SerializeField]
         private SquareSide mSide;
 
         /// <summary>
-        /// The index to use in the sprite path array
+        /// The animator of the gameobject
         /// </summary>
-        [SerializeField]
-        private int mSpritePathIndex = 0;
-
-        /// <summary>
-        /// The index for get the sprite prefix
-        /// </summary>
-        [SerializeField]
-        private int mSpritePrefixIndex = 0;
+        private Animator mAnimator;
         #endregion Fields
 
         #region Properties
@@ -88,6 +91,9 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares
         {
             base.Awake();
 
+            //get the animator
+            mAnimator = gameObject.GetComponent<Animator>();
+
             //Actualise the sprite with the datas at the start of the level
             ActualiseSprite();
         }
@@ -98,17 +104,10 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares
         /// </summary>
         private void ActualiseSprite()
         {
-            if (CanMoveOn)
+            if (CanMoveOn && mAnimator != null)
             {
-                //Get the sprite in the resource folder
-                Sprite lSprite = 
-                    Resources.Load<Sprite>(SpriteNameBuilder.GetSpriteResourceName(mSpritePathIndex,mSpritePrefixIndex,side,level));
-
-                //set the sprite in the sprite renderer
-                if (lSprite != null)
-                {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = lSprite;
-                }
+                mAnimator.SetInteger(ANIMATOR_SIDE_PROPERTY, (int)side);
+                mAnimator.SetInteger(ANIMATOR_LEVEL_PROPERTY, level);
             }
         }
         #endregion Methods
