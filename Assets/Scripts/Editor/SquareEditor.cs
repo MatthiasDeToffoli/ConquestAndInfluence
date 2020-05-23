@@ -1,6 +1,4 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils;
+﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,7 +10,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
     /// <seealso cref="Editor"/>
     /// <seealso cref="Square"/>"/>
     [CustomEditor(typeof(Square), true)]
-    public class SquareEditor : Editor
+    internal class SquareEditor : Editor
     {
         #region Constants
         /// <summary>
