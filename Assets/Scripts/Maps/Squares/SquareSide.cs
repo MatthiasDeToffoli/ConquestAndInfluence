@@ -1,4 +1,4 @@
-﻿namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core.Levels.Squares
+﻿namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares
 {
     /// <summary>
     /// Enume for define the side of a square
