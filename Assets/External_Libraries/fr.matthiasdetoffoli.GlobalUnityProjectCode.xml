@@ -4,81 +4,146 @@
         <name>fr.matthiasdetoffoli.GlobalUnityProjectCode</name>
     </assembly>
     <members>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.GuiStyles">
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute">
             <summary>
-            Static class for implement default GUI styles used in editor
+            Attribute for define a range with a step
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.GuiStyles.mTitleStyle">
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.min">
             <summary>
-            the style for a title in gui
+            The min value
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.GuiStyles.titleStyle">
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.max">
             <summary>
-            the style for a title in gui
+            The max value
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor">
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.step">
+            <summary>
+            the step value
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute"/>
+            </summary>
+            <param name="pMin">the min value</param>
+            <param name="pMax">the max value</param>
+            <param name="pStep">the step</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.FormatWithStep(System.Single)">
+            <summary>
+            Format a number with the step
+            </summary>
+            <param name="pValue">the value to format</param>
+            <returns>the value formated</returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.FormatWithStep(System.Int32)">
+            <summary>
+            Format a number with the step
+            </summary>
+            <param name="pValue">the value to format</param>
+            <returns>the value formated</returns>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor">
             <summary>
             Custom Editor for the switch menu button listener class
             </summary>
             <seealso cref="T:UnityEditor.Editor"/> 
             <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchMenuButtonListener"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_OPEN">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.SCREEN_TO_OPEN">
             <summary>
             string of the variale mScreenToOpen
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_OPEN_TITLE">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.SCREEN_TO_OPEN_TITLE">
             <summary>
             the title show in inspector for the screen to open property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT">
             <summary>
             string of the variale mScreenToCloseIsParent
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT_TITLE">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT_TITLE">
             <summary>
             the title show in inspector for the screen to close is parent property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE">
             <summary>
             string of the variale screenToClose
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_TITLE">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.SCREEN_TO_CLOSE_TITLE">
             <summary>
             the title show in inspector for the screen to close property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.mScreenToCloseIsParentProperty">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.mScreenToCloseIsParentProperty">
             <summary>
             The screen to close is parent serialized property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.mScreenToCloseProperty">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.mScreenToCloseProperty">
             <summary>
             The screen to close serialized property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.mScreenToOpenProperty">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.mScreenToOpenProperty">
             <summary>
             The screen to open serialized property
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.OnEnable">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.OnEnable">
             <summary>
             When the GUI is enable
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditor.SwitchMenuButtonListenerEditor.OnInspectorGUI">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchMenuButtonListenerEditor.OnInspectorGUI">
             <summary>
             When the inspector is updated
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer">
+            <summary>
+            Property drawer for the attribute RangeWithStep
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.mIntValue">
+            <summary>
+            The int value
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.mFloatValue">
+            <summary>
+            The float value
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
+            <summary>
+            When the gui is refresh
+            </summary>
+            <param name="position">the gui position</param>
+            <param name="property">the property link to the gui</param>
+            <param name="label">the label of the gui</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GuiStyles">
+            <summary>
+            Static class for implement default GUI styles used in editor
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GuiStyles.mTitleStyle">
+            <summary>
+            the style for a title in gui
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GuiStyles.titleStyle">
+            <summary>
+            the style for a title in gui
             </summary>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1">
@@ -158,11 +223,6 @@
             The order the main manager will call the init method
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Start">
-            <summary>
-            Start of the behaviour
-            </summary>
-        </member>
         <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Init">
             <summary>
             init the manager, this function is called by the main manager
@@ -180,7 +240,7 @@
             <typeparam name="T">the type of the object managed by the manager</typeparam>
             <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.objects">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.items">
             <summary>
             the list of object managed by the manager
             </summary>
@@ -401,48 +461,27 @@
             Pause state
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler">
-            <summary>
-            Static class keep all global static events wich can be called in the project
-            </summary>
-        </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler.Manager">
-            <summary>
-            All global static event used in the managers
-            </summary>
-        </member>
-        <member name="E:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler.Manager.ManagedManagerCreatedEvent">
-            <summary>
-            event fired for tell a managed manager is created (it will be used for add the managed manager in main manager)
-            </summary>
-        </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.GlobalEventHandler.Manager.NotifyManagedManagerCreated(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
-            <summary>
-            Fire the ManagedManagerCreated Event
-            </summary>
-            <param name="pManager">the manager created</param>
-        </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants">
             <summary>
             All project global constants
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor">
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor">
             <summary>
             All constants used in the custom editor
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor.SEPARATOR">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.SEPARATOR">
             <summary>
             Line for separate elements in inspector 
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor.ARRAY_SIZE">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.ARRAY_SIZE">
             <summary>
             the array size word (used for the title of array side)
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.CustomEditor.ARRAY_ELEMENT">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.ARRAY_ELEMENT">
             <summary>
             The array element words (used the title of array elements)
             </summary>
