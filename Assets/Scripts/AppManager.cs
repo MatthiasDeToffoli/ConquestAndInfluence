@@ -5,9 +5,6 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence
     /// <summary>
     /// Main manager of the app
     /// </summary>
-    public class AppManager : AMainManager<AppManager>
-    {
-
-    }
+    public class AppManager : AMainManager<AppManager> { }
 }
 
