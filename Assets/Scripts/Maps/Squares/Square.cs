@@ -79,6 +79,18 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares
                 ActualiseSprite();
             }
         }
+
+        /// <summary>
+        /// the position of the square
+        /// </summary>
+        [HideInInspector]
+        public Vector3 position
+        {
+            get
+            {
+                return transform.position;
+            }
+        }
         #endregion Properties
 
         #region Methods
