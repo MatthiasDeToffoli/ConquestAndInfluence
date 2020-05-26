@@ -9,32 +9,10 @@ using UnityEngine.Events;
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
 {
     /// <summary>
-    /// unity event for test the start and the stop of a clock
-    /// </summary>
-    [Serializable]
-    public class StartPauseUnityEvent : UnityEvent<bool> { };
-    /// <summary>
     /// used for unit test of the clock
     /// </summary>
     public class TestClock : AMonoBehaviour
     {
-        #region Events
-        /// <summary>
-        /// call for test the start or stop of the clock
-        /// </summary>
-        public StartPauseUnityEvent StartPauseClockEvent;
-
-        /// <summary>
-        /// used for test the speed changement of the clock
-        /// </summary>
-        public UnityEvent ChangeClockSpeedEvent;
-
-        /// <summary>
-        /// Used for test the reset of the clock
-        /// </summary>
-        public UnityEvent ResetClockEvent;
-        #endregion Events
-
         #region Methods
         protected override void AfterStart()
         {
@@ -49,11 +27,14 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// <summary>
         /// Start or stop the clock
         /// </summary>
-        public void StartStopClock()
+        /// <param name="pStartOrPause">if we start or pause the ckicj</param>
+        public void StartStopClock(bool pStartOrPause)
         {
-            if (StartPauseClockEvent != null)
+            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
+
+            if (lCoreGameManager != null)
             {
-                StartPauseClockEvent.Invoke(true);
+                lCoreGameManager.StartOrPauseClock(pStartOrPause);
             }
         }
 
@@ -62,9 +43,11 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// </summary>
         public void ChangeClockSpeed()
         {
-            if(ChangeClockSpeedEvent != null)
+            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
+
+            if (lCoreGameManager != null)
             {
-                ChangeClockSpeedEvent.Invoke();
+                lCoreGameManager.ChangeClockSpeed();
             }
         }
         
@@ -73,9 +56,11 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// </summary>
         public void ResetClock()
         {
-            if(ResetClockEvent != null)
+            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
+
+            if (lCoreGameManager != null)
             {
-                ResetClockEvent.Invoke();
+                lCoreGameManager.ResetClock();
             }
         }
         /// <summary>

@@ -429,7 +429,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1945202038}
         m_MethodName: StartStopClock
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1087,49 +1087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ab2a6cc16417a47afdd208007e0b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartPauseClockEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 944243308}
-        m_MethodName: StartOrPauseClock
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  ChangeClockSpeedEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 944243308}
-        m_MethodName: ChangeClockSpeed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  ResetClockEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 944243308}
-        m_MethodName: ResetClock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  clockIsStarting: 0
 --- !u!4 &1945202039
 Transform:
   m_ObjectHideFlags: 0
