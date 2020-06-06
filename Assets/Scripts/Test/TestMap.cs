@@ -1,5 +1,5 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares;
+﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
+using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +9,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
     /// <summary>
     /// Class used for test map features
     /// </summary>
+    /// <seealso cref="AMonoBehaviour"/>
     public class TestMap : AMonoBehaviour
     {
         #region Properties
@@ -31,11 +32,19 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         public void TestSelectMap(int pIndex)
         {
             MapManager lMapManager = AppManager.instance.GetFirstManager<MapManager>();
-
+            
             if(lMapManager != null)
             {
                 lMapManager.SelectMap(pIndex);
                 Debug.Log(string.Format("map {0} selected", pIndex));
+            }
+
+            CoreGameManager lCoreManager = AppManager.instance.GetFirstManager<CoreGameManager>();
+
+            //Active the controller for interact with the squares
+            if(lCoreManager != null)
+            {
+                lCoreManager.SetActiveController(true);
             }
         }
 
