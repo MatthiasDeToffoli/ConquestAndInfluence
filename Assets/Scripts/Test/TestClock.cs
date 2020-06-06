@@ -1,16 +1,14 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
+﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
-using System;
 using System.ComponentModel;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
 {
     /// <summary>
     /// used for unit test of the clock
     /// </summary>
+    /// <seealso cref="AMonoBehaviour"/>
     public class TestClock : AMonoBehaviour
     {
         #region Methods

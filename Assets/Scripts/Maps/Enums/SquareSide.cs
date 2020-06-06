@@ -1,4 +1,4 @@
-﻿namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares
+﻿namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums
 {
     /// <summary>
     /// Enume for define the side of a square

@@ -1,4 +1,5 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares;
+﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
+using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using UnityEditor;
 using UnityEngine;
 
@@ -57,6 +58,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
         #endregion Fields
 
         #region Methods
+        
         /// <summary>
         /// When the GUI is enable
         /// </summary>
@@ -80,12 +82,11 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
             if (mCanMoveOnProperty.boolValue)
             {
                 //let a blank
-                EditorGUILayout.LabelField(string.Empty);
+                EditorGUILayout.Space();
 
-                mTypedTarget.level = EditorGUILayout.IntSlider(LEVEL_TITLE,mTypedTarget.level, MIN_LVL, MAX_LVL);
+                mTypedTarget.level = EditorGUILayout.IntSlider(LEVEL_TITLE, mTypedTarget.level, MIN_LVL, MAX_LVL);
 
-                
-                if(mTypedTarget.level > 0)
+                if (mTypedTarget.level > 0)
                 {
                     mTypedTarget.side = (SquareSide)EditorGUILayout.EnumPopup(SIDE_TITLE, mTypedTarget.side);
                 }

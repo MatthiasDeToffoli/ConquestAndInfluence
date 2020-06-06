@@ -1,10 +1,8 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
+﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using UnityEngine;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
@@ -12,6 +10,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
     /// <summary>
     /// Class for 
     /// </summary>
+    /// <seealso cref="AMonoBehaviour"/>
     public class MapHandler : AMonoBehaviour
     {
         #region Constants
@@ -60,7 +59,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
         /// </summary>
         /// <param name="pPosition">the position to format</param>
         /// <returns>the position formated</returns>
-        private Vector3 GetFormatedPosition(Vector3 pPosition)
+        public Vector3 GetFormatedPosition(Vector3 pPosition)
         {
             float lFormatedX = pPosition.x;
             float lFormatedY = pPosition.y;

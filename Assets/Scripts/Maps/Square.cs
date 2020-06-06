@@ -1,11 +1,14 @@
+using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares
+namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
 {
     /// <summary>
     /// the square behaviour
     /// </summary>
+    /// <seealso cref="AMonoBehaviour"/>
+    /// <seealso cref="Animator"/>
     [RequireComponent(typeof(Animator))]
     public class Square : AMonoBehaviour
     {
@@ -25,11 +28,13 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares
         /// <summary>
         /// the level of the square
         /// </summary>
+        [SerializeField]
         private int mLevel;
 
         /// <summary>
         /// the side of the square
         /// </summary>
+        [SerializeField]
         private SquareSide mSide;
 
         /// <summary>
@@ -110,7 +115,14 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares
             ActualiseSprite();
         }
         #endregion Unity
-
+        /// <summary>
+        /// When the square is enable
+        /// </summary>
+        private void OnEnable()
+        {
+            //Reactualise sprite for resort the good values
+            ActualiseSprite();
+        }
         /// <summary>
         /// Change the sprite of the square
         /// </summary>

@@ -1,5 +1,4 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Squares;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
+﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +7,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
     /// <summary>
     /// Manager used for managed all the maps
     /// </summary>
+    /// <seealso cref="AManagerWithList{T}"/>
     public class MapManager : AManagerWithList<MapHandler>
     {
         #region Constants
