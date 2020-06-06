@@ -61,7 +61,7 @@
         </member>
         <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Init">
             <summary>
-            Call after the Start in a chosen order for init elements
+            Call in a chosen order for init elements
             </summary>
         </member>
         <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Clear">
