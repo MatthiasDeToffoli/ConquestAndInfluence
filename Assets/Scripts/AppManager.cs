@@ -6,6 +6,8 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence
     /// Main manager of the app
     /// </summary>
     /// <seealso cref="AMainManager{TMain}"/>
-    public class AppManager : AMainManager<AppManager> { }
+    public class AppManager : AMainManager<AppManager> 
+    {
+    }
 }
 
