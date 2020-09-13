@@ -281,12 +281,22 @@
         </member>
         <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.mTitleStyle">
             <summary>
-            the style for a title in gui
+            The style for a title in gui
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.mErrorStyle">
+            <summary>
+            The style for an error in gui
             </summary>
         </member>
         <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.titleStyle">
             <summary>
-            the style for a title in gui
+            The style for a title in gui
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.errorStyle">
+            <summary>
+            The style for an error in gui
             </summary>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1">
@@ -679,6 +689,144 @@
             set the instance of the singleton if it not have another instance
             </summary>
             <param name="pInstance">the instance to set</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1">
+            <summary>
+            Manage all the pools
+            </summary>
+            <typeparam name="T">the type of the initializer</typeparam>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.ERROR_STOCK_UNKNOW">
+            <summary>
+            Error showed when you try to stock an element in the pool which never was in it
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.mInitContainer">
+            <summary>
+            The initializer container
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.mContainer">
+            <summary>
+            The pool container
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.CreatePool">
+            <summary>
+            Create and Init the pool
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.GetElement``1(System.String)">
+            <summary>
+            Get a pool element
+            </summary>
+            <typeparam name="T">the type of the element</typeparam>
+            <param name="pRef">the id of the element</param>
+            <returns>the pool element</returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.StockElement(System.String,System.Object)">
+            <summary>
+            Stock an element in the pool
+            </summary>
+            <param name="pRef">the id of the element</param>
+            <param name="pElm">the element to stock</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement">
+            <summary>
+            Pool element for Game objects
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.ERROR_TRY_TO_RESET_NOT_EQUAL">
+            <summary>
+            Error showed when the user try to reset an object which is not 
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mId">
+            <summary>
+            the id of the element
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mNbToCreate">
+            <summary>
+            The number of elements to create
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mValue">
+            <summary>
+            The value of the element
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.id">
+            <summary>
+            the id of the element
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.nbToCreate">
+            <summary>
+            The number of elements to create
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.value">
+            <summary>
+            The value of the element
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.typedValue">
+            <summary>
+            The value of the pool element
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.CreateInstanceOfObject">
+            <summary>
+            Create an instance of the object in the scenario
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.IsEquivalent(System.Object)">
+            <summary>
+            If an object is equivalent to the value of the element
+            </summary>
+            <param name="pObject">the object to test</param>
+            <returns></returns>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.Reset(System.Object)">
+            <summary>
+            reset the properties of the object with the elements value
+            </summary>
+            <param name="pObject">the object to reset</param>
+            <returns>the object reset</returns>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer">
+            <summary>
+            Used for initialized the pool (already contain a list of gameobject)
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.mGameObjectsPoolInitializer">
+            <summary>
+            The game objects pool initializer
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.elements">
+            <summary>
+            The list of pool elements
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.Add(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
+            <summary>
+            Add item to the list
+            </summary>
+            <param name="pItem">the item to add</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.Add(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement)">
+            <summary>
+            Add item to the list
+            </summary>
+            <param name="pItem">the item to add</param>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState">
             <summary>
