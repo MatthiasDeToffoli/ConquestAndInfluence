@@ -11,6 +11,7 @@
 /[Mm]emoryCaptures/
 /[Pp]ackages/
 /[Pp]rojectSettings/
+/[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -74,6 +75,8 @@ Assets/Scenes/**/*.meta
 Assets/Scripts/**/*.meta
 Assets/Sprites.meta
 Assets/Sprites/Roads.meta
+Assets/Prefabs.meta
+Assets/Prefabs/**/*.meta
 
 # personal and work files
 Documentations/IHM.psd
