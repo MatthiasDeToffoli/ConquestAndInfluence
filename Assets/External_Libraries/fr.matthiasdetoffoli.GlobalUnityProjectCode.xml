@@ -828,6 +828,26 @@
             </summary>
             <param name="pItem">the item to add</param>
         </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait">
+            <summary>
+            Enum used for say what type of wait we will use in a coroutine
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.SECONDS">
+            <summary>
+            If we wait seconds
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.END_OF_FRAME">
+            <summary>
+            If we wait frames
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.FIXED_UPDATE">
+            <summary>
+            If we wait fixed update
+            </summary>
+        </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState">
             <summary>
             Enum used for know the game state
@@ -851,6 +871,94 @@
         <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.PAUSE">
             <summary>
             Pause state
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback">
+            <summary>
+            Visual feedback which is unshow after a time
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack"/> 
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.mTypeOfWait">
+            <summary>
+            The type of wait for the coroutine
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.mTimeToWait">
+            <summary>
+            The time to wait for the couroutine
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.coroutineUnShowInstance">
+            <summary>
+            The instance of the coroutine
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.#ctor(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait,System.Single)">
+            <summary>
+            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback"/>
+            </summary>
+            <param name="pPoolManager"></param>
+            <param name="pTypeOfWait"></param>
+            <param name="pTime"></param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.Show(UnityEngine.Transform)">
+            <summary>
+            Show the visual feed back
+            </summary>
+            <param name="pNewTransform">the transforms contains position size and rotation of the feed back</param>
+            <remarks>it search a game object in the pool</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.UnShow(UnityEngine.GameObject)">
+            <summary>
+            Unshow the feedback
+            </summary>
+            <param name="pObject">the object to unshow</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.UnShowCoroutine(UnityEngine.GameObject)">
+            <summary>
+            The coroutine for call unshow
+            </summary>
+            <param name="pObject">the object to unshow</param>
+            <returns></returns>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack">
+            <summary>
+            Parent of all visual feed backs managed by the code
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.mPoolManager">
+            <summary>
+            The pool manager
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.mPoolID">
+            <summary>
+            The ID of the pool for get the visual feedback
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.#ctor(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
+            <summary>
+            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack"/>
+            </summary>
+            <param name="pPoolManager">the pool manager</param>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.Show(UnityEngine.Transform)">
+            <summary>
+            Show the visual feed back
+            </summary>
+            <param name="pNewTransform">the transforms contains position size and rotation of the feed back</param>
+            <remarks>it search a game object in the pool</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.UnShow(UnityEngine.GameObject)">
+            <summary>
+            Unshow the feedback
+            </summary>
+            <param name="pObject">the object to unshow</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager">
+            <summary>
+            Abstract class use for manage all visual feedback
             </summary>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants">
