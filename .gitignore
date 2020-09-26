@@ -63,11 +63,7 @@ crashlytics-build.properties
 
 #useless meta
 Assets/Animations.meta
-Assets/Animations/Animators.meta
-Assets/Animations/Animators/Square.meta
-Assets/Animations/Clips.meta
-Assets/Animations/Clips/Square.meta
-Assets/Animations/Clips/Square/Road.meta
+Assets/Animations/**/*.meta
 Assets/External_Libraries.meta
 Assets/Scenes.meta
 Assets/Scripts.meta
@@ -75,6 +71,7 @@ Assets/Scenes/**/*.meta
 Assets/Scripts/**/*.meta
 Assets/Sprites.meta
 Assets/Sprites/Roads.meta
+Assets/Sprites/Path_selections.meta
 Assets/Prefabs.meta
 Assets/Prefabs/**/*.meta
 

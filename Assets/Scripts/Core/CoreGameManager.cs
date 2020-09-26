@@ -2,6 +2,7 @@
 using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
 using fr.matthiasdetoffoli.ConquestAndInfluence.Pooling;
 using fr.matthiasdetoffoli.ConquestAndInfluence.UI;
+using fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
 using System.Collections.Generic;
@@ -180,24 +181,33 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
             List<Square> lList = mMapManager.FindPath(Vector3.zero, pSquare.transform.position);
 
             if(lList != null)
-                foreach (Square lSquare in lList)
+            {
+                VisualFeedBacksManager lVFBManager = AppManager.instance.GetFirstManager<VisualFeedBacksManager>();
+
+                if(lVFBManager != null)
                 {
-                    PoolManager lPoolManager = AppManager.instance.GetFirstManager<PoolManager>();
-
-                    if(lPoolManager != null)
-                    {
-                        GameObject lGO = lPoolManager.GetElement<GameObject>("playerselection");
-
-                        lGO.SetActive(true);
-
-                        //Set the local scale to one for use the new lossy scale for calcul the good local scale
-                        lGO.transform.localScale = Vector3.one;
-                        //Calcul the good scale (don't need to set the z it's a 2D Game)
-                        lGO.transform.localScale = new Vector3(lSquare.transform.lossyScale.x / lGO.transform.lossyScale.x,lSquare.transform.lossyScale.y/lGO.transform.lossyScale.y,1);
-
-                        lGO.transform.position = new Vector3(lSquare.transform.position.x,lSquare.transform.position.y,lSquare.transform.position.z - 1);
-                    }
+                    lVFBManager.ShowMovingCaseVisualFeedback(lList);
+                    //TODO keep the ref and do the unshow
                 }
+            }
+                //foreach (Square lSquare in lList)
+                //{
+                //    PoolManager lPoolManager = AppManager.instance.GetFirstManager<PoolManager>();
+
+                //    if(lPoolManager != null)
+                //    {
+                //        GameObject lGO = lPoolManager.GetElement<GameObject>("playerselection");
+
+                //        lGO.SetActive(true);
+
+                //        //Set the local scale to one for use the new lossy scale for calcul the good local scale
+                //        lGO.transform.localScale = Vector3.one;
+                //        //Calcul the good scale (don't need to set the z it's a 2D Game)
+                //        lGO.transform.localScale = new Vector3(lSquare.transform.lossyScale.x / lGO.transform.lossyScale.x,lSquare.transform.lossyScale.y/lGO.transform.lossyScale.y,1);
+
+                //        lGO.transform.position = new Vector3(lSquare.transform.position.x,lSquare.transform.position.y,lSquare.transform.position.z - 1);
+                //    }
+                //}
         }
 
         #endregion Methods
