@@ -53,11 +53,11 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
         /// Show the visual feed back
         /// </summary>
         /// <param name="pPoolManager">the pool manager</param>
-        /// <param name="pNewTransform">the transforms contains position size and rotation of the feed back</param>
+        /// <param name="pTransform">the transforms contains position size and rotation of the feed back</param>
         /// <remarks>it search a game object in the pool</remarks>
-        public override void Show(IPoolManager pPoolManager, Transform pNewTransform)
+        public override void Show(IPoolManager pPoolManager, Transform pTransform)
         {
-            base.Show(pPoolManager, pNewTransform);
+            base.Show(pPoolManager, pTransform.localScale,new Vector3(pTransform.position.x,pTransform.position.y,pTransform.position.z - 1),pTransform.rotation);
 
             if (mObject != null)
             {

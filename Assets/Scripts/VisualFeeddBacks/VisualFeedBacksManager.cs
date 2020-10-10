@@ -32,6 +32,14 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
 
         #region Methods
         /// <summary>
+        /// Awake of the behaviour
+        /// </summary>
+        protected override void Awake()
+        {
+            base.Awake();
+            mPathFeedbacks = new Dictionary<string, List<string>>();
+        }
+        /// <summary>
         /// Initialize the manager
         /// </summary>
         public override void Init()

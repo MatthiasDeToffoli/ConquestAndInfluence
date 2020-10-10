@@ -956,7 +956,17 @@
             Show the visual feed back
             </summary>
             <param name="pPoolManager">the pool manager</param>
-            <param name="pNewTransform">the transforms contains position size and rotation of the feed back</param>
+            <param name="pTransform">the transforms contains position size and rotation of the feed back</param>
+            <remarks>it search a game object in the pool</remarks>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.Show(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+            <summary>
+            Show the visual feed back
+            </summary>
+            <param name="pPoolManager">the pool manager</param>
+            <param name="pScale">the scale of the feedback</param>
+            <param name="pPosition">the position of the feddback</param>
+            <param name="pRotation">the rotation of the feedback</param>
             <remarks>it search a game object in the pool</remarks>
         </member>
         <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.UnShow(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
