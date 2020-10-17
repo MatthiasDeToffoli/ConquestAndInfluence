@@ -410,7 +410,7 @@
             the parent of all menu manager
             </summary>
             <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/> 
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen"/>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
         <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.ERROR_TO_CLOSE_NOT_EXIST">
             <summary>
@@ -448,7 +448,7 @@
             <param name="pIndexToClose">index of the screen to close</param>
             <param name="pIndexToOpen">index of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.SwitchScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.SwitchScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen)">
             <summary>
             switch two screen
             </summary>
@@ -467,7 +467,7 @@
             </summary>
             <param name="pIndexToOpen">index of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.OpenScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.OpenScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen)">
             <summary>
             open a screen
             </summary>
@@ -485,27 +485,11 @@
             </summary>
             <param name="pIndexToClose">index of the screen to close</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.CloseScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.CloseScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen)">
             <summary>
             close a screen
             </summary>
             <param name="pScreenToClose"></param>
-        </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen">
-            <summary>
-            Parent of all menu screen, implement methods for open and close
-            </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
-        </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen.Open">
-            <summary>
-            show the screen
-            </summary>
-        </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.AMenuScreen.Close">
-            <summary>
-            unshow the screen
-            </summary>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener">
             <summary>
@@ -527,6 +511,71 @@
         <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.UnlistenToEvents">
             <summary>
             unlisten all events here
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.SendStateDelegate">
+            <summary>
+            Delegate will send the state of the button listener
+            </summary>
+            <param name="pState">the state to send</param>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener">
+            <summary>
+            Button listener which send a boolean
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+        </member>
+        <member name="E:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.OnClick">
+            <summary>
+            event fire when we click on the button
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.mState">
+            <summary>
+            The state of the button
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.OnButtonClicked">
+            <summary>
+            call when we click on the button
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable">
+            <summary>
+            A Boolean button listener which can be configurable in the inspector
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable.mConfigurableState">
+            <summary>
+            The state of the button
+            </summary>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable.mState">
+            <summary>
+            The state of the button
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.InvalidateButtonListener">
+            <summary>
+            Boolean button listener which only sent false
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.InvalidateButtonListener.mState">
+            <summary>
+            The state of the button
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ValidateButtonListener">
+            <summary>
+            Button listener which only sent true
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
+        </member>
+        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ValidateButtonListener.mState">
+            <summary>
+            The state of the button
             </summary>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener">
@@ -577,6 +626,54 @@
             <summary>
             call when we click on the button
             </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen">
+            <summary>
+            Parent of all menu screen, implement methods for open and close
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Open">
+            <summary>
+            show the screen
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Close">
+            <summary>
+            unshow the screen
+            </summary>
+        </member>
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen">
+            <summary>
+            Screen show for validate or not
+            </summary>
+            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.mValidateBtn">
+            <summary>
+            The validate button
+            </summary>
+        </member>
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.mInvalidateBtn">
+            <summary>
+            The invalidate button
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.ListenToEvents">
+            <summary>
+            Listen all the events
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.UnlistenToEvents">
+            <summary>
+            Unlisten all the events
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.OnValidation(System.Boolean)">
+            <summary>
+            When a validation button was clicked
+            </summary>
+            <param name="pState"></param>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour">
             <summary>

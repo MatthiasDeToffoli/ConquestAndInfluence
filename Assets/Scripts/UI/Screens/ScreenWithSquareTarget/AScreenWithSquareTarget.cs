@@ -1,6 +1,6 @@
 ﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
 using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu;
+using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
 {
