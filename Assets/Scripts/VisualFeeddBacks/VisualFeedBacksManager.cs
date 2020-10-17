@@ -45,7 +45,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
         public override void Init()
         {
             base.Init();
-            mPoolManager = AppManager.instance.GetFirstManager<PoolManager>();
+            mPoolManager = AppManager.instance?.poolManager;
         }
 
         /// <summary>

@@ -15,7 +15,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         protected override void AfterStart()
         {
             base.AfterStart();
-            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
+            CoreGameManager lCoreGameManager = AppManager.instance?.coreGameManager;
 
             if (lCoreGameManager != null)
             {
@@ -28,12 +28,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// <param name="pStartOrPause">if we start or pause the ckicj</param>
         public void StartStopClock(bool pStartOrPause)
         {
-            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
-
-            if (lCoreGameManager != null)
-            {
-                lCoreGameManager.StartOrPauseClock(pStartOrPause);
-            }
+            AppManager.instance?.coreGameManager?.StartOrPauseClock(pStartOrPause);
         }
 
         /// <summary>
@@ -41,12 +36,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// </summary>
         public void ChangeClockSpeed()
         {
-            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
-
-            if (lCoreGameManager != null)
-            {
-                lCoreGameManager.ChangeClockSpeed();
-            }
+            AppManager.instance?.coreGameManager?.ChangeClockSpeed();
         }
         
         /// <summary>
@@ -54,12 +44,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// </summary>
         public void ResetClock()
         {
-            CoreGameManager lCoreGameManager = AppManager.instance.GetFirstManager<CoreGameManager>();
-
-            if (lCoreGameManager != null)
-            {
-                lCoreGameManager.ResetClock();
-            }
+            AppManager.instance?.coreGameManager?.ResetClock();
         }
         /// <summary>
         /// When a clock property changed

@@ -18,11 +18,6 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         /// If the mouse left button is down or not
         /// </summary>
         private bool mMouseLeftButtonDown;
-
-        /// <summary>
-        /// The map manager
-        /// </summary>
-        private MapManager mMapManager;
         #endregion Fields
 
         #region Properties
@@ -45,10 +40,8 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         /// <summary>
         /// Initialize an instance of the class <see cref="Controller"/>
         /// </summary>
-        /// <param name="pMapManager">the map manager</param>
-        public Controller(MapManager pMapManager)
+        public Controller()
         {
-            mMapManager = pMapManager;
             #if UNITY_EDITOR
                 mUseMouse = true;
             #elif UNITY_IOS || UNITY_ANDROID
@@ -106,16 +99,19 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         /// <returns><c>true</c> if we hit a square, <c>false</c> otherwise</returns>
         private bool TryHitSquare(Vector3 pPos)
         {
-            //Translate the mouse or touch position to a world map formated position
-            Vector2 lXY = mMapManager.currentMap.GetFormatedPosition(Camera.main.ScreenToWorldPoint(pPos));
-
-            //If we touch a square
-            if (mMapManager.currentMap.map.ContainsKey(lXY.x)
-                && mMapManager.currentMap.map[lXY.x].ContainsKey(lXY.y))
+            if(AppManager.instance?.mapManager != null)
             {
-                squareHit = mMapManager.currentMap.map[lXY.x][lXY.y];
+                //Translate the mouse or touch position to a world map formated position
+                Vector2 lXY = AppManager.instance.mapManager.currentMap.GetFormatedPosition(Camera.main.ScreenToWorldPoint(pPos));
 
-                return squareHit.CanMoveOn;
+                //If we touch a square
+                if (AppManager.instance.mapManager.currentMap.map.ContainsKey(lXY.x)
+                    && AppManager.instance.mapManager.currentMap.map[lXY.x].ContainsKey(lXY.y))
+                {
+                    squareHit = AppManager.instance.mapManager.currentMap.map[lXY.x][lXY.y];
+
+                    return squareHit.CanMoveOn;
+                }
             }
             return false;
         }

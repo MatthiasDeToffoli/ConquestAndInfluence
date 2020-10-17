@@ -55,16 +55,6 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         /// The game controller
         /// </summary>
         private Controller mController;
-
-        /// <summary>
-        /// The map manager
-        /// </summary>
-        private MapManager mMapManager;
-
-        /// <summary>
-        /// The menu manager
-        /// </summary>
-        private MenuManager mMenuManager;
         #endregion Fields
 
         #region Methods
@@ -87,9 +77,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
             base.Start();
 
             //At start for be sure the appmanager is created
-            mMapManager = AppManager.instance?.GetFirstManager<MapManager>();
-            mMenuManager = AppManager.instance?.GetFirstManager<MenuManager>();
-            mController = new Controller(mMapManager);
+            mController = new Controller();
         }
         /// <summary>
         /// Behavior loop
@@ -167,7 +155,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         {
             if (mController.TryHitSquare())
             {
-                mMenuManager.OpenSquareInteractionScreen(mController.squareHit);
+                AppManager.instance?.menuManager?.OpenSquareInteractionScreen(mController.squareHit);
             }
         }
         #endregion Controller
@@ -178,36 +166,12 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         /// <param name="pAction"></param>
         public void StartActionOnSquare(Square pSquare, ActionOnSquare pAction)
         {
-            List<Square> lList = mMapManager.FindPath(Vector3.zero, pSquare.transform.position);
+            List<Square> lList = AppManager.instance?.mapManager?.FindPath(Vector3.zero, pSquare.transform.position);
 
-            if(lList != null)
+            if(lList != null && AppManager.instance?.visualFeedBakcManager != null)
             {
-                VisualFeedBacksManager lVFBManager = AppManager.instance.GetFirstManager<VisualFeedBacksManager>();
-
-                if(lVFBManager != null)
-                {
-                    lVFBManager.ShowMovingCaseVisualFeedback(lList);
-                    //TODO keep the ref and do the unshow
-                }
+                AppManager.instance?.visualFeedBakcManager.ShowMovingCaseVisualFeedback(lList);
             }
-                //foreach (Square lSquare in lList)
-                //{
-                //    PoolManager lPoolManager = AppManager.instance.GetFirstManager<PoolManager>();
-
-                //    if(lPoolManager != null)
-                //    {
-                //        GameObject lGO = lPoolManager.GetElement<GameObject>("playerselection");
-
-                //        lGO.SetActive(true);
-
-                //        //Set the local scale to one for use the new lossy scale for calcul the good local scale
-                //        lGO.transform.localScale = Vector3.one;
-                //        //Calcul the good scale (don't need to set the z it's a 2D Game)
-                //        lGO.transform.localScale = new Vector3(lSquare.transform.lossyScale.x / lGO.transform.lossyScale.x,lSquare.transform.lossyScale.y/lGO.transform.lossyScale.y,1);
-
-                //        lGO.transform.position = new Vector3(lSquare.transform.position.x,lSquare.transform.position.y,lSquare.transform.position.z - 1);
-                //    }
-                //}
         }
 
         #endregion Methods

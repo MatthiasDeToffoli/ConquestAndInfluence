@@ -78,11 +78,11 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareT
         /// <param name="pSender">the sender of the event</param>
         private void StartActionOnSquare(AActionOnSquareButtonListener pSender)
         {
-            if(mCoreGameManager != null && mTarget != null)
+            if( mTarget != null)
             {
                 Square lTarget = mTarget;
                 Close();
-                mCoreGameManager.StartActionOnSquare(lTarget, pSender.action);
+                AppManager.instance?.coreGameManager?.StartActionOnSquare(lTarget, pSender.action);
             }
         }
 

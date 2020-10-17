@@ -31,21 +31,11 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
         /// <param name="pIndex">the index to select</param>
         public void TestSelectMap(int pIndex)
         {
-            MapManager lMapManager = AppManager.instance.GetFirstManager<MapManager>();
-            
-            if(lMapManager != null)
-            {
-                lMapManager.SelectMap(pIndex);
-                Debug.Log(string.Format("map {0} selected", pIndex));
-            }
-
-            CoreGameManager lCoreManager = AppManager.instance.GetFirstManager<CoreGameManager>();
+            AppManager.instance?.mapManager?.SelectMap(pIndex);
+            Debug.Log(string.Format("map {0} selected", pIndex));
 
             //Active the controller for interact with the squares
-            if(lCoreManager != null)
-            {
-                lCoreManager.SetActiveController(true);
-            }
+            AppManager.instance?.coreGameManager?.SetActiveController(true);
         }
 
         /// <summary>
@@ -61,7 +51,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
                 return;
             }
 
-            MapManager lMapManager = AppManager.instance.GetFirstManager<MapManager>();
+            MapManager lMapManager = AppManager.instance?.mapManager;
 
             if (lMapManager != null)
             {

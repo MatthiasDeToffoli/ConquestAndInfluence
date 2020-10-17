@@ -12,26 +12,12 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareT
     {
         #region Fields
         /// <summary>
-        /// The core game manager
-        /// </summary>
-        protected CoreGameManager mCoreGameManager;
-
-        /// <summary>
         /// The square target
         /// </summary>
         protected Square mTarget;
         #endregion Fields
 
         #region Methods
-        /// <summary>
-        /// Start of the behavior
-        /// </summary>
-        protected override void Start()
-        {
-            base.Start();
-            mCoreGameManager = AppManager.instance?.GetFirstManager<CoreGameManager>();
-        }
-        
         /// <summary>
         /// show the screen
         /// </summary>
@@ -48,7 +34,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareT
         public override void Open()
         {
             //Unactive the controller
-            mCoreGameManager.SetActiveController(false);
+            AppManager.instance?.coreGameManager?.SetActiveController(false);
             base.Open();
         }
 
@@ -58,10 +44,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareT
         public override void Close()
         {
             mTarget = null;
-            
             base.Close();
-
-            mCoreGameManager.SetActiveController(true);
         }
         #endregion Methods
     }
