@@ -405,91 +405,106 @@
             Awake of the behaviour
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager">
+        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager">
             <summary>
-            the parent of all menu manager
+            manage all the menu
             </summary>
             <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/> 
             <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.ERROR_TO_CLOSE_NOT_EXIST">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_TO_CLOSE_NOT_EXIST">
             <summary>
             Error when we try to close a screen which not exist
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.ERROR_TO_OPEN_NOT_EXIST">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_TO_OPEN_NOT_EXIST">
             <summary>
             Error when we try to open a screen which not exist
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.Awake">
+        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_INDEX">
+            <summary>
+            Error when we try to open a screen at an index which not exist
+            </summary>
+        </member>
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.Awake">
             <summary>
             Awake of the behaviour
             </summary>
             <remarks>Init all the properties and Fields here</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.Init">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.Init">
             <summary>
             init the manager
             </summary>
             <remarks>this function is called by the main manager</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.SwitchScreen``2">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen``2(System.Object[])">
             <summary>
             switch two screen
             </summary>
             <typeparam name="TToClose">type of the screen to close</typeparam>
             <typeparam name="TToOpen">type of the screen to open</typeparam>
+            <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.SwitchScreen(System.Int32,System.Int32)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen(System.Int32,System.Int32,System.Object[])">
             <summary>
             switch two screen
             </summary>
             <param name="pIndexToClose">index of the screen to close</param>
             <param name="pIndexToOpen">index of the screen to open</param>
+            <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.SwitchScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String,System.String,System.Object[])">
             <summary>
             switch two screen
             </summary>
             <param name="pScreenToClose"></param>
             <param name="pScreenToOpen"></param>
+            <param name="pToCloseTypeName">the name of the type of screen to close used for the error message</param>
+            <param name="pToOpenTypeName">the name of the type of screen to open used for the error message</param>
+            <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.OpenScreen``1">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen``1(System.Object[])">
             <summary>
             open a screen
             </summary>
             <typeparam name="TToOpen">type of the screen to open</typeparam>
+            <param name="pParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.OpenScreen(System.Int32)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen(System.Int32,System.Object[])">
             <summary>
             open a screen
             </summary>
             <param name="pIndexToOpen">index of the screen to open</param>
+            <param name="pParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.OpenScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String,System.Object[])">
             <summary>
             open a screen
             </summary>
             <param name="pScreenToOpen"></param>
+            <param name="pTypeName">the name of the type for the error message</param>
+            <param name="pParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.CloseScreen``1">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen``1">
             <summary>
             close a screen
             </summary>
             <typeparam name="TToClose">type of the screen to close</typeparam>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.CloseScreen(System.Int32)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen(System.Int32)">
             <summary>
             close a screen
             </summary>
             <param name="pIndexToClose">index of the screen to close</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AMenuManager.CloseScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String)">
             <summary>
             close a screen
             </summary>
             <param name="pScreenToClose"></param>
+            <param name="pTypeName">the name of the type for the error message</param>
         </member>
         <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener">
             <summary>
@@ -633,7 +648,7 @@
             </summary>
             <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Open">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Open(System.Object[])">
             <summary>
             show the screen
             </summary>
@@ -1106,7 +1121,7 @@
             </summary>
             <param name="pFeedBackRef">the unic id of the feedback</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.StophortLivedFeedBackCoroutine(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback)">
+        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.StopShortLivedFeedBackCoroutine(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback)">
             <summary>
             stop the short lived feedback coroutine
             </summary>

@@ -2,6 +2,7 @@
 using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using fr.matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.ActionOnSquareButtonListener;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
+using System.Linq;
 using UnityEngine;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
@@ -82,44 +83,55 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareT
             {
                 Square lTarget = mTarget;
                 Close();
-                AppManager.instance?.coreGameManager?.StartActionOnSquare(lTarget, pSender.action);
+                AppManager.instance?.coreGameManager?.CheckActionOnSquare(lTarget, pSender.action);
             }
         }
 
         /// <summary>
         /// show the screen
         /// </summary>
-        public override void Open(Square pSquare)
+        /// <param name="pParams">the parameters of the screen</param>
+        public override void Open(params object[] pParams)
         {
-            //Active the buttons in functions of the square side
-            switch (pSquare.side)
+            mTarget = null;
+
+            if (pParams != null && pParams.Length > 0)
+                mTarget = pParams.FirstOrDefault(pElm => pElm is Square) as Square;
+
+            if (mTarget != null)
             {
-                case SquareSide.ALLY:
-                    mUpgradeSquare.gameObject.SetActive(true);
-                    mAttackSquare.gameObject.SetActive(false);
-                    mBuySquare.gameObject.SetActive(false);
-                    mNegociateForSquare.gameObject.SetActive(false);
-                    mConvertSquare.gameObject.SetActive(false);
-                    break;
+                //Active the buttons in functions of the square side
+                switch (mTarget.side)
+                {
+                    case SquareSide.ALLY:
+                        mUpgradeSquare.gameObject.SetActive(true);
+                        mAttackSquare.gameObject.SetActive(false);
+                        mBuySquare.gameObject.SetActive(false);
+                        mNegociateForSquare.gameObject.SetActive(false);
+                        mConvertSquare.gameObject.SetActive(false);
+                        break;
 
-                case SquareSide.NEUTRAL:
-                    mUpgradeSquare.gameObject.SetActive(false);
-                    mAttackSquare.gameObject.SetActive(false);
-                    mBuySquare.gameObject.SetActive(false);
-                    mNegociateForSquare.gameObject.SetActive(false);
-                    mConvertSquare.gameObject.SetActive(true);
-                    break;
+                    case SquareSide.NEUTRAL:
+                        mUpgradeSquare.gameObject.SetActive(false);
+                        mAttackSquare.gameObject.SetActive(false);
+                        mBuySquare.gameObject.SetActive(false);
+                        mNegociateForSquare.gameObject.SetActive(false);
+                        mConvertSquare.gameObject.SetActive(true);
+                        break;
 
-                case SquareSide.ENEMY:
-                    mUpgradeSquare.gameObject.SetActive(false);
-                    mAttackSquare.gameObject.SetActive(true);
-                    mBuySquare.gameObject.SetActive(true);
-                    mNegociateForSquare.gameObject.SetActive(true);
-                    mConvertSquare.gameObject.SetActive(false);
-                    break;
+                    case SquareSide.ENEMY:
+                        mUpgradeSquare.gameObject.SetActive(false);
+                        mAttackSquare.gameObject.SetActive(true);
+                        mBuySquare.gameObject.SetActive(true);
+                        mNegociateForSquare.gameObject.SetActive(true);
+                        mConvertSquare.gameObject.SetActive(false);
+                        break;
+                }
+
+                
             }
 
-            base.Open(pSquare);
+            base.Open(pParams);
         }
 
         /// <summary>

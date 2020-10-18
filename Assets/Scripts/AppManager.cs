@@ -1,9 +1,9 @@
 ﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
 using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
 using fr.matthiasdetoffoli.ConquestAndInfluence.Pooling;
-using fr.matthiasdetoffoli.ConquestAndInfluence.UI;
 using fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers;
+using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence
 {

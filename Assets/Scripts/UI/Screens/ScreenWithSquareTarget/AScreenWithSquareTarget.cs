@@ -1,6 +1,7 @@
 ﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
 using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
+using System.Linq;
 
 namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
 {
@@ -21,21 +22,16 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareT
         /// <summary>
         /// show the screen
         /// </summary>
-        /// <param name="pSquare">the square linked to the screen</param>
-        public virtual void Open(Square pSquare)
+        /// <param name="pParams">the parameters of the sceen</param>
+        public override void Open(params object[] pParams)
         {
-            mTarget = pSquare;
-            Open();
-        }
-
-        /// <summary>
-        /// show the screen
-        /// </summary>
-        public override void Open()
-        {
-            //Unactive the controller
-            AppManager.instance?.coreGameManager?.SetActiveController(false);
-            base.Open();
+            //mTarget as to be set in the child
+            if(mTarget != null)
+            {
+                //Unactive the controller
+                AppManager.instance?.coreGameManager?.SetActiveController(false);
+                base.Open();
+            }
         }
 
         /// <summary>
