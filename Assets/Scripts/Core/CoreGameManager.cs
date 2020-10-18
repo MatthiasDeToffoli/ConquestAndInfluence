@@ -2,6 +2,8 @@
 using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
 using fr.matthiasdetoffoli.ConquestAndInfluence.Pooling;
 using fr.matthiasdetoffoli.ConquestAndInfluence.UI;
+using fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
+using fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget;
 using fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
 using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
@@ -155,7 +157,7 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         {
             if (mController.TryHitSquare())
             {
-                AppManager.instance?.menuManager?.OpenSquareInteractionScreen(mController.squareHit);
+                AppManager.instance?.menuManager?.OpenScreen<SquareInteractionScreen>(mController.squareHit);
             }
         }
         #endregion Controller
@@ -164,14 +166,23 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
         /// Start an action on a square
         /// </summary>
         /// <param name="pAction"></param>
-        public void StartActionOnSquare(Square pSquare, ActionOnSquare pAction)
+        public void CheckActionOnSquare(Square pSquare, ActionOnSquare pAction)
         {
             List<Square> lList = AppManager.instance?.mapManager?.FindPath(Vector3.zero, pSquare.transform.position);
 
-            if(lList != null && AppManager.instance?.visualFeedBakcManager != null)
+            if(lList != null)
             {
-                AppManager.instance?.visualFeedBakcManager.ShowMovingCaseVisualFeedback(lList);
+                string lFeedBackId = AppManager.instance?.visualFeedBakcManager?.ShowMovingCaseVisualFeedback(lList);
+                AppManager.instance?.menuManager?.OpenScreen<ValidationPathScreen>(lFeedBackId);
             }
+        }
+
+        /// <summary>
+        /// Do the action on a square
+        /// </summary>
+        public void OrderActionOnSquare()
+        {
+            SetActiveController(true);
         }
 
         #endregion Methods

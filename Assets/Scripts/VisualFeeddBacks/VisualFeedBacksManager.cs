@@ -76,6 +76,23 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
 
             return lID;
         }
+
+        /// <summary>
+        /// Unshow the moving cas visual feedback
+        /// </summary>
+        /// <param name="pRef">the id of the feedback</param>
+        public void UnshowMovingCaseVisualFeedback(string pRef)
+        {
+            if (string.IsNullOrEmpty(pRef) == false &&  mPathFeedbacks.ContainsKey(pRef))
+            {
+                foreach(string lFeedBackRef in mPathFeedbacks[pRef])
+                {
+                    UnshowFeedBack(lFeedBackRef);
+                }
+            }
+
+            mPathFeedbacks.Remove(pRef);
+        }
         #endregion Methods
     }
 }
