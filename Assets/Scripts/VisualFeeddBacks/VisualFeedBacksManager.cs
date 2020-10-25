@@ -20,8 +20,10 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
         /// </summary>
         protected override IPoolManager mPoolManager
         {
-            get;
-            set;
+            get
+            {
+                return AppManager.instance?.poolManager;
+            }
         }
 
         /// <summary>
@@ -45,7 +47,6 @@ namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
         public override void Init()
         {
             base.Init();
-            mPoolManager = AppManager.instance?.poolManager;
         }
 
         /// <summary>
