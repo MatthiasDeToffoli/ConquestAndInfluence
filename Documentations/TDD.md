@@ -74,6 +74,7 @@
 | V0.4 | 05/09/2020 | Change regions and add events parts						  | Write regions name in upper camelcase, and add events in codding rules											 | Matthias de Toffoli |
 | V0.5 | 05/10/2020 | Update regions part and add constants region in it		  | Add rules for constants regions and update regions for allow subregions											 | Matthias de Toffoli |
 | V0.6 | 05/16/2020 | Update Namespace part, and the coding rules				  | Add an exception for Editor folder in namespace part, and change some syntaxes in coding rules					 | Matthias de Toffoli |
+| V1.0 | 10/25/2020 | Update the communication diagram							  | Update the communication diagram for match with the current project												 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -122,6 +123,7 @@ Will use managers, they will manage their part and single objects will be manage
 ![Legend of the project communications diagram](./pictures/TDD/Communication/Legend.png "Legend")
 #### Diagram
 ![Show the communication between elements of the project](./pictures/TDD/Communication/Diagram.png "Communication")
+***This diagram don't show test scripts because they will be deleted at the end of the project***
 ### Project structur
 #### Legend
 ![Legend of the folders diagram](./pictures/TDD/Folders/Legend.png "Legend")
