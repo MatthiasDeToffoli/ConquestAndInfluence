@@ -148,9 +148,11 @@ Will use managers, they will manage their part and single objects will be manage
 ![Clips folder diagram](./pictures/TDD/Folders/Clips.png "Clips folder")
 
 * *Feedbacks*
+
 ![Feedbacks folder diagram](./pictures/TDD/Folders/Clips_Feedbacks.png "Clips/Feedbacks folder")
 
 * *Square*
+
 ![Square folder diagram](./pictures/TDD/Folders/Clips_Square.png "Clips/Square folder")
 ##### Scenes
 ![Scenes folder diagram](./pictures/TDD/Folders/Scenes.png "Scenes folder")
@@ -164,9 +166,11 @@ Will use managers, they will manage their part and single objects will be manage
 ![UI folder diagram](./pictures/TDD/Folders/UI.png "UI folder")
 
 * *ButtonListeners*
+
 ![ButtonListeners folder diagram](./pictures/TDD/Folders/UI_ButtonListeners.png "UI/ButtonListeners folder")
 
 * *Screens*
+
 ![Screens folder diagram](./pictures/TDD/Folders/UI_Screens.png "UI/Screens folder")
 ##### Sprites
 ![Sprites folder diagram](./pictures/TDD/Folders/Sprites.png "Sprites folder")
