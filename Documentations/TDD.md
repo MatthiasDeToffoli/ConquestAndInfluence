@@ -26,9 +26,19 @@
 	* *Diagram*
 * **B** *- Project structur*
 	* *Legend*
-	* *Diagrams*
-		* *Assets*
+	* *Assets*
+		* *Animators*
+		* *Clips*
+			* *Feedbacks*
+			* *Square*
+		* *Scenes*
 		* *Scripts*
+			* *Core*
+			* *Maps*
+			* *UI*
+				* *ButtonListeners*
+				* *Screens*
+		* *Sprites*
 * **C** *- Namespaces*
 * **D** *- Coding rules*
 	* *Using*
@@ -75,6 +85,7 @@
 | V0.5 | 05/10/2020 | Update regions part and add constants region in it		  | Add rules for constants regions and update regions for allow subregions											 | Matthias de Toffoli |
 | V0.6 | 05/16/2020 | Update Namespace part, and the coding rules				  | Add an exception for Editor folder in namespace part, and change some syntaxes in coding rules					 | Matthias de Toffoli |
 | V1.0 | 10/25/2020 | Update the communication diagram							  | Update the communication diagram for match with the current project												 | Matthias de Toffoli |
+| V1.1 | 10/31/2020 | Update the Folders diagrams								  | Update the folders diagram for match with the current project and change the unity version						 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -110,7 +121,7 @@ Touch only
 ### Research
 No tool researchs was make for this project beause the goal is to improve my skills with Unity.
 ### Software
-Unity 3D 2019
+Unity 3D 2020.1.0f1
 ### Language
 C# with .Net 4.6
 ### Libraries
@@ -127,11 +138,34 @@ Will use managers, they will manage their part and single objects will be manage
 ### Project structur
 #### Legend
 ![Legend of the folders diagram](./pictures/TDD/Folders/Legend.png "Legend")
-#### Diagrams
-##### Assets
+#### Assets
 ![Assets folder diagram](./pictures/TDD/Folders/Assets.png "Assets folder")
+##### Animations
+![Animations folder diagram](./pictures/TDD/Folders/Animations.png "Animations folder")
+###### Animators
+![Animators folder diagram](./pictures/TDD/Folders/Animators.png "Animators folder")
+###### Clips
+![Clips folder diagram](./pictures/TDD/Folders/Clips.png "Clips folder")
+####### Feedbacks
+![Feedbacks folder diagram](./pictures/TDD/Folders/Clips_Feedbacks.png "Clips/Feedbacks folder")
+####### Square
+![Square folder diagram](./pictures/TDD/Folders/Clips_Square.png "Clips/Square folder")
+##### Scenes
+![Scenes folder diagram](./pictures/TDD/Folders/Scenes.png "Scenes folder")
 ##### Scripts
 ![Scripts folder diagram](./pictures/TDD/Folders/Scripts.png "Scripts folder")
+###### Core
+![Core folder diagram](./pictures/TDD/Folders/Core.png "Core folder")
+###### Maps
+![Maps folder diagram](./pictures/TDD/Folders/Maps.png "Maps folder")
+###### UI
+![UI folder diagram](./pictures/TDD/Folders/UI.png "UI folder")
+####### ButtonListeners
+![ButtonListeners folder diagram](./pictures/TDD/Folders/UI_ButtonListeners.png "UI/ButtonListeners folder")
+####### Screens
+![Screens folder diagram](./pictures/TDD/Folders/UI_Screens.png "UI/Screens folder")
+##### Sprites
+![Sprites folder diagram](./pictures/TDD/Folders/Sprites.png "Sprites folder")
 ### Namespaces
 ![Namespaces diagram](./pictures/TDD/Namespaces.png "Namespaces")
 ### Coding rules
