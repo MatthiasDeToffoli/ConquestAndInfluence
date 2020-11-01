@@ -1,8 +1,8 @@
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 {
     /// <summary>
     /// the square behaviour

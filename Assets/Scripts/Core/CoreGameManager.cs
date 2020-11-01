@@ -1,17 +1,17 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core.Enums;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Pooling;
-using fr.matthiasdetoffoli.ConquestAndInfluence.UI;
-using fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
-using fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget;
-using fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Enums;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 {
     /// <summary>
     /// Manage all the game

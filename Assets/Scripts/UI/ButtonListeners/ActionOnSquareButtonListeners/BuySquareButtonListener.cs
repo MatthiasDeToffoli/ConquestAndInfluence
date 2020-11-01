@@ -1,6 +1,6 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core.Enums;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Enums;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.ActionOnSquareButtonListener
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.ActionOnSquareButtonListener
 {
     /// <summary>
     /// Button listener for buy a square

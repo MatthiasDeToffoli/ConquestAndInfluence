@@ -1,9 +1,9 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
 using System.Linq;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
 {
     /// <summary>
     /// Parent of all screen wich need a square target

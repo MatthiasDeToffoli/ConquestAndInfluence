@@ -1,11 +1,11 @@
-﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 {
     /// <summary>
     /// Class for 

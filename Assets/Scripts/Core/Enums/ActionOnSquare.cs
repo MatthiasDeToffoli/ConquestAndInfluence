@@ -1,4 +1,4 @@
-﻿namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core.Enums
+﻿namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Enums
 {
     /// <summary>
     /// Enum describe the actions on a square

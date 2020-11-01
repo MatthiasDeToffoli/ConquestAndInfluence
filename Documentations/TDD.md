@@ -55,7 +55,7 @@
 	* *Loops*
 	* *Events*
 	* *Nomenclature*
-		* *Namespace*
+		* *Namespaces*
 		* *Classes / Structs*
 		* *Metodes*
 		* *Constants*
@@ -86,6 +86,7 @@
 | V0.6 | 05/16/2020 | Update Namespace part, and the coding rules				  | Add an exception for Editor folder in namespace part, and change some syntaxes in coding rules					 | Matthias de Toffoli |
 | V1.0 | 10/25/2020 | Update the communication diagram							  | Update the communication diagram for match with the current project												 | Matthias de Toffoli |
 | V1.1 | 10/31/2020 | Update the Folders diagrams								  | Update the folders diagram for match with the current project and change the unity version						 | Matthias de Toffoli |
+| V1.2 | 11/01/2020 | Update the Namespaces diagrams							  | Update the Namespaces diagram for match with the current project and corect all namespaces references			 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -183,7 +184,7 @@ All usings are at top of the document and sorte by alphabetic order.
 *It's more legible.*
 
 #### Namespaces
-One namespace by documents, the namespace start with fr.matthiasdetoffoli.ConquestAndInfluence and use folders name
+One namespace by documents, the namespace start with Fr.Matthiasdetoffoli.ConquestAndInfluence and use folders name
 without assets and scripts folders.
 One exception for the folder Editor the namespace will finish by PersonalEditor, for not have conflict with UnityEngine.Editor.
 *With this type of namespace it will be easyer to find files.*
@@ -351,8 +352,8 @@ public FireMyEvent()
 ##### Folder
 Upper camel case
 *More legible.*
-##### Namespace
-Like folders except fr.matthiasdetoffoli
+##### Namespaces
+Like folders except Fr.Matthiasdetoffoli
 *More legible*
 ##### Classes / Structs
 Upper camel case

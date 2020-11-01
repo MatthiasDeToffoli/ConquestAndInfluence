@@ -1,10 +1,10 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Test
 {
     /// <summary>
     /// Class used for test map features

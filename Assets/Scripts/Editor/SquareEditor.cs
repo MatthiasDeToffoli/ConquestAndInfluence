@@ -1,9 +1,9 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using UnityEditor;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
 {
     /// <summary>
     /// Custom editor for the square class

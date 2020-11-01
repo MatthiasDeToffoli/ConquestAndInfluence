@@ -1,7 +1,7 @@
-﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
+﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
 using System.Linq;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
 {
     /// <summary>
     /// Screen open for validate an action

@@ -1,76 +1,76 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>fr.matthiasdetoffoli.GlobalProjectCode</name>
+        <name>Fr.Matthiasdetoffoli.GlobalProjectCode</name>
     </assembly>
     <members>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1">
             <summary>
             Abstract class preparing the instance of the singleton
             </summary>
             <typeparam name="T">The new singleton</typeparam>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.mInstance">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.mInstance">
             <summary>
             Private instance of the singleton
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.instance">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.instance">
             <summary>
             public instance of the singleton
             </summary>
             <remarks>it return the private instance mIntance</remarks>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.uniqueId">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.uniqueId">
             <summary>
             The unique id of the singleton
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.#ctor">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.#ctor">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1"/>
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.Replace(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.Replace(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
             <summary>
             Remove the current instance of the singleton and Replace it by another one
             </summary>
             <param name="pNewInstance">the new isntance to set</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.Remove">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.Remove">
             <summary>
             remove the current instance of the singleton
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.SetInstance(`0)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.SetInstance(`0)">
             <summary>
             set the instance of the singleton if it not have another instance
             </summary>
             <param name="pInstance">the instance to set</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.RemoveInstance(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.ASingleton`1.RemoveInstance(System.String)">
             <summary>
             Remove the current instance of the singleton
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer">
             <summary>
             Parent of all pool Container
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.ERROR_GET_NULL_EXCEPTION">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.ERROR_GET_NULL_EXCEPTION">
             <summary>
             Error show when the user try to get a value which not exist
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Add(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Add(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
             <summary>
             Add item to the list
             </summary>
             <param name="pItem">the item to add</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Get``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Get``1(System.String)">
             <summary>
             Get an item
             </summary>
@@ -78,7 +78,7 @@
             <param name="pRef">the id of the item</param>
             <returns>the item with the good type</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.GetInternal``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.GetInternal``1(System.String)">
             <summary>
             Get an item intern to the class
             </summary>
@@ -86,14 +86,14 @@
             <param name="pRef">the id of the item</param>
             <returns>the item with the good type</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Contain(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Contain(System.String)">
             <summary>
             If the list contain the item
             </summary>
             <param name="pRef">the id of the item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Contain``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Contain``1(System.String)">
             <summary>
             If the list contain the item
             </summary>
@@ -101,7 +101,7 @@
             <param name="pRef">the id of the item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Contain``1(``0)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Contain``1(``0)">
             <summary>
             If the list contain the item
             </summary>
@@ -109,28 +109,28 @@
             <param name="pItem">The item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Clear">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer.Clear">
             <summary>
             Clear all elements
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer">
             <summary>
             Used for initialized the pool
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.elements">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.elements">
             <summary>
             The list of pool elements
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.#ctor">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.#ctor">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer"/>
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.GetInternal``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.GetInternal``1(System.String)">
             <summary>
             Get an item
             </summary>
@@ -138,14 +138,14 @@
             <param name="pRef">the id of the item</param>
             <returns>the item with the good type</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.Contain(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.Contain(System.String)">
             <summary>
             If the list contain the item
             </summary>
             <param name="pRef">the id of the item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.Contain``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.Contain``1(System.String)">
             <summary>
             If the list contain the item
             </summary>
@@ -153,63 +153,63 @@
             <param name="pRef">the id of the item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.Clear">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer.Clear">
             <summary>
             Clear all elements
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer">
             <summary>
             Dictionary contain all pool elements
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolContainer"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.ERROR_TRY_TO_ADD_NULL_VALUE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.ERROR_TRY_TO_ADD_NULL_VALUE">
             <summary>
             Error throw when you try to add a null value in the pool dictionary
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.mAllPools">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.mAllPools">
             <summary>
             The list of pool elements
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.mPoolInitializerContainer">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.mPoolInitializerContainer">
             <summary>
             The pool list
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.#ctor(fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.#ctor(Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer)">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer"/>
             </summary>
             <param name="pList">the pool list for init the pool dictionary</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Init">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Init">
             <summary>
             Init the pool dictionary and create all elements we need in pool
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.CreatePool(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.CreatePool(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
             <summary>
             Create all element we need at the init of the app
             </summary>
             <param name="pElement">the pool element contain datas we need for create what we want</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Add(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Add(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
             <summary>
             Add item to the list
             </summary>
             <param name="pItem">the item to add</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Add(System.String,System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Add(System.String,System.Object)">
             <summary>
             Add item to the list
             </summary>
             <param name="pKey">the key of the dictionary</param>
             <param name="pValue">the value of the dictionary</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.GetInternal``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.GetInternal``1(System.String)">
             <summary>
             Get an item
             </summary>
@@ -217,14 +217,14 @@
             <param name="pRef">the id of the item</param>
             <returns>the item with the good type</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Contain(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Contain(System.String)">
             <summary>
             If the list contain the item
             </summary>
             <param name="pRef">the id of the item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Contain``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Contain``1(System.String)">
             <summary>
             If the list contain the item
             </summary>
@@ -232,58 +232,58 @@
             <param name="pRef">the id of the item</param>
             <returns><c>true</c> if the list contain the item, <c>false</c> if not</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Clear">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.PoolContainer.Clear">
             <summary>
             Clear intern dictionnary
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager">
             <summary>
             Interface used for all Managers
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Init">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Init">
             <summary>
             Call in a chosen order for init elements
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Clear">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager.Clear">
             <summary>
             Clear the Manager properties
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton">
             <summary>
             Singleton Interface
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.uniqueId">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.uniqueId">
             <summary>
             The unique id of the singleton
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.Replace(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.Replace(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
             <summary>
             Remove the current instance of the singleton and Replace it by another one
             </summary>
             <param name="pNewInstance"></param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.Remove">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton.Remove">
             <summary>
             remove the current instance of the singleton
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager">
             <summary>
             Interface of the Manager used for interact with the pool
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager.CreatePool">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager.CreatePool">
             <summary>
             Create and Init the pool
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager.GetElement``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager.GetElement``1(System.String)">
             <summary>
             Get a pool element
             </summary>
@@ -291,55 +291,55 @@
             <param name="pRef">the id of the element</param>
             <returns>the pool element</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager.StockElement(System.String,System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager.StockElement(System.String,System.Object)">
             <summary>
             Stock an element in the pool
             </summary>
             <param name="pRef">the id of the element</param>
             <param name="pElm">the element to stock</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement">
             <summary>
             Element used for init and create pool items
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.id">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.id">
             <summary>
             the id of the element
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.nbToCreate">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.nbToCreate">
             <summary>
             The number of elements to create
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.value">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.value">
             <summary>
             The value of the element
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.IsEquivalent(System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.IsEquivalent(System.Object)">
             <summary>
             If an object is equivalent to the value of the element
             </summary>
             <param name="pObject">the object to test</param>
             <returns></returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.Reset(System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement.Reset(System.Object)">
             <summary>
             reset the properties of the object with the elements value
             </summary>
             <param name="pObject">the object to reset</param>
             <returns>the object reset</returns>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElementWithType`1">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElementWithType`1">
             <summary>
             a  IPoolElement with a specific type
             </summary>
             <typeparam name="T">type of the value</typeparam>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElementWithType`1.typedValue">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElementWithType`1.typedValue">
             <summary>
             The typed value of the pool element
             </summary>

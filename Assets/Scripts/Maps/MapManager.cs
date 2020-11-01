@@ -1,8 +1,8 @@
-﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
+﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Maps
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 {
     /// <summary>
     /// Manager used for managed all the maps

@@ -1,8 +1,8 @@
-﻿using fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks;
+﻿using Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
 {
     /// <summary>
     /// Show and unshow the feedback when we click on a case

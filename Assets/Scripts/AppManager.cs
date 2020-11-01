@@ -1,11 +1,11 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Pooling;
-using fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
 {
     /// <summary>
     /// Main manager of the app

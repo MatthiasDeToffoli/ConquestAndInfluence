@@ -1,9 +1,9 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Core;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System.ComponentModel;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Test
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Test
 {
     /// <summary>
     /// used for unit test of the clock

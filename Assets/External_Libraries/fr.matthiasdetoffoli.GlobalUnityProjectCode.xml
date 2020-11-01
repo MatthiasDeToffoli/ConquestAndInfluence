@@ -1,222 +1,222 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>fr.matthiasdetoffoli.GlobalUnityProjectCode</name>
+        <name>Fr.Matthiasdetoffoli.GlobalUnityProjectCode</name>
     </assembly>
     <members>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute">
             <summary>
             Attribute for define a costum label for a List or array element
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.elmentsFixedLabels">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.elmentsFixedLabels">
             <summary>
             the new label to set
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.#ctor(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.#ctor(System.String)">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
             </summary>
             <param name="pLabel">the new label to set</param>
             <remarks>if <paramref name="pLabel"/> is null the inspector will show the default label</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.#ctor(System.String[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.#ctor(System.String[])">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
             </summary>
             <param name="pFixedLabels">fixed labels for the elements</param>
             <remarks>for all elements which has index superior or equal to <paramref name="pFixedLabels"/> size, the inspector will show the default label </remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.#ctor(System.String,System.String[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute.#ctor(System.String,System.String[])">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
             </summary>
             <param name="pLabel">the new label to set</param>
             <param name="pFixedLabels">fixed labels for the elements</param>
             <remarks>for all elements which has index superior or equal to <paramref name="pFixedLabels"/> size, the inspector will <paramref name="pLabel"/> + the index of the element </remarks>
             <remarks>if <paramref name="pLabel"/> is null the inspector will show the default label</remarks>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute">
             <summary>
             Attribute for define a costum label for a property
             </summary>
             <remarks>Don't work on list and array</remarks>
             <seealso cref="T:UnityEngine.PropertyAttribute"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute.label">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute.label">
             <summary>
             the new label to set
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute.#ctor(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute.#ctor(System.String)">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute"/>
             </summary>
             <param name="pLabel">the new label to set</param>
             <remarks>if <paramref name="pLabel"/> is null the inspector will show the property name</remarks>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute">
             <summary>
             Attribute for define a range with a step
             </summary>
             <seealso cref="T:UnityEngine.PropertyAttribute"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.min">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.min">
             <summary>
             The min value
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.max">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.max">
             <summary>
             The max value
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.step">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.step">
             <summary>
             the step value
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.#ctor(System.Single,System.Single,System.Single)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.#ctor(System.Single,System.Single,System.Single)">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute"/>
             </summary>
             <param name="pMin">the min value</param>
             <param name="pMax">the max value</param>
             <param name="pStep">the step</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.FormatWithStep(System.Single)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.FormatWithStep(System.Single)">
             <summary>
             Format a number with the step
             </summary>
             <param name="pValue">the value to format</param>
             <returns>the value formated</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.FormatWithStep(System.Int32)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute.FormatWithStep(System.Int32)">
             <summary>
             Format a number with the step
             </summary>
             <param name="pValue">the value to format</param>
             <returns>the value formated</returns>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor">
             <summary>
             Custom Editor for the close menu button listener class
             </summary>
             <seealso cref="T:UnityEditor.Editor"/> 
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT">
             <summary>
             string of the variale mScreenToCloseIsParent
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT_TITLE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT_TITLE">
             <summary>
             the title show in inspector for the screen to close is parent property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE">
             <summary>
             string of the variale screenToClose
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_TITLE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_TITLE">
             <summary>
             the title show in inspector for the screen to close property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.mScreenToCloseIsParentProperty">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.mScreenToCloseIsParentProperty">
             <summary>
             The screen to close is parent serialized property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.mScreenToCloseProperty">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.mScreenToCloseProperty">
             <summary>
             The screen to close serialized property
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.OnEnable">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.OnEnable">
             <summary>
             When the GUI is enable
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.OnInspectorGUI">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.OnInspectorGUI">
             <summary>
             When the inspector is updated
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.CreateProperties">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.CreateProperties">
             <summary>
             Create all the properties
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor">
             <summary>
             Custom Editor for the switch screen button listener class
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor"/> 
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor"/> 
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.OPEN_TITLE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.OPEN_TITLE">
             <summary>
             Title for screen to open property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.CLOSE_TITLE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.CLOSE_TITLE">
             <summary>
             Title for screen to close properties
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.SCREEN_TO_OPEN">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.SCREEN_TO_OPEN">
             <summary>
             string of the variale mScreenToOpen
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.SCREEN_TO_OPEN_TITLE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.SCREEN_TO_OPEN_TITLE">
             <summary>
             the title show in inspector for the screen to open property
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.mScreenToOpenProperty">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.mScreenToOpenProperty">
             <summary>
             The screen to open serialized property
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.OnEnable">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.OnEnable">
             <summary>
             When the GUI is enable
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.CreateProperties">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.CreateProperties">
             <summary>
             Create all the properties
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer">
             <summary>
             Drawer for Costum element label attribute
             </summary>
             <seealso cref="T:UnityEditor.PropertyDrawer"/>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomElementLabelAttribute"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.DATA">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.DATA">
             <summary>
             Used for test if it's the element of a list or an array
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.ELEMENT">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.ELEMENT">
             <summary>
             The old name of the element
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.ERROR_NOT_USE_ON_ARRAY">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.ERROR_NOT_USE_ON_ARRAY">
             <summary>
             Error show when we try to use the custom label on an array or a list
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomElementLabelDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
             <summary>
             When the gui is refresh
             </summary>
@@ -224,24 +224,24 @@
             <param name="pProperty">the property link to the gui</param>
             <param name="pLabel">the label of the gui</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers">
             <summary>
             Drawer for Costum label attribute
             </summary>
             <seealso cref="T:UnityEditor.PropertyDrawer"/>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.CustomLabelAttribute"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers.DATA">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers.DATA">
             <summary>
             Used for test if it's the element of a list or an array
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers.ERROR_USE_ON_ARRAY">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers.ERROR_USE_ON_ARRAY">
             <summary>
             Error show when we try to use the custom label on an array or a list
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.CustomLabelDrawers.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
             <summary>
             When the gui is refresh
             </summary>
@@ -249,24 +249,24 @@
             <param name="pProperty">the property link to the gui</param>
             <param name="pLabel">the label of the gui</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer">
             <summary>
             Property drawer for the attribute RangeWithStep
             </summary>
             <seealso cref="T:UnityEditor.PropertyDrawer"/>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes.RangeWithStepAttribute"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.mIntValue">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.mIntValue">
             <summary>
             The int value
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.mFloatValue">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.mFloatValue">
             <summary>
             The float value
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.Drawers.RangeWithStepDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">
             <summary>
             When the gui is refresh
             </summary>
@@ -274,67 +274,67 @@
             <param name="pProperty">the property link to the gui</param>
             <param name="pLabel">the label of the gui</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles">
             <summary>
             Static class for implement default GUI styles used in editor
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.mTitleStyle">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.mTitleStyle">
             <summary>
             The style for a title in gui
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.mErrorStyle">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.mErrorStyle">
             <summary>
             The style for an error in gui
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.titleStyle">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.titleStyle">
             <summary>
             The style for a title in gui
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.errorStyle">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.GUIStyles.errorStyle">
             <summary>
             The style for an error in gui
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1">
             <summary>
             The main manager will managed all the manager
             </summary>
             <typeparam name="TMain">the type of the main manager use for the singleton instance</typeparam>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1"/>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.managers">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.managers">
             <summary>
             All managers managed by the main manager
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.currentGameState">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.currentGameState">
             <summary>
             the current state of the game
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Awake">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Awake">
             <summary>
             Awake of the behaviour
             </summary>
             <remarks>Init all the properties and Fields here</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.AddManagedManager(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.AddManagedManager(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
             <summary>
             Add the manager in the current list
             </summary>
             <param name="pManager">the manager to add</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.AfterStart">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.AfterStart">
             <summary>
             Call the frame after the start
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.SortByInitOrder(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.SortByInitOrder(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager,Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager)">
             <summary>
             Function used for sort the managers by they init order
             </summary>
@@ -342,104 +342,104 @@
             <param name="pElemB">the second element to compare</param>
             <returns><c>-1</c> if element A have to have an index smaller than Elem B, <c>0</c> if element A and B have the same init order, <c>1</c> otherwhise</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Init">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Init">
             <summary>
             init the manager
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.GetFirstManager">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.GetFirstManager">
             <summary>
             Get the first manager
             </summary>
             <returns>the first manager</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.GetFirstManager``1">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.GetFirstManager``1">
             <summary>
             get the first manager of a specified type
             </summary>
             <typeparam name="TMangaged">the type of the manager we want</typeparam>
             <returns>the first manager of the type set</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Clear">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1.Clear">
             <summary>
             Clear the Manager properties
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager">
             <summary>
-            Abstract class for all managers managed by the <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1" />
+            Abstract class for all managers managed by the <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1" />
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.initOrder">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.initOrder">
             <summary>
             The order the main manager will call the init method
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Init">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Init">
             <summary>
             init the manager
             </summary>
             <remarks>this function is called by the main manager</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Clear">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager.Clear">
             <summary>
             Clear the manager
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1">
             <summary>
             Parent of all manager wich manage an objects array
             </summary>
             <typeparam name="T">the type of the object managed by the manager</typeparam>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.items">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.items">
             <summary>
             the list of object managed by the manager
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.Awake">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1.Awake">
             <summary>
             Awake of the behaviour
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager">
             <summary>
             manage all the menu
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/> 
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/> 
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_TO_CLOSE_NOT_EXIST">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_TO_CLOSE_NOT_EXIST">
             <summary>
             Error when we try to close a screen which not exist
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_TO_OPEN_NOT_EXIST">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_TO_OPEN_NOT_EXIST">
             <summary>
             Error when we try to open a screen which not exist
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_INDEX">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.ERROR_INDEX">
             <summary>
             Error when we try to open a screen at an index which not exist
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.Awake">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.Awake">
             <summary>
             Awake of the behaviour
             </summary>
             <remarks>Init all the properties and Fields here</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.Init">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.Init">
             <summary>
             init the manager
             </summary>
             <remarks>this function is called by the main manager</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen``2(System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen``2(System.Object[])">
             <summary>
             switch two screen
             </summary>
@@ -447,7 +447,7 @@
             <typeparam name="TToOpen">type of the screen to open</typeparam>
             <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen(System.Int32,System.Int32,System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen(System.Int32,System.Int32,System.Object[])">
             <summary>
             switch two screen
             </summary>
@@ -455,7 +455,7 @@
             <param name="pIndexToOpen">index of the screen to open</param>
             <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String,System.String,System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.SwitchScreen(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String,System.String,System.Object[])">
             <summary>
             switch two screen
             </summary>
@@ -465,21 +465,21 @@
             <param name="pToOpenTypeName">the name of the type of screen to open used for the error message</param>
             <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen``1(System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen``1(System.Object[])">
             <summary>
             open a screen
             </summary>
             <typeparam name="TToOpen">type of the screen to open</typeparam>
             <param name="pParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen(System.Int32,System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen(System.Int32,System.Object[])">
             <summary>
             open a screen
             </summary>
             <param name="pIndexToOpen">index of the screen to open</param>
             <param name="pParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String,System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.OpenScreen(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String,System.Object[])">
             <summary>
             open a screen
             </summary>
@@ -487,358 +487,358 @@
             <param name="pTypeName">the name of the type for the error message</param>
             <param name="pParams">the parametters of the screen to open</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen``1">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen``1">
             <summary>
             close a screen
             </summary>
             <typeparam name="TToClose">type of the screen to close</typeparam>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen(System.Int32)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen(System.Int32)">
             <summary>
             close a screen
             </summary>
             <param name="pIndexToClose">index of the screen to close</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.MenuManager.CloseScreen(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen,System.String)">
             <summary>
             close a screen
             </summary>
             <param name="pScreenToClose"></param>
             <param name="pTypeName">the name of the type for the error message</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener">
             <summary>
             Class listen button click
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
             <seealso cref="T:UnityEngine.UI.Button"/>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.ListenToEvents">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.ListenToEvents">
             <summary>
             Listen all events here
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.UnlistenToEvents">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.UnlistenToEvents">
             <summary>
             unlisten all events here
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.SendStateDelegate">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.SendStateDelegate">
             <summary>
             Delegate will send the state of the button listener
             </summary>
             <param name="pState">the state to send</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener">
             <summary>
             Button listener which send a boolean
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
         </member>
-        <member name="E:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.OnClick">
+        <member name="E:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.OnClick">
             <summary>
             event fire when we click on the button
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.mState">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.mState">
             <summary>
             The state of the button
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable">
             <summary>
             A Boolean button listener which can be configurable in the inspector
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable.mConfigurableState">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable.mConfigurableState">
             <summary>
             The state of the button
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable.mState">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.BooleanButtonListenerConfigurable.mState">
             <summary>
             The state of the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.InvalidateButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.InvalidateButtonListener">
             <summary>
             Boolean button listener which only sent false
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.InvalidateButtonListener.mState">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.InvalidateButtonListener.mState">
             <summary>
             The state of the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ValidateButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ValidateButtonListener">
             <summary>
             Button listener which only sent true
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ABooleanButtonListener"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ValidateButtonListener.mState">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.BooleanButtonListeners.ValidateButtonListener.mState">
             <summary>
             The state of the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener">
             <summary>
             Class used for make a button close a screen
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.mScreenToCloseIsParent">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.mScreenToCloseIsParent">
             <summary>
             If the screen to close is the parent of the button or another screen
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.mScreenToClose">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.mScreenToClose">
             <summary>
             the screen to close
             </summary>
             <remarks>if it's the parent the property is not used</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener">
             <summary>
             Component used for make a button close the app
             </summary> 
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener">
             <summary>
             Class used for make a button close a screen and open another one
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener.mScreenToOpen">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener.mScreenToOpen">
             <summary>
             The new screen to open
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen">
             <summary>
             Parent of all menu screen, implement methods for open and close
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Open(System.Object[])">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Open(System.Object[])">
             <summary>
             show the screen
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Close">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen.Close">
             <summary>
             unshow the screen
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen">
             <summary>
             Screen show for validate or not
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.mValidateBtn">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.mValidateBtn">
             <summary>
             The validate button
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.mInvalidateBtn">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.mInvalidateBtn">
             <summary>
             The invalidate button
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.ListenToEvents">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.ListenToEvents">
             <summary>
             Listen all the events
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.UnlistenToEvents">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.UnlistenToEvents">
             <summary>
             Unlisten all the events
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.OnValidation(System.Boolean)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AValidationScreen.OnValidation(System.Boolean)">
             <summary>
             When a validation button was clicked
             </summary>
             <param name="pState"></param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour">
             <summary>
             Abstract class implement some functions of MonoBehaviour
             </summary>
             <seealso cref="T:UnityEngine.MonoBehaviour"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.mDidStart">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.mDidStart">
             <summary>
             If we did the start
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.mDidAfterStart">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.mDidAfterStart">
             <summary>
             If we did the after start
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStartCoroutineHandler">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStartCoroutineHandler">
             <summary>
             Used for keep the after start coroutine
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.Awake">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.Awake">
             <summary>
             Awake of the behaviour
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.Start">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.Start">
             <summary>
             Start of the behaviour
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.OnDestroy">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.OnDestroy">
             <summary>
             Destroy of the behaviour
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.ListenToEvents">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.ListenToEvents">
             <summary>
             Listen all events here
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStart">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStart">
             <summary>
             Call the frame after the start
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStartCoroutine">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.AfterStartCoroutine">
             <summary>
             Wait one frame before fire the after start
             </summary>
             <returns></returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.UnlistenToEvents">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.UnlistenToEvents">
             <summary>
             unlisten all events here
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.OnDisable">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour.OnDisable">
             <summary>
             when the script is desable
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1">
             <summary>
             Singleton implementing mono behaviour methods
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.mInstance">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.mInstance">
             <summary>
             unique instance of the class
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.instance">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.instance">
             <summary>
             unique instance of the class
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.replaceIfAlreadyExist">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.replaceIfAlreadyExist">
             <summary>
             If it's true the old value of the singleton will be replaced
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.dontDestroyGameObjectOnLoad">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.dontDestroyGameObjectOnLoad">
             <summary>
             if it's true the gameobject will not be destroy when we will change the scene
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.uniqueId">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.uniqueId">
             <summary>
             The unique id of the singleton
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Awake">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Awake">
             <summary>
             Awake of the behaviour
             </summary>
             <remarks>Init all the properties and Fields here</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Replace(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Replace(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.ISingleton)">
             <summary>
             Remove the current instance of the singleton and Replace it by another one
             </summary>
             <param name="pNewInstance">the new isntance to set</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Remove">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.Remove">
             <summary>
             remove the current instance of the singleton
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.SetInstance(`0)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviourSingleton`1.SetInstance(`0)">
             <summary>
             set the instance of the singleton if it not have another instance
             </summary>
             <param name="pInstance">the instance to set</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1">
             <summary>
             Manage all the pools
             </summary>
             <typeparam name="T">the type of the initializer</typeparam>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.ERROR_STOCK_UNKNOW">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.ERROR_STOCK_UNKNOW">
             <summary>
             Error showed when you try to stock an element in the pool which never was in it
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.mInitContainer">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.mInitContainer">
             <summary>
             The initializer container
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.mContainer">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.mContainer">
             <summary>
             The pool container
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.Awake">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.Awake">
             <summary>
             Awake of the behaviour
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.CreatePool">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.CreatePool">
             <summary>
             Create and Init the pool
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.GetElement``1(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.GetElement``1(System.String)">
             <summary>
             Get a pool element
             </summary>
@@ -846,178 +846,178 @@
             <param name="pRef">the id of the element</param>
             <returns>the pool element</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.StockElement(System.String,System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.APoolManager`1.StockElement(System.String,System.Object)">
             <summary>
             Stock an element in the pool
             </summary>
             <param name="pRef">the id of the element</param>
             <param name="pElm">the element to stock</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement">
             <summary>
             Pool element for Game objects
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.ERROR_TRY_TO_RESET_NOT_EQUAL">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.ERROR_TRY_TO_RESET_NOT_EQUAL">
             <summary>
             Error showed when the user try to reset an object which is not 
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mId">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mId">
             <summary>
             the id of the element
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mNbToCreate">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mNbToCreate">
             <summary>
             The number of elements to create
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mValue">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.mValue">
             <summary>
             The value of the element
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.id">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.id">
             <summary>
             the id of the element
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.nbToCreate">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.nbToCreate">
             <summary>
             The number of elements to create
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.value">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.value">
             <summary>
             The value of the element
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.typedValue">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.typedValue">
             <summary>
             The value of the pool element
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.CreateInstanceOfObject">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.CreateInstanceOfObject">
             <summary>
             Create an instance of the object in the scenario
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.IsEquivalent(System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.IsEquivalent(System.Object)">
             <summary>
             If an object is equivalent to the value of the element
             </summary>
             <param name="pObject">the object to test</param>
             <returns></returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.Reset(System.Object)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement.Reset(System.Object)">
             <summary>
             reset the properties of the object with the elements value
             </summary>
             <param name="pObject">the object to reset</param>
             <returns>the object reset</returns>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer">
             <summary>
             Used for initialized the pool (already contain a list of gameobject)
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Pooling.APoolInitializerContainer"/>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.mGameObjectsPoolInitializer">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.mGameObjectsPoolInitializer">
             <summary>
             The game objects pool initializer
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.elements">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.elements">
             <summary>
             The list of pool elements
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.Add(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.Add(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.PoolElements.IPoolElement)">
             <summary>
             Add item to the list
             </summary>
             <param name="pItem">the item to add</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.Add(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.PoolInitializerContainer.Add(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling.GameObjectPoolElement)">
             <summary>
             Add item to the list
             </summary>
             <param name="pItem">the item to add</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait">
             <summary>
             Enum used for say what type of wait we will use in a coroutine
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.SECONDS">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.SECONDS">
             <summary>
             If we wait seconds
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.END_OF_FRAME">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.END_OF_FRAME">
             <summary>
             If we wait frames
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.FIXED_UPDATE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait.FIXED_UPDATE">
             <summary>
             If we wait fixed update
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState">
             <summary>
             Enum used for know the game state
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.MENU">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.MENU">
             <summary>
             In menu state
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.LOADING">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.LOADING">
             <summary>
             Loading state
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.IN_GAME">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.IN_GAME">
             <summary>
             In game state
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.PAUSE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.GameState.PAUSE">
             <summary>
             Pause state
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback">
             <summary>
             Visual feedback which is unshow after a time
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack"/> 
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack"/> 
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.mTypeOfWait">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.mTypeOfWait">
             <summary>
             The type of wait for the coroutine
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.coroutineUnShowInstance">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.coroutineUnShowInstance">
             <summary>
             The instance of the coroutine
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.timeToWait">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.timeToWait">
             <summary>
             The time to wait for the couroutine
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.#ctor(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.#ctor(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Utils.Enums.CoroutineTypeOfWait)">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback"/>
             </summary>
             <param name="pTypeOfWait"></param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.Show(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Transform)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.Show(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Transform)">
             <summary>
             Show the visual feed back
             </summary>
@@ -1025,45 +1025,45 @@
             <param name="pNewTransform">the transforms contains position size and rotation of the feed back</param>
             <remarks>it search a game object in the pool</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.UnShow(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.UnShow(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
             <summary>
             Unshow the feedback
             </summary>
             <param name="pPoolManager">the pool manager</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.UnShowCoroutine(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback.UnShowCoroutine(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
             <summary>
             The coroutine for call unshow
             </summary>
             <param name="pPoolManager">the pool manager</param>
             <returns></returns>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack">
             <summary>
             Parent of all visual feed backs managed by the code
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.mPoolID">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.mPoolID">
             <summary>
             The ID of the pool for get the visual feedback
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.mObject">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.mObject">
             <summary>
             the game object of the feedback show
             </summary>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.unicId">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.unicId">
             <summary>
             THe unic id of the feeback
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.#ctor">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.#ctor">
             <summary>
-            Initialize an instance of the class <see cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack"/>
+            Initialize an instance of the class <see cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack"/>
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.Show(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Transform)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.Show(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Transform)">
             <summary>
             Show the visual feed back
             </summary>
@@ -1071,7 +1071,7 @@
             <param name="pTransform">the transforms contains position size and rotation of the feed back</param>
             <remarks>it search a game object in the pool</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.Show(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.Show(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
             <summary>
             Show the visual feed back
             </summary>
@@ -1081,24 +1081,24 @@
             <param name="pRotation">the rotation of the feedback</param>
             <remarks>it search a game object in the pool</remarks>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.UnShow(fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack.UnShow(Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling.IPoolManager)">
             <summary>
             Unshow the feedback
             </summary>
             <param name="pPoolManager">the pool manager</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager">
             <summary>
             Abstract class use for manage all visual feedback
             </summary>
-            <seealso cref="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/>
         </member>
-        <member name="P:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.mPoolManager">
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.mPoolManager">
             <summary>
             The pool manager
             </summary>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.ShowFeedBack(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack,UnityEngine.Transform)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.ShowFeedBack(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBack,UnityEngine.Transform)">
             <summary>
             Show a feed back
             </summary>
@@ -1106,7 +1106,7 @@
             <param name="pTransform">the transform for place the feed back</param>
             <returns>the unic id of the feedback</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.ShowShortLivedFeedBack(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback,UnityEngine.Transform,System.Single)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.ShowShortLivedFeedBack(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback,UnityEngine.Transform,System.Single)">
             <summary>
             Show a short lived feedback
             </summary>
@@ -1115,39 +1115,39 @@
             <param name="pTime">the time of live of the feedback (the unit is define in the constructor)</param>
             <returns>the unic id of the feedback</returns>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.UnshowFeedBack(System.String)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.UnshowFeedBack(System.String)">
             <summary>
             Unshow a  feedback
             </summary>
             <param name="pFeedBackRef">the unic id of the feedback</param>
         </member>
-        <member name="M:fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.StopShortLivedFeedBackCoroutine(fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback)">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AVisualFeedBacksManager.StopShortLivedFeedBackCoroutine(Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks.AShortLivedVisualFeedback)">
             <summary>
             stop the short lived feedback coroutine
             </summary>
             <param name="pFeedBack">the feedback to stop the coroutine</param>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants">
             <summary>
             All project global constants
             </summary>
         </member>
-        <member name="T:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor">
             <summary>
             All constants used in the custom editor
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.SEPARATOR">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.SEPARATOR">
             <summary>
             Line for separate elements in inspector 
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.ARRAY_SIZE">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.ARRAY_SIZE">
             <summary>
             the array size word (used for the title of array side)
             </summary>
         </member>
-        <member name="F:fr.matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.ARRAY_ELEMENT">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Utils.Constants.PersonalEditor.ARRAY_ELEMENT">
             <summary>
             The array element words (used the title of array elements)
             </summary>

@@ -1,6 +1,6 @@
-﻿using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling;
+﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Pooling;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Pooling
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling
 {
     public class PoolManager : APoolManager<PoolInitializerContainer>
     {

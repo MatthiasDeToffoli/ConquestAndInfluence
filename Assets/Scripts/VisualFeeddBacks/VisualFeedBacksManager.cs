@@ -1,13 +1,13 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Pooling;
-using fr.matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
+using Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.Pooling;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.VisualFeebacks;
 using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks
 {
     /// <summary>
     /// Manage all AVisual Feedbacks

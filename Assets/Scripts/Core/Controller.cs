@@ -1,7 +1,7 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 {
     /// <summary>
     /// Manage the mouse or touch control and hit

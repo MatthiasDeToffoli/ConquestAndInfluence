@@ -3,7 +3,7 @@ using System.Collections;
 using System.ComponentModel;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.Core
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 {
     /// <summary>
     /// Implement the clock of a game

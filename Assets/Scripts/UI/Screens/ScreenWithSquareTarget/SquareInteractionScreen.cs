@@ -1,11 +1,11 @@
-﻿using fr.matthiasdetoffoli.ConquestAndInfluence.Maps;
-using fr.matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
-using fr.matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.ActionOnSquareButtonListener;
-using fr.matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.ActionOnSquareButtonListener;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
 using System.Linq;
 using UnityEngine;
 
-namespace fr.matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget
 {
     /// <summary>
     /// Screen open for chose an interaction with a square
