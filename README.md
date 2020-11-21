@@ -1,5 +1,5 @@
 # ConquestAndInfluence
-A 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same for conquer the all map.
+A 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. Every square will give you power for deafeat an opponent which will do same.
 
 * [GDD](./Documentations/GDD.md "GDD")
 * [TDD](./Documentations/TDD.md "TDD")
