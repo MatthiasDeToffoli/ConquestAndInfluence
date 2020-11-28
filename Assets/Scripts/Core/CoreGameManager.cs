@@ -1,10 +1,5 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Enums;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens.ScreenWithSquareTarget;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
 using System.Collections.Generic;
@@ -157,7 +152,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         {
             if (mController.TryHitSquare())
             {
-                AppManager.instance?.menuManager?.OpenScreen<SquareInteractionScreen>(mController.squareHit);
+                CheckSquare(mController.squareHit);
             }
         }
         #endregion Controller
@@ -166,7 +161,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// Start an action on a square
         /// </summary>
         /// <param name="pAction"></param>
-        public void CheckActionOnSquare(Square pSquare, ActionOnSquare pAction)
+        public void CheckSquare(Square pSquare)
         {
             List<Square> lList = AppManager.instance?.mapManager?.FindPath(Vector3.zero, pSquare.transform.position);
 

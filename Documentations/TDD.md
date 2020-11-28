@@ -33,11 +33,8 @@
 			* *Square*
 		* *Scenes*
 		* *Scripts*
-			* *Core*
 			* *Maps*
 			* *UI*
-				* *ButtonListeners*
-				* *Screens*
 		* *Sprites*
 * **C** *- Namespaces*
 * **D** *- Coding rules*
@@ -87,12 +84,13 @@
 | V1.0 | 10/25/2020 | Update the communication diagram							  | Update the communication diagram for match with the current project												 | Matthias de Toffoli |
 | V1.1 | 10/31/2020 | Update the Folders diagrams								  | Update the folders diagram for match with the current project and change the unity version						 | Matthias de Toffoli |
 | V1.2 | 11/01/2020 | Update the Namespaces diagrams							  | Update the Namespaces diagram for match with the current project and corect all namespaces references			 | Matthias de Toffoli |
+| V1.3 | 11/28/2020 | Change some game rules 									  | Change some game rules for make it more easy for the player														 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
 For improve my skills with unity 2D and made a game on my own.
 ### What is it ?
-It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same for conquer the all map.
+It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
 #### Victory condition
 The player conquer the all map or beat the opponent hero
 #### Defeat condition
@@ -105,18 +103,9 @@ Fix 2D top-down
 #### Control
 Touch only
 #### Character
+* Move to a square point out
 * Conquer an empty square
-* attack a square or the opponent's hero
-* Buy a square or the opponent's hero
-* Convince peoples in a square for make them work for him
-* Convince the opponent's hero to give up
-* build a simple village on an empty square for food
-* build a woodcutter village on an empty square for wood
-* build a mining village on an empty square for gold
-* build a war village on an empty square for have soldiers
-* Destroy a village for have an empty square
-* send messages for do the previous actions.
-* go to a village for increase his position in it
+* attack the opponent's hero
 
 ## Tools
 ### Research
@@ -159,20 +148,10 @@ Will use managers, they will manage their part and single objects will be manage
 ![Scenes folder diagram](./pictures/TDD/Folders/Scenes.png "Scenes folder")
 ##### Scripts
 ![Scripts folder diagram](./pictures/TDD/Folders/Scripts.png "Scripts folder")
-###### Core
-![Core folder diagram](./pictures/TDD/Folders/Core.png "Core folder")
 ###### Maps
 ![Maps folder diagram](./pictures/TDD/Folders/Maps.png "Maps folder")
 ###### UI
 ![UI folder diagram](./pictures/TDD/Folders/UI.png "UI folder")
-
-* *ButtonListeners*
-
-![ButtonListeners folder diagram](./pictures/TDD/Folders/UI_ButtonListeners.png "UI/ButtonListeners folder")
-
-* *Screens*
-
-![Screens folder diagram](./pictures/TDD/Folders/UI_Screens.png "UI/Screens folder")
 ##### Sprites
 ![Sprites folder diagram](./pictures/TDD/Folders/Sprites.png "Sprites folder")
 ### Namespaces
