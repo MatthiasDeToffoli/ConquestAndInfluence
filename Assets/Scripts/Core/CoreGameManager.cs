@@ -55,7 +55,14 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         #endregion Fields
 
         #region Methods
-
+        /// <summary>
+        /// Listen all events
+        /// </summary>
+        protected override void ListenToEvents()
+        {
+            base.ListenToEvents();
+            //mClock.PercentOfDayChanged += mController.
+        }
         #region Unity
         /// <summary>
         /// Awake of the behaviour

@@ -6,6 +6,12 @@ using UnityEngine;
 namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 {
     /// <summary>
+    /// Used for say the percent of day changed
+    /// </summary>
+    /// <param name="pPercent"></param>
+    public delegate void PercentOfDayDelegate(double pPercent);
+
+    /// <summary>
     /// Implement the clock of a game
     /// </summary>
     public class GameClock : INotifyPropertyChanged
@@ -22,6 +28,11 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// Fire when a property changed
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Fire when the percent of day change
+        /// </summary>
+        public event PercentOfDayDelegate PercentOfDayChanged;
         #endregion Events
 
         #region Fields
@@ -125,10 +136,13 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
                 
                 if (mStep >= MAX_STEP)
                 {
+                    NotifyPercentOfDatChanged(1);
                     days++;
                     //keep the excess
                     mStep -= MAX_STEP;
                 }
+
+                NotifyPercentOfDatChanged(mStep / MAX_STEP);
             }
 
             yield return null;
@@ -162,6 +176,17 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             mSpeed = 1;
         }
 
+        /// <summary>
+        /// Notify the percent of day changed
+        /// </summary>
+        /// <param name="pPercent"></param>
+        private void NotifyPercentOfDatChanged(double pPercent)
+        {
+            if(PercentOfDayChanged != null)
+            {
+                PercentOfDayChanged.Invoke(pPercent);
+            }
+        }
         /// <summary>
         /// Fire the property changed event
         /// </summary>
