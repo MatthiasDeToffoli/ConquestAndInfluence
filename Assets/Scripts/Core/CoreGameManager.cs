@@ -1,4 +1,5 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
@@ -52,6 +53,12 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// The game controller
         /// </summary>
         private Controller mController;
+
+        /// <summary>
+        /// The main player character
+        /// </summary>
+        [SerializeField]
+        private PlayerCharacter mPlayerCharacter;
         #endregion Fields
 
         #region Methods
@@ -61,7 +68,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         protected override void ListenToEvents()
         {
             base.ListenToEvents();
-            //mClock.PercentOfDayChanged += mController.
+            mClock.PercentOfDayChanged += mPlayerCharacter.Move;
         }
         #region Unity
         /// <summary>
@@ -170,11 +177,12 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// <param name="pAction"></param>
         public void CheckSquare(Square pSquare)
         {
-            List<Square> lList = AppManager.instance?.mapManager?.FindPath(Vector3.zero, pSquare.transform.position);
+            mPlayerCharacter.canMove = false;
+            mPlayerCharacter.path = AppManager.instance?.mapManager?.FindPath(mPlayerCharacter.currentPosition.position, pSquare.position);
 
-            if(lList != null)
+            if(mPlayerCharacter.path != null)
             {
-                string lFeedBackId = AppManager.instance?.visualFeedBakcManager?.ShowMovingCaseVisualFeedback(lList);
+                string lFeedBackId = AppManager.instance?.visualFeedBakcManager?.ShowMovingCaseVisualFeedback(mPlayerCharacter.path);
                 AppManager.instance?.menuManager?.OpenScreen<ValidationPathScreen>(lFeedBackId);
             }
         }
@@ -185,6 +193,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         public void OrderActionOnSquare()
         {
             SetActiveController(true);
+            mPlayerCharacter.canMove = true;
         }
 
         #endregion Methods

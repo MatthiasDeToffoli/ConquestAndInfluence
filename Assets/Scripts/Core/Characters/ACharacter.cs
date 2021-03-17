@@ -1,9 +1,10 @@
 ﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 
-namespace Assets.Scripts.Core.Characters
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
 {
     /// <summary>
     /// Abstract class for define a character
@@ -20,6 +21,11 @@ namespace Assets.Scripts.Core.Characters
         /// The square where the player want to go
         /// </summary>
         private Square mTargetSquare;
+
+        /// <summary>
+        /// The percent of day we was when the character start of move
+        /// </summary>
+        private float mPercentStartOfMove;
         #endregion Fields
 
         #region Properties
@@ -42,15 +48,18 @@ namespace Assets.Scripts.Core.Characters
         {
             if(mTargetSquare == null && path != null && path.Count > 0)
             {
+                mPercentStartOfMove = pPercentOfDay;
                 mTargetSquare = path[0];
                 mCurrentMovement = new Vector3(mTargetSquare.position.x - currentPosition.position.x, mTargetSquare.position.y - currentPosition.position.y, transform.position.z);
             }
 
             if(mCurrentMovement != Vector3.Zero && mTargetSquare != null)
             {
-                if(pPercentOfDay != 1)
+                float lCurrentPersentMove = Math.Abs(pPercentOfDay - mPercentStartOfMove);
+
+                if(lCurrentPersentMove <= 1)
                 {
-                    transform.position.Set(currentPosition.position.x + mCurrentMovement.X * pPercentOfDay, currentPosition.position.y + mCurrentMovement.Y * pPercentOfDay, transform.position.z);
+                    transform.position.Set(currentPosition.position.x + mCurrentMovement.X * lCurrentPersentMove, currentPosition.position.y + mCurrentMovement.Y * lCurrentPersentMove, transform.position.z);
                     path.RemoveAt(0);
                 }
                 else

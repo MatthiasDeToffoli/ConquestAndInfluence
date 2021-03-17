@@ -9,7 +9,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
     /// Used for say the percent of day changed
     /// </summary>
     /// <param name="pPercent"></param>
-    public delegate void PercentOfDayDelegate(double pPercent);
+    public delegate void PercentOfDayDelegate(float pPercent);
 
     /// <summary>
     /// Implement the clock of a game
@@ -180,7 +180,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// Notify the percent of day changed
         /// </summary>
         /// <param name="pPercent"></param>
-        private void NotifyPercentOfDatChanged(double pPercent)
+        private void NotifyPercentOfDatChanged(float pPercent)
         {
             if(PercentOfDayChanged != null)
             {
