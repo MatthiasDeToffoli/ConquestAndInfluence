@@ -25,14 +25,15 @@
 	
 	
 ## Versions
-| VX.X | Date       | Title							| Comments																										| Author              |
-| ---- | ---------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------	| ------------------- |
-| V0.0 | 04/12/2020 | Creation of the documentation	| Create the document and add the summary and product description part											| Matthias de Toffoli |
-| V0.1 | 04/13/2020 | Concept						| Add Concept part																								| Matthias de Toffoli |
-| V0.2 | 04/18/2020 | Gameplay and mechanics		| Add Gameplay and mechanics parts and add Victory and defeat condition and 3C (Camera and control) parts in it	| Matthias de Toffoli |
-| V0.3 | 04/19/2020 | Character and HUD				| Add Character part in Gameplay and mechanics, and add HUD part											   	| Matthias de Toffoli |
-| V0.4 | 05/02/2020 | Flowsharts, LD bricks and HUD	| Add Flowshart's legend and Flowsharts for hero, messenger and square, add LD bricks and modify HUD			| Matthias de Toffoli |
-| V1.0 | 21/11/2020 | Change game rules 			| Change game rules for make it more easy for the player														| Matthias de Toffoli |
+| VX.X | Date       | Title							  | Comments																										| Author              |
+| ---- | ---------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------	| ------------------- |
+| V0.0 | 04/12/2020 | Creation of the documentation	  | Create the document and add the summary and product description part											| Matthias de Toffoli |
+| V0.1 | 04/13/2020 | Concept						  | Add Concept part																								| Matthias de Toffoli |
+| V0.2 | 04/18/2020 | Gameplay and mechanics		  | Add Gameplay and mechanics parts and add Victory and defeat condition and 3C (Camera and control) parts in it	| Matthias de Toffoli |
+| V0.3 | 04/19/2020 | Character and HUD				  | Add Character part in Gameplay and mechanics, and add HUD part											   	| Matthias de Toffoli |
+| V0.4 | 05/02/2020 | Flowsharts, LD bricks and HUD	  | Add Flowshart's legend and Flowsharts for hero, messenger and square, add LD bricks and modify HUD			| Matthias de Toffoli |
+| V1.0 | 21/11/2020 | Change game rules 			  | Change game rules for make it more easy for the player														| Matthias de Toffoli |
+| V1.1 | 24/03/2021 | Add a rule for in game actions | Change game rules for make it more easy for the player														| Matthias de Toffoli |
 
 ## Product Description
 * Pitch : It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
@@ -45,6 +46,7 @@
 ## Concept
 This game will make you control a character who will have to conquere an area by capturing all it squares and fight an opponant who will try to do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
 * For capturing the square a character have to staying on it.
+* Every actions start at the start of a day
 * A square conquered has a level of influence
 	* if a character want capture a square with a level superior to 0, the square will lose his levels one by one.
 	* if the level is superior to the level of the square next to him (not the diagonal) it will influence it and they will be conquered to.
