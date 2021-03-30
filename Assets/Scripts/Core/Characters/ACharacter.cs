@@ -62,10 +62,20 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
                     path.RemoveAt(0);
                     currentPosition = mTargetSquare;
                     mTargetSquare = null;
+
+                    if(path.Count == 0)
+                    {
+                        FinishedMove();
+                    }
                 }
             }
             
         }
+
+        /// <summary>
+        /// Call when the move of the caracter is finished
+        /// </summary>
+        protected abstract void FinishedMove();
         #endregion Methods
     }
 }

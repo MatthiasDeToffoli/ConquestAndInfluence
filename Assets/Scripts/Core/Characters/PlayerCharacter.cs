@@ -63,6 +63,14 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
                 currentPosition.AddLevelSide(Maps.Enums.SquareSide.ALLY);
             }
         }
+
+        /// <summary>
+        /// Call when the move of the caracter is finished
+        /// </summary>
+        protected override void FinishedMove()
+        {
+            mCanMove = false;
+        }
         #endregion //Methods
     }
 }
