@@ -41,7 +41,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
         /// </summary>
         public virtual void Move(float pPercentOfDay)
         {
-            if(mTargetSquare == null && path != null && path.Count > 0)
+            if(mTargetSquare == null && path != null && path.Count > 0 && pPercentOfDay == 0)
             {
                 mTargetSquare = path[0];
                 mCurrentMovement = new Vector3(mTargetSquare.position.x - currentPosition.position.x, mTargetSquare.position.y - currentPosition.position.y, transform.position.z);

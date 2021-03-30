@@ -131,18 +131,22 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         {
             while (isStarted)
             {
+                NotifyPercentOfDatChanged(mStep / MAX_STEP);
+
                 yield return new WaitForEndOfFrame();
                 mStep+= 1 * speed;
                 
                 if (mStep >= MAX_STEP)
                 {
+                    //For notify a day just finished
                     NotifyPercentOfDatChanged(1);
                     days++;
                     //keep the excess
                     mStep -= MAX_STEP;
-                }
 
-                NotifyPercentOfDatChanged(mStep / MAX_STEP);
+                    // For init proporties of listener of days
+                    NotifyPercentOfDatChanged(0);
+                }
             }
 
             yield return null;
