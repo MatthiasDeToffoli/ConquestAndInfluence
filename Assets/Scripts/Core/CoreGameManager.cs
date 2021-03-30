@@ -68,7 +68,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         protected override void ListenToEvents()
         {
             base.ListenToEvents();
-            mClock.PercentOfDayChanged += mPlayerCharacter.Move;
+            mClock.PercentOfDayChanged += OnPercentOfDayChanged;
+        }
+
+        /// <summary>
+        /// Unlisten all evenes
+        /// </summary>
+        protected override void UnlistenToEvents()
+        {
+            base.UnlistenToEvents();
+            mClock.PercentOfDayChanged -= OnPercentOfDayChanged;
         }
         #region Unity
         /// <summary>
@@ -146,6 +155,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             StartOrPauseClock(false);
 
             mClock.Reset();
+        }
+
+        /// <summary>
+        /// Call when percent of day changed
+        /// </summary>
+        /// <param name="pPercent"></param>
+        private void OnPercentOfDayChanged(float pPercent)
+        {
+            if(mPlayerCharacter != null)
+                mPlayerCharacter.ClockUpdate(pPercent);
         }
         #endregion Clock
 

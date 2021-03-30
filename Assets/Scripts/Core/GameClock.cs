@@ -18,9 +18,9 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
     {
         #region Constants
         /// <summary>
-        /// the number max of step when the step is equal to it we add one day
+        /// the number max of step when the step is equal to it we add one day (5 seconds for 60 frames per seconds)
         /// </summary>
-        private const int MAX_STEP = 120;
+        private const int MAX_STEP = 300;
         #endregion Constants
 
         #region Events

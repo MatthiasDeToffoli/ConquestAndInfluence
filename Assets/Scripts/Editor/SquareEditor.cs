@@ -33,16 +33,6 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
         /// the title show in inspector for the Can Move On property
         /// </summary>
         private const string CAN_MOVE_ON_TITLE = "Can we move on it ?";
-
-        /// <summary>
-        /// The min lvl of a square
-        /// </summary>
-        private const int MIN_LVL = 0;
-
-        /// <summary>
-        /// The max lvl of a square
-        /// </summary>
-        private const int MAX_LVL = 3;
         #endregion Constants
 
         #region Fields
@@ -84,7 +74,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.PersonalEditor
                 //let a blank
                 EditorGUILayout.Space();
 
-                mTypedTarget.level = EditorGUILayout.IntSlider(LEVEL_TITLE, mTypedTarget.level, MIN_LVL, MAX_LVL);
+                mTypedTarget.level = EditorGUILayout.IntSlider(LEVEL_TITLE, mTypedTarget.level, Square.MIN_LVL, Square.MAX_LVL);
 
                 if (mTypedTarget.level > 0)
                 {

@@ -1,5 +1,6 @@
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
+using System;
 using UnityEngine;
 
 namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
@@ -22,6 +23,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// The name of the property level in the animator
         /// </summary>
         private string ANIMATOR_LEVEL_PROPERTY = "Level";
+
+        /// <summary>
+        /// The min lvl of a square
+        /// </summary>
+        public const int MIN_LVL = 0;
+
+        /// <summary>
+        /// The max lvl of a square
+        /// </summary>
+        public const int MAX_LVL = 3;
         #endregion Constants
 
         #region Fields
@@ -62,7 +73,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             {
                 mLevel = value;
 
-                if (mLevel == 0)
+                if (mLevel == MIN_LVL)
                     mSide = SquareSide.NEUTRAL;
 
                 ActualiseSprite();
@@ -133,6 +144,37 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 mAnimator.SetInteger(ANIMATOR_SIDE_PROPERTY, (int)side);
                 mAnimator.SetInteger(ANIMATOR_LEVEL_PROPERTY, level);
             }
+        }
+
+        /// <summary>
+        /// Add a level if the square is Neutral or on the same side as pSide, remove a level if not and change automaticaly the side
+        /// </summary>
+        /// <param name="pSide">reference side</param>
+        /// <param name="pLevel">number of level to add</param>
+        public void AddLevelSide(SquareSide pSide, int pLevel = 1)
+        {
+            if(pLevel == 0)
+            {
+                Debug.LogWarning("You try to add 0 level to a square it's useless !");
+                return;
+            }
+
+            int lNewLevel = 0;
+
+            //In this case we substract pLevel
+            if ((pSide == SquareSide.ALLY && side == SquareSide.ENEMY) || (pSide == SquareSide.ENEMY && side == SquareSide.ALLY))
+            {
+                pLevel *= -1;
+            }
+
+            lNewLevel = level + pLevel;
+
+            if (lNewLevel < MIN_LVL || side == SquareSide.NEUTRAL)
+            {
+                side = pSide;
+            }
+
+            level = Math.Min(Math.Abs(lNewLevel), MAX_LVL);
         }
         #endregion Methods
     }

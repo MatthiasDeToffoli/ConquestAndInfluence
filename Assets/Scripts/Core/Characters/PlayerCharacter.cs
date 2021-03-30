@@ -11,21 +11,57 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
     /// </summary>
     public class PlayerCharacter : ACharacter
     {
+        #region Fields
+        /// <summary>
+        /// If the player can move or not
+        /// </summary>
+        private bool mCanMove;
+
+        /// <summary>
+        /// If the player converting a square or not
+        /// </summary>
+        private bool mConvertingASquare;
+        #endregion Fields
+
         #region Properties
         /// <summary>
         /// If the player can move or not
         /// </summary>
-        public bool canMove;
+        public bool canMove
+        {
+            get
+            {
+                return mCanMove;
+            }
+            set
+            {
+                mCanMove = value;
+
+                if (value == true)
+                    mConvertingASquare = false;
+            }
+        }
         #endregion //Properties
 
         #region Methods
         /// <summary>
-        /// The movement of the character
+        /// Update with clock
         /// </summary>
-        public override void Move(float pPercentOfDay)
+        /// <param name="pPercentOfDay"></param>
+        public void ClockUpdate(float pPercentOfDay)
         {
-            if(canMove)
-                base.Move(pPercentOfDay);
+            if (canMove)
+            {
+                Move(pPercentOfDay);
+            }
+            else if(pPercentOfDay == 0)
+            {
+                mConvertingASquare = true;
+            }
+            else if(pPercentOfDay == 1 && mConvertingASquare)
+            {
+                currentPosition.AddLevelSide(Maps.Enums.SquareSide.ALLY);
+            }
         }
         #endregion //Methods
     }
