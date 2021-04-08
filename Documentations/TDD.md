@@ -85,6 +85,7 @@
 | V1.1 | 10/31/2020 | Update the Folders diagrams								  | Update the folders diagram for match with the current project and change the unity version						 | Matthias de Toffoli |
 | V1.2 | 11/01/2020 | Update the Namespaces diagrams							  | Update the Namespaces diagram for match with the current project and corect all namespaces references			 | Matthias de Toffoli |
 | V1.3 | 11/28/2020 | Change some game rules 									  | Change some game rules for make it more easy for the player														 | Matthias de Toffoli |
+| V1.4 | 04/08/2021 | Add a missing point										  | Add a missing skills for the character																			 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -105,6 +106,7 @@ Touch only
 #### Character
 * Move to a square point out
 * Conquer an empty square
+* Upgrade a square already conquered
 * attack the opponent's hero
 
 ## Tools
