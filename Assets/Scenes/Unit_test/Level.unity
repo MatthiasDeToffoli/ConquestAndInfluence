@@ -1188,8 +1188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mLevel: 1
-  mSide: 1
+  mLevel: 0
+  mSide: 0
   CanMoveOn: 1
 --- !u!95 &704808588
 Animator:
@@ -1387,8 +1387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mLevel: 2
-  mSide: -1
+  mLevel: 0
+  mSide: 0
   CanMoveOn: 1
 --- !u!95 &811403493
 Animator:
@@ -2137,7 +2137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: []
   currentPosition: {fileID: 1509090078}
-  canMove: 0
 --- !u!212 &1021282249
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2928,7 +2927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mLevel: 3
+  mLevel: 0
   mSide: 0
   CanMoveOn: 1
 --- !u!95 &1324928282
@@ -3246,8 +3245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mLevel: 0
-  mSide: 0
+  mLevel: 3
+  mSide: -1
   CanMoveOn: 1
 --- !u!95 &1476977844
 Animator:
@@ -4768,7 +4767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mLevel: 0
   mSide: 0
-  CanMoveOn: 0
+  CanMoveOn: 1
 --- !u!95 &2055526741
 Animator:
   serializedVersion: 3

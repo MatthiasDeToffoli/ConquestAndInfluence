@@ -56,6 +56,14 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 
         #region Properties
         /// <summary>
+        /// The unic ID of the square
+        /// </summary>
+        public string unicId
+        {
+            get;
+            private set;
+        }
+        /// <summary>
         /// If we can move on or not
         /// </summary>
         public bool CanMoveOn = true;
@@ -124,8 +132,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 
             //Actualise the sprite with the datas at the start of the level
             ActualiseSprite();
+
+            unicId = string.Format("Square.{0}", Guid.NewGuid().ToString());
         }
-        #endregion Unity
+
         /// <summary>
         /// When the square is enable
         /// </summary>
@@ -134,6 +144,8 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             //Reactualise sprite for resort the good values
             ActualiseSprite();
         }
+        #endregion Unity
+
         /// <summary>
         /// Change the sprite of the square
         /// </summary>

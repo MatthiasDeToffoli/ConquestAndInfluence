@@ -1,4 +1,5 @@
-﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System;
 using System.Collections.Generic;
@@ -321,6 +322,92 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// Update all squares except ignored ones
+        /// </summary>
+        /// <param name="pIgnoredSquaresId">ignored squares id</param>
+        /// <param name="pSquaresToConvert">Dictionary contain all squares to convert and the side used to convert them</param>
+        public void UpdateSquares(IEnumerable<string> pIgnoredSquaresId, ref Dictionary<Square, SquareSide> pSquaresToConvert)
+        {
+            foreach (Dictionary<float,Square> lX in map.Values)
+            {
+                foreach(Square lSquare in lX.Values.Where(pElm => pElm.CanMoveOn && pElm.side != Enums.SquareSide.NEUTRAL))
+                {
+                    CheckSquaresToConvert(lSquare, pIgnoredSquaresId, ref pSquaresToConvert);
+                }
+            }
+
+            //For convert day by day
+            foreach(KeyValuePair<Square,SquareSide> lToConvert in pSquaresToConvert)
+            {
+                lToConvert.Key.AddLevelSide(lToConvert.Value);
+            }
+        }
+
+        /// <summary>
+        /// Try to convert all squares around one
+        /// </summary>
+        /// <param name="pSquare"></param>
+        /// <param name="pIgnoredSquaresId">ignored squares id</param>
+        /// <param name="pSquaresToConvert">Dictionary contain all squares to convert and the side used to convert them</param>
+        private void CheckSquaresToConvert(Square pSquare, IEnumerable<string> pIgnoredSquaresId, ref Dictionary<Square,SquareSide> pSquaresToConvert)
+        {
+            //left
+            if(CheckIfPositionIsValid(pSquare.position.x - 1, pSquare.position.y))
+            {
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x - 1][pSquare.position.y], pIgnoredSquaresId, ref pSquaresToConvert);
+            }
+
+            //top
+            if (CheckIfPositionIsValid(pSquare.position.x, pSquare.position.y - 1))
+            {
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x][pSquare.position.y - 1], pIgnoredSquaresId, ref pSquaresToConvert);
+            }
+
+            //right
+            if (CheckIfPositionIsValid(pSquare.position.x + 1, pSquare.position.y))
+            {
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x + 1][pSquare.position.y], pIgnoredSquaresId, ref pSquaresToConvert);
+            }
+
+            //bottom
+            if (CheckIfPositionIsValid(pSquare.position.x, pSquare.position.y + 1))
+            {
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x][pSquare.position.y + 1], pIgnoredSquaresId, ref pSquaresToConvert);
+            }
+        }
+
+        /// <summary>
+        /// Try to convert a square with another
+        /// </summary>
+        /// <param name="pConverterSquare">the converter square</param>
+        /// <param name="pToConvertSquare">the square to convert</param>
+        /// <param name="pIgnoredSquaresId">ignored squares id</param>
+        /// <param name="pSquaresToConvert">Dictionary contain all squares to convert and the side used to convert them</param>
+        private void AddToSquaresToConvert(Square pConverterSquare, Square pToConvertSquare, IEnumerable<string> pIgnoredSquaresId, ref Dictionary<Square, SquareSide> pSquaresToConvert)
+        {
+            if (pIgnoredSquaresId.Contains(pToConvertSquare.unicId))
+            {
+                return;
+            }
+
+            if(pConverterSquare.level > pToConvertSquare.level)
+            {
+                if(pSquaresToConvert.Keys.Contains(pToConvertSquare))
+                {
+                    //If they're opposite then do nothing
+                    if(pSquaresToConvert[pToConvertSquare] != pConverterSquare.side)
+                    {
+                        pSquaresToConvert.Remove(pToConvertSquare);
+                    }
+                }
+                else
+                {
+                    pSquaresToConvert.Add(pToConvertSquare, pConverterSquare.side);
+                }
+            }
         }
         #endregion Methods
     }

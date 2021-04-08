@@ -1,5 +1,6 @@
 ﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections;
@@ -163,8 +164,22 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// <param name="pPercent"></param>
         private void OnPercentOfDayChanged(float pPercent)
         {
-            if(mPlayerCharacter != null)
+            if (mPlayerCharacter != null)
                 mPlayerCharacter.ClockUpdate(pPercent);
+
+            if(pPercent == 1)
+            {
+                Dictionary<Square, SquareSide> lSquaresToConvert = new Dictionary<Square, SquareSide>();
+                List<string> lIgnoredSquares = new List<string>();
+
+                if(mPlayerCharacter != null)
+                {
+                    lIgnoredSquares.Add(mPlayerCharacter.currentPosition.unicId);
+                    mPlayerCharacter.TryToConvertCurrentPositionSquare(ref lSquaresToConvert);
+                }
+
+                AppManager.instance?.mapManager?.currentMap?.UpdateSquares(lIgnoredSquares, ref lSquaresToConvert);
+            }
         }
         #endregion Clock
 

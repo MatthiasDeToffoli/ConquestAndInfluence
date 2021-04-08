@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +50,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
         /// Update with clock
         /// </summary>
         /// <param name="pPercentOfDay"></param>
+        /// <returns><c>true</c> if the player converted a square, <c>false</c> if not</returns>
         public void ClockUpdate(float pPercentOfDay)
         {
             if (canMove)
@@ -58,9 +61,17 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
             {
                 mConvertingASquare = true;
             }
-            else if(pPercentOfDay == 1 && mConvertingASquare)
+        }
+
+        /// <summary>
+        /// Try to add the current position to the squares to convert
+        /// </summary>
+        /// <param name="pSquaresToConvert">Dictionary contain all squares to convert and the side used to convert them</param>
+        public void TryToConvertCurrentPositionSquare(ref Dictionary<Square, SquareSide> pSquaresToConvert)
+        {
+            if (mConvertingASquare)
             {
-                currentPosition.AddLevelSide(Maps.Enums.SquareSide.ALLY);
+                pSquaresToConvert.Add(currentPosition, SquareSide.ALLY);
             }
         }
 
