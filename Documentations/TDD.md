@@ -86,6 +86,7 @@
 | V1.2 | 11/01/2020 | Update the Namespaces diagrams							  | Update the Namespaces diagram for match with the current project and corect all namespaces references			 | Matthias de Toffoli |
 | V1.3 | 11/28/2020 | Change some game rules 									  | Change some game rules for make it more easy for the player														 | Matthias de Toffoli |
 | V1.4 | 04/08/2021 | Add a missing point										  | Add a missing skills for the character																			 | Matthias de Toffoli |
+| V1.5 | 04/14/2021 | Update diagrams											  | Update some diagrams and add Core folder's diagram																 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -150,6 +151,8 @@ Will use managers, they will manage their part and single objects will be manage
 ![Scenes folder diagram](./pictures/TDD/Folders/Scenes.png "Scenes folder")
 ##### Scripts
 ![Scripts folder diagram](./pictures/TDD/Folders/Scripts.png "Scripts folder")
+###### Core
+![Core folder diagram](./pictures/TDD/Folders/Core.png "Core folder")
 ###### Maps
 ![Maps folder diagram](./pictures/TDD/Folders/Maps.png "Maps folder")
 ###### UI
