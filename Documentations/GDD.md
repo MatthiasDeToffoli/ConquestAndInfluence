@@ -22,6 +22,22 @@
 * **E** *- HUD*
 * **F** *- Level Design*
 	* *LD Bricks*
+	* *Level 1*
+	* *Level 2*
+	* *Level 3*
+	* *Level 4*
+	* *Level 5*
+	* *Level 6*
+	* *Level 7*
+	* *Level 8*
+	* *Level 9*
+	* *Level 10*
+	* *Level 11*
+	* *Level 12*
+	* *Level 13*
+	* *Level 14*
+	* *Level 15*
+	* *Level Epilogue*
 	
 	
 ## Versions
@@ -35,6 +51,7 @@
 | V1.0 | 21/11/2020 | Change game rules 			  | Change game rules for make it more easy for the player															| Matthias de Toffoli |
 | V1.1 | 24/03/2021 | Add a rule for in game actions  | Change game rules for make it more easy for the player															| Matthias de Toffoli |
 | V1.2 | 04/08/2021 | Add a missing point			  | Add a missing skills for the character																			| Matthias de Toffoli |
+| V1.3 | 07/10/2021 | Add level designs				  | Add the 15 level's diagrams and the epilogue's one and update the LD Bricks										| Matthias de Toffoli |
 
 ## Product Description
 * Pitch : It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
@@ -93,15 +110,37 @@ Touch only
 ![IHM](./pictures/GDD/IHM.png "IHM")
 ### Level design
 #### LD Bricks
-Square took by no side :
-
-![neutral square](./pictures/GDD/neutral_square.png "neutral square")
-
-Square took by the player :
-
-![ally square](./pictures/GDD/ally_square.png "ally square")
-
-Square took by the oponent :
-
-![enemy square](./pictures/GDD/enemy_square.png "enemy square")
+![LD Bricks](./pictures/GDD/lvl_Bricks "LD Bricks")
+#### Level 1
+![Level 1](./pictures/GDD/lvl1 "Level 1")
+#### Level 2
+![Level 2](./pictures/GDD/lvl2 "Level 2")
+#### Level 3
+![Level 3](./pictures/GDD/lvl3 "Level 3")
+#### Level 4
+![Level 4](./pictures/GDD/lvl4 "Level 4")
+#### Level 5
+![Level 5](./pictures/GDD/lvl5 "Level 5")
+#### Level 6
+![Level 6](./pictures/GDD/lvl6 "Level 6")
+#### Level 7
+![Level 7](./pictures/GDD/lvl7 "Level 7")
+#### Level 8
+![Level 8](./pictures/GDD/lvl8 "Level 8")
+#### Level 9
+![Level 9](./pictures/GDD/lvl9 "Level 9")
+#### Level 10
+![Level 10](./pictures/GDD/lvl10 "Level 10")
+#### Level 11
+![Level 11](./pictures/GDD/lvl11 "Level 11")
+#### Level 12
+![Level 12](./pictures/GDD/lvl12 "Level 12")
+#### Level 13
+![Level 13](./pictures/GDD/lvl13 "Level 13")
+#### Level 14
+![Level 14](./pictures/GDD/lvl14 "Level 14")
+#### Level 15
+![Level 15](./pictures/GDD/lvl15 "Level 15")
+#### Epilogue
+![Epilogue](./pictures/GDD/lvlEpilogue "Epilogue")
 
