@@ -110,37 +110,37 @@ Touch only
 ![IHM](./pictures/GDD/IHM.png "IHM")
 ### Level design
 #### LD Bricks
-![LD Bricks](./pictures/GDD/lvl_Bricks "LD Bricks")
+![LD Bricks](./pictures/GDD/lvl_Bricks.png "LD Bricks")
 #### Level 1
-![Level 1](./pictures/GDD/lvl1 "Level 1")
+![Level 1](./pictures/GDD/lvl1.png "Level 1")
 #### Level 2
-![Level 2](./pictures/GDD/lvl2 "Level 2")
+![Level 2](./pictures/GDD/lvl2.png "Level 2")
 #### Level 3
-![Level 3](./pictures/GDD/lvl3 "Level 3")
+![Level 3](./pictures/GDD/lvl3.png "Level 3")
 #### Level 4
-![Level 4](./pictures/GDD/lvl4 "Level 4")
+![Level 4](./pictures/GDD/lvl4.png "Level 4")
 #### Level 5
-![Level 5](./pictures/GDD/lvl5 "Level 5")
+![Level 5](./pictures/GDD/lvl5.png "Level 5")
 #### Level 6
-![Level 6](./pictures/GDD/lvl6 "Level 6")
+![Level 6](./pictures/GDD/lvl6.png "Level 6")
 #### Level 7
-![Level 7](./pictures/GDD/lvl7 "Level 7")
+![Level 7](./pictures/GDD/lvl7.png "Level 7")
 #### Level 8
-![Level 8](./pictures/GDD/lvl8 "Level 8")
+![Level 8](./pictures/GDD/lvl8.png "Level 8")
 #### Level 9
-![Level 9](./pictures/GDD/lvl9 "Level 9")
+![Level 9](./pictures/GDD/lvl9.png "Level 9")
 #### Level 10
-![Level 10](./pictures/GDD/lvl10 "Level 10")
+![Level 10](./pictures/GDD/lvl10.png "Level 10")
 #### Level 11
-![Level 11](./pictures/GDD/lvl11 "Level 11")
+![Level 11](./pictures/GDD/lvl11.png "Level 11")
 #### Level 12
-![Level 12](./pictures/GDD/lvl12 "Level 12")
+![Level 12](./pictures/GDD/lvl12.png "Level 12")
 #### Level 13
-![Level 13](./pictures/GDD/lvl13 "Level 13")
+![Level 13](./pictures/GDD/lvl13.png "Level 13")
 #### Level 14
-![Level 14](./pictures/GDD/lvl14 "Level 14")
+![Level 14](./pictures/GDD/lvl14.png "Level 14")
 #### Level 15
-![Level 15](./pictures/GDD/lvl15 "Level 15")
+![Level 15](./pictures/GDD/lvl15.png "Level 15")
 #### Epilogue
-![Epilogue](./pictures/GDD/lvlEpilogue "Epilogue")
+![Epilogue](./pictures/GDD/lvlEpilogue.png "Epilogue")
 
