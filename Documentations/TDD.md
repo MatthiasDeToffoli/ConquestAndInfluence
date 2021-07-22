@@ -87,7 +87,7 @@
 | V1.3 | 11/28/2020 | Change some game rules 									  | Change some game rules for make it more easy for the player														 | Matthias de Toffoli |
 | V1.4 | 04/08/2021 | Add a missing point										  | Add a missing skills for the character																			 | Matthias de Toffoli |
 | V1.5 | 04/14/2021 | Update diagrams											  | Update some diagrams and add Core folder's diagram																 | Matthias de Toffoli |
-| V1.6 | 07/22/2021 | Add background to images text	  							  | Add a white background to the images dark texts															   		 | Matthias de Toffoli |
+| V1.6 | 07/22/2021 | Add background to some images	  							  | Add a white background to some images																	   		 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
