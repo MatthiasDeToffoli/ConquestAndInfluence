@@ -52,6 +52,7 @@
 | V1.1 | 24/03/2021 | Add a rule for in game actions  | Change game rules for make it more easy for the player															| Matthias de Toffoli |
 | V1.2 | 04/08/2021 | Add a missing point			  | Add a missing skills for the character																			| Matthias de Toffoli |
 | V1.3 | 07/10/2021 | Add level designs				  | Add the 15 level's diagrams and the epilogue's one and update the LD Bricks										| Matthias de Toffoli |
+| V1.4 | 07/22/2021 | Add background to images text	  | Add a white background to the images dark texts																	| Matthias de Toffoli |
 
 ## Product Description
 * Pitch : It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
