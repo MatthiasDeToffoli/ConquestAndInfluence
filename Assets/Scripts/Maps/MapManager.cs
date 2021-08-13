@@ -1,15 +1,29 @@
-﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
+﻿using Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 {
     /// <summary>
+    /// Delegate fire for unlock a level
+    /// </summary>
+    /// <param name="pLevelIndex">the index of the level to unlock</param>
+    public delegate void UnlockLevelDelegate(int pLevelIndex);
+
+    /// <summary>
     /// Manager used for managed all the maps
     /// </summary>
     /// <seealso cref="AManagerWithList{T}"/>
-    public class MapManager : AManagerWithList<MapHandler>
+    public class MapManager : ALevelsManager<MapHandler>
     {
+        #region Events
+        /// <summary>
+        /// Event fire for unlock a level
+        /// </summary>
+        public event UnlockLevelDelegate unlockLevel;
+        #endregion Events
+
         #region Constants
         /// <summary>
         /// Error when we try to select a map which not exist
@@ -29,44 +43,37 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         #endregion Properties
 
         #region Methods
-
-        #region Unity
         /// <summary>
-        /// Awake of the behaviour
+        /// Select a level and unselect another one
         /// </summary>
-        protected override void Awake()
+        /// <param name="pIndex"></param>
+        public override void SelectLevel(int pIndex)
         {
-            base.Awake();
+            currentMap = null;
 
-            //Unactive all map at the start of the project
-            foreach(MapHandler lMapHandler in items)
-            {
-                lMapHandler.gameObject.SetActive(false);
-            }
-        }
-        #endregion Unity
-
-        /// <summary>
-        /// Select the map
-        /// </summary>
-        /// <param name="pIndex">the index of the map to select</param>
-        public void SelectMap(int pIndex)
-        {
-            if(items.Count - 1 < pIndex)
+            if (items.Count - 1 < pIndex)
             {
                 Debug.LogError(ERROR_SELECT_WRONG_MAP);
             }
             else
             {
-                currentMap = items[pIndex];
+                base.SelectLevel(pIndex);
 
-                if(currentMap == null)
+                MapHandler lCurrentMap = null;
+                if(items.TryToGetValue(pIndex, out lCurrentMap))
                 {
-                    Debug.LogError(ERROR_SELECT_WRONG_MAP);
+                    if(lCurrentMap == null)
+                    {
+                        Debug.LogError(ERROR_SELECT_WRONG_MAP);
+                    }
+                    else
+                    {
+                        currentMap = lCurrentMap;
+                    }
                 }
                 else
                 {
-                    currentMap.gameObject.SetActive(true);
+                    Debug.LogError(ERROR_SELECT_WRONG_MAP);
                 }
             }
         }
@@ -84,6 +91,18 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 return currentMap.GetBetterPath(pStartPos, pTargetPos);
             }
             return null;
+        }
+
+        /// <summary>
+        /// Notify the unlock level event
+        /// </summary>
+        /// <param name="pLevelIndex"></param>
+        public void NotifyUnlockLevel(int pLevelIndex)
+        {
+            if(unlockLevel != null)
+            {
+                unlockLevel.Invoke(pLevelIndex);
+            }
         }
         #endregion Methods
     }

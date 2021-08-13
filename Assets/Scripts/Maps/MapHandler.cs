@@ -1,5 +1,6 @@
 ﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
     /// Class for 
     /// </summary>
     /// <seealso cref="AMonoBehaviour"/>
-    public class MapHandler : AMonoBehaviour
+    public class MapHandler : ALevelBehavior
     {
         #region Constants
         /// <summary>

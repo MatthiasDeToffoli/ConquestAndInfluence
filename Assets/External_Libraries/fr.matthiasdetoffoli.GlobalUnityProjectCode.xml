@@ -299,6 +299,22 @@
             The style for an error in gui
             </summary>
         </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels.ALevelBehavior">
+            <summary>
+            Behavior for the levels
+            </summary>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels.ALevelBehavior.Activate">
+            <summary>
+            Active and init the level
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels.ALevelBehavior.Deactivate">
+            <summary>
+            Deactive the level
+            </summary>
+        </member>
         <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.AMainManager`1">
             <summary>
             The main manager will managed all the manager
@@ -364,6 +380,37 @@
             <summary>
             Clear the Manager properties
             </summary>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.ALevelsManager`1">
+            <summary>
+            manage all levels
+            </summary>
+            <typeparam name="T">the type of the levels managed by the manager</typeparam>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagerWithList`1"/> 
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels.ALevelBehavior"/>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.ALevelsManager`1.mCurrentIndexSelected">
+            <summary>
+            The current index selected
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.ALevelsManager`1.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+            <remarks>Init all the properties and Fields here</remarks>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.ALevelsManager`1.Init">
+            <summary>
+            init the manager
+            </summary>
+            <remarks>this function is called by the main manager</remarks>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.ALevelsManager`1.SelectLevel(System.Int32)">
+            <summary>
+            Select a level and unselect another one
+            </summary>
+            <param name="pIndex"></param>
         </member>
         <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager.AManagedManager">
             <summary>
@@ -512,6 +559,16 @@
             </summary>
             <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour"/> 
             <seealso cref="T:UnityEngine.UI.Button"/>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.mButton">
+            <summary>
+            The button
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
         </member>
         <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.ListenToEvents">
             <summary>

@@ -31,7 +31,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Test
         /// <param name="pIndex">the index to select</param>
         public void TestSelectMap(int pIndex)
         {
-            AppManager.instance?.mapManager?.SelectMap(pIndex);
+            AppManager.instance?.mapManager?.SelectLevel(pIndex);
             Debug.Log(string.Format("map {0} selected", pIndex));
 
             //Active the controller for interact with the squares

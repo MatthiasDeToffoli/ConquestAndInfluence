@@ -237,6 +237,38 @@
             Clear intern dictionnary
             </summary>
         </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils.ArrayExtension">
+            <summary>
+            Extension for array
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils.ArrayExtension.TryToGetValue``1(``0[],System.Int32,``0@)">
+            <summary>
+            Try to get a value from an array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="pArray">the array</param>
+            <param name="pIndex">the index we try to get the value of</param>
+            <param name="pItem">the item will have the value </param>
+            <returns><c>true</c> if we find the value, <c>false</c> if not</returns>
+            <remarks>don't do it on IEnumerable because of dictionary class</remarks>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils.ListExtension">
+            <summary>
+            Extension for list
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils.ListExtension.TryToGetValue``1(System.Collections.Generic.List{``0},System.Int32,``0@)">
+            <summary>
+            Try to get a value from a list
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="pList">the list</param>
+            <param name="pIndex">the index we try to get the value of</param>
+            <param name="pItem">the item will have the value </param>
+            <returns><c>true</c> if we find the value, <c>false</c> if not</returns>
+            <remarks>don't do it on IEnumerable because of dictionary class</remarks>
+        </member>
         <member name="T:Fr.Matthiasdetoffoli.GlobalProjectCode.Interfaces.IManager">
             <summary>
             Interface used for all Managers
