@@ -1,4 +1,5 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
+﻿using Assets.Scripts.UI.Screens;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
@@ -121,6 +122,14 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
             }
         }
         #endregion Properties
+
+        #region Methods
+        protected override void AfterStart()
+        {
+            base.AfterStart();
+            menuManager?.OpenScreen<WaitingTouchScreen>();
+        }
+        #endregion Methods
     }
 }
 

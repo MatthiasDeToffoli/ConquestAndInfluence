@@ -747,6 +747,70 @@
             </summary>
             <param name="pState"></param>
         </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen">
+            <summary>
+            Screen waiting an user action to do something
+            </summary>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.mAllowClickAndTouch">
+            <summary>
+            If we allow click and touch or not
+            </summary>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.mAllowKeyboard">
+            <summary>
+            If we allow the keyboard or not
+            </summary>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.mTextHandler">
+            <summary>
+            The UI text on the screen
+            </summary>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.mWaitingText">
+            <summary>
+            The text show at first when we wait the user action
+            </summary>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.mLoadingText">
+            <summary>
+            The text show when we load stuff if we had to
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.Awake">
+            <summary>
+            Awake of the behaviour
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.Update">
+            <summary>
+            Update of the behavior
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+            <summary>
+            WHen the pointer click on the screen
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.StartLoading">
+            <summary>
+            Start the loading
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.SetTextHandlerText(System.String)">
+            <summary>
+            Set the text handler text
+            </summary>
+            <param name="pText"></param>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AWaitingUserActionScreen.LoadingEnded(System.Boolean)">
+            <summary>
+            Call when the loading ended
+            </summary>
+            <param name="pSucceed"><c>True</c> if the loading succeed, <c>False</c> otherwise</param>
+        </member>
         <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors.AMonoBehaviour">
             <summary>
             Abstract class implement some functions of MonoBehaviour
