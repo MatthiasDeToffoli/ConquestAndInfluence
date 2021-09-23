@@ -1,7 +1,6 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence;
-using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
+﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
 
-namespace Assets.Scripts.UI.Screens
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
 {
     /// <summary>
     /// Screen waiting the user touch the screen
@@ -17,8 +16,7 @@ namespace Assets.Scripts.UI.Screens
         {
             if (pSucceed)
             {
-                AppManager.instance?.menuManager?.CloseScreen<WaitingTouchScreen>();
-                //AppManager.instance?.menuManager?.SwitchScreen<WaitingTouchScreen,>();
+                AppManager.instance?.menuManager?.SwitchScreen<WaitingTouchScreen, MainScreen>();
             }
         }
         #endregion Methods

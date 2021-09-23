@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.UI.Screens;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
