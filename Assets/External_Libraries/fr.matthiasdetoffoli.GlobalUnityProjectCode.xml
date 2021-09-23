@@ -565,6 +565,11 @@
             The button
             </summary>
         </member>
+        <member name="P:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.Isinteractable">
+            <summary>
+            If the button is interactable or not
+            </summary>
+        </member>
         <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener.Awake">
             <summary>
             Awake of the behaviour
