@@ -105,7 +105,8 @@
             Custom Editor for the close menu button listener class
             </summary>
             <seealso cref="T:UnityEditor.Editor"/> 
-            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
         <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor.SCREEN_TO_CLOSE_IS_PARENT">
             <summary>
@@ -157,7 +158,7 @@
             Custom Editor for the switch screen button listener class
             </summary>
             <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.CloseScreenButtonListenerEditor"/> 
-            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ASwitchScreenButtonListener"/>
         </member>
         <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.PersonalEditors.CustomEditors.SwitchScreenButtonListenerEditor.OPEN_TITLE">
             <summary>
@@ -655,27 +656,109 @@
             The state of the button
             </summary>
         </member>
-        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener">
             <summary>
             Class used for make a button close a screen
             </summary>
-            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
         </member>
-        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.mScreenToCloseIsParent">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener.mScreenToCloseIsParent">
             <summary>
             If the screen to close is the parent of the button or another screen
             </summary>
         </member>
-        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.mScreenToClose">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener.OnButtonClicked">
+            <summary>
+            call when we click on the button
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener.CloseParentScreen">
+            <summary>
+            Close the parent screen
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener.CloseNotParentScreen">
+            <summary>
+            Close a screen which is not the parent screen
+            </summary>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ATypedCloseScreenButtonListener`1">
+            <summary>
+            Class used for make a button close a screen
+            </summary>
+            <typeparam name="T">the type of the screen to close</typeparam>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ATypedCloseScreenButtonListener`1.mScreenToClose">
             <summary>
             the screen to close
             </summary>
             <remarks>if it's the parent the property is not used</remarks>
         </member>
-        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ATypedCloseScreenButtonListener`1.CloseParentScreen">
+            <summary>
+            Close the parent screen
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ATypedCloseScreenButtonListener`1.CloseNotParentScreen">
+            <summary>
+            Close a screen which is not the parent screen
+            </summary>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.CloseScreenButtonListener">
+            <summary>
+            Class used for make a button close a screen
+            </summary>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ATypedCloseScreenButtonListener`1"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>"/>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ASwitchScreenButtonListener">
+            <summary>
+            SwitchScreenButtonListener
+            </summary>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.ACloseScreenButtonListener"/>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2">
+            <summary>
+            SwitchScreenButtonListener
+            </summary>
+            <typeparam name="TToOpen">Type of the screen to open</typeparam>
+            <typeparam name="TToClose">Type of the screen to close</typeparam>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ASwitchScreenButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2.mScreenToOpen">
+            <summary>
+            The new screen to open
+            </summary>
+        </member>
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2.mScreenToClose">
+            <summary>
+            the screen to close
+            </summary>
+            <remarks>if it's the parent the property is not used</remarks>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2.CloseParentScreen">
+            <summary>
+            Close the parent screen
+            </summary>
+        </member>
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2.CloseNotParentScreen">
+            <summary>
+            Close a screen which is not the parent screen
+            </summary>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.SwitchScreenButtonListener">
+            <summary>
+            Class used for make a button close a screen and open another one
+            </summary>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListeners.SwitchScreenButtonListeners.ATypedSwitchScreenButtonListener`2"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
         <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.ExitAppButtonListener">
             <summary>
@@ -688,21 +771,30 @@
             call when we click on the button
             </summary>
         </member>
-        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener">
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.OpenScreenButtonListeners.AOpenScreenButtonListener`1">
             <summary>
-            Class used for make a button close a screen and open another one
+            Button listener which open a screen
             </summary>
-            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.CloseScreenButtonListener"/>
+            <typeparam name="T">Type of the screen to open</typeparam>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.AButtonListener"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
-        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener.mScreenToOpen">
+        <member name="F:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.OpenScreenButtonListeners.AOpenScreenButtonListener`1.mScreenToOpen">
             <summary>
             The new screen to open
             </summary>
         </member>
-        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.SwitchScreenButtonListener.OnButtonClicked">
+        <member name="M:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.OpenScreenButtonListeners.AOpenScreenButtonListener`1.OnButtonClicked">
             <summary>
             call when we click on the button
             </summary>
+        </member>
+        <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.OpenScreenButtonListeners.OpenScreenButtonListener">
+            <summary>
+            Button listener which open a screen
+            </summary>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners.OpenScreenButtonListeners.AOpenScreenButtonListener`1"/>
+            <seealso cref="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen"/>
         </member>
         <member name="T:Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens.AMenuScreen">
             <summary>

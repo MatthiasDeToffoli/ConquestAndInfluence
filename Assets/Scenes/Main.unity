@@ -6351,12 +6351,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 320061981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -114914655, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
+  m_Script: {fileID: 1326823182, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mScreenToCloseIsParent: 1
-  mScreenToClose: {fileID: 0}
   mScreenToOpen: {fileID: 995564673}
+  mScreenToClose: {fileID: 0}
 --- !u!1 &323413638
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,7 +6369,6 @@ GameObject:
   - component: {fileID: 323413643}
   - component: {fileID: 323413642}
   - component: {fileID: 323413641}
-  - component: {fileID: 323413640}
   m_Layer: 5
   m_Name: Return to menu button
   m_TagString: Untagged
@@ -6397,18 +6396,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3, y: 3.5}
   m_SizeDelta: {x: 0.31973267, y: -9.296524}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &323413640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323413638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1357632236, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &323413641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6784,8 +6771,9 @@ GameObject:
   - component: {fileID: 362588930}
   - component: {fileID: 362588929}
   - component: {fileID: 362588928}
+  - component: {fileID: 362588931}
   m_Layer: 5
-  m_Name: Menu Button
+  m_Name: Pause Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6891,6 +6879,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362588926}
   m_CullTransparentMesh: 0
+--- !u!114 &362588931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362588926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92eb8d8940acd22479ab002ede70ccdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mScreenToCloseIsParent: 1
+  mScreenToOpen: {fileID: 1158939729}
+  mScreenToClose: {fileID: 0}
 --- !u!1 &382639831
 GameObject:
   m_ObjectHideFlags: 0
@@ -10487,6 +10490,7 @@ MonoBehaviour:
   - {fileID: 1255327348}
   - {fileID: 995564673}
   - {fileID: 76565065}
+  - {fileID: 1158939726}
 --- !u!114 &707118259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19938,6 +19942,7 @@ GameObject:
   - component: {fileID: 1158939728}
   - component: {fileID: 1158939727}
   - component: {fileID: 1158939726}
+  - component: {fileID: 1158939729}
   m_Layer: 5
   m_Name: Pause menu
   m_TagString: Untagged
@@ -20018,6 +20023,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158939724}
   m_CullTransparentMesh: 0
+--- !u!114 &1158939729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158939724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6af00f7f4080864c82e29ea74e23ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1161343886
 GameObject:
   m_ObjectHideFlags: 0
@@ -25066,12 +25083,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1480265363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -114914655, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
+  m_Script: {fileID: 1326823182, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mScreenToCloseIsParent: 1
-  mScreenToClose: {fileID: 0}
   mScreenToOpen: {fileID: 0}
+  mScreenToClose: {fileID: 0}
 --- !u!1 &1482038829
 GameObject:
   m_ObjectHideFlags: 0
