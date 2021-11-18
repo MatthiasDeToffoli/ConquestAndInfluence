@@ -31,7 +31,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners
         /// </summary>
         protected override void OnButtonClicked()
         {
-            AppManager.instance.GetFirstManager<MapManager>()?.SelectLevel(levelIndexToSelect);
+            AppManager.instance.mapManager?.SelectLevel(levelIndexToSelect);
             gameObject.GetComponentInParent<LevelSelectorScreen>()?.Close();
         }
         #endregion Methods

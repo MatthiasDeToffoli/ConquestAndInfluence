@@ -32,11 +32,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
         protected override void ListenToEvents()
         {
             base.ListenToEvents();
-            MapManager lMapManager = AppManager.instance.GetFirstManager<MapManager>();
 
-            if (lMapManager != null)
+            if (AppManager.instance.mapManager != null)
             {
-                lMapManager.unlockLevel += OnUnlockLevel;
+                AppManager.instance.mapManager.unlockLevel += OnUnlockLevel;
             }
         }
 
@@ -55,11 +54,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
         protected override void UnlistenToEvents()
         {
             base.UnlistenToEvents();
-            MapManager lMapManager = AppManager.instance.GetFirstManager<MapManager>();
-
-            if(lMapManager != null)
+            
+            if(AppManager.instance.mapManager != null)
             {
-                lMapManager.unlockLevel -= OnUnlockLevel;
+                AppManager.instance.mapManager.unlockLevel -= OnUnlockLevel;
             }
         }
 
