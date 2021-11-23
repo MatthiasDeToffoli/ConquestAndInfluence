@@ -88,6 +88,7 @@
 | V1.4 | 04/08/2021 | Add a missing point										  | Add a missing skills for the character																			 | Matthias de Toffoli |
 | V1.5 | 04/14/2021 | Update diagrams											  | Update some diagrams and add Core folder's diagram																 | Matthias de Toffoli |
 | V1.6 | 07/22/2021 | Add background to some images	  							  | Add a white background to some images																	   		 | Matthias de Toffoli |
+| V1.7 | 11/23/2021 | Update the diagrams 			  							  | Update the diagram for matching with the project files															 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?

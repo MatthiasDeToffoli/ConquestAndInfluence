@@ -19,7 +19,15 @@
 	* *Hero*
 	* *Messenger*
 	* *Square*
-* **E** *- HUD*
+* **E** *- UI*
+	* *Interaction*
+	* *Legend*
+	* *Start screen*
+	* *Main menu*
+	* *Level selector*
+	* *HUD*
+	* *Pause menu*
+	
 * **F** *- Level Design*
 	* *LD Bricks*
 	* *Level 1*
@@ -53,6 +61,7 @@
 | V1.2 | 04/08/2021 | Add a missing point			  | Add a missing skills for the character																			| Matthias de Toffoli |
 | V1.3 | 07/10/2021 | Add level designs				  | Add the 15 level's diagrams and the epilogue's one and update the LD Bricks										| Matthias de Toffoli |
 | V1.4 | 07/22/2021 | Add background to some images	  | Add a white background to some images																			| Matthias de Toffoli |
+| V1.4 | 11/23/2021 | Add UIs diagrams				  | Add diagrams for user interfaces and update the others															| Matthias de Toffoli |
 
 ## Product Description
 * Pitch : It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
@@ -99,49 +108,61 @@ Touch only
 * attack the opponent's hero
 ### Flowshart
 #### Legend
-![Legend flowshart](./pictures/GDD/Flowshart_legend.png "Legend flowshart")
+![Legend flowshart](./pictures/GDD/Flowshart/Legend.png "Legend flowshart")
 #### Hero
-![Hero flowshart](./pictures/GDD/Hero_flowshart.png "Hero flowshart")
+![Hero flowshart](./pictures/GDD/Flowshart/Hero.png "Hero flowshart")
 #### Square
-![Square flowshart](./pictures/GDD/Square_flowshart.png "Square flowshart")
-### HUD
-* *Red are actions*
-* *Blue are indications*
+![Square flowshart](./pictures/GDD/Flowshart/Square.png "Square flowshart")
 
-![IHM](./pictures/GDD/IHM.png "IHM")
+### UI
+#### Interaction
+![UI Interaction](./pictures/GDD/UI/Interaction.png "UI Interaction")
+#### Legend
+![Legend UI](./pictures/GDD/UI/Legend.png "Legend UI")
+#### Start screen
+![Start screen](./pictures/GDD/UI/Start_Screen.png "Start screen")
+#### Main menu
+![Main menu](./pictures/GDD/UI/Main_Menu.png "Main menu")
+#### Level selector
+![Level selector](./pictures/GDD/UI/Level_Selector.png "Level selector")
+#### HUD
+![HUD](./pictures/GDD/UI/HUD.png "HUD")
+#### Pause menu
+![Pause menu](./pictures/GDD/UI/Pause_Menu.png "Pause menu")
+
 ### Level design
 #### LD Bricks
-![LD Bricks](./pictures/GDD/lvl_Bricks.png "LD Bricks")
+![LD Bricks](./pictures/GDD/Level/Bricks.png "LD Bricks")
 #### Level 1
-![Level 1](./pictures/GDD/lvl1.png "Level 1")
+![Level 1](./pictures/GDD/Level/01.png "Level 1")
 #### Level 2
-![Level 2](./pictures/GDD/lvl2.png "Level 2")
+![Level 2](./pictures/GDD/Level/02.png "Level 2")
 #### Level 3
-![Level 3](./pictures/GDD/lvl3.png "Level 3")
+![Level 3](./pictures/GDD/Level/03.png "Level 3")
 #### Level 4
-![Level 4](./pictures/GDD/lvl4.png "Level 4")
+![Level 4](./pictures/GDD/Level/04.png "Level 4")
 #### Level 5
-![Level 5](./pictures/GDD/lvl5.png "Level 5")
+![Level 5](./pictures/GDD/Level/05.png "Level 5")
 #### Level 6
-![Level 6](./pictures/GDD/lvl6.png "Level 6")
+![Level 6](./pictures/GDD/Level/06.png "Level 6")
 #### Level 7
-![Level 7](./pictures/GDD/lvl7.png "Level 7")
+![Level 7](./pictures/GDD/Level/07.png "Level 7")
 #### Level 8
-![Level 8](./pictures/GDD/lvl8.png "Level 8")
+![Level 8](./pictures/GDD/Level/08.png "Level 8")
 #### Level 9
-![Level 9](./pictures/GDD/lvl9.png "Level 9")
+![Level 9](./pictures/GDD/Level/09.png "Level 9")
 #### Level 10
-![Level 10](./pictures/GDD/lvl10.png "Level 10")
+![Level 10](./pictures/GDD/Level/10.png "Level 10")
 #### Level 11
-![Level 11](./pictures/GDD/lvl11.png "Level 11")
+![Level 11](./pictures/GDD/Level/11.png "Level 11")
 #### Level 12
-![Level 12](./pictures/GDD/lvl12.png "Level 12")
+![Level 12](./pictures/GDD/Level/12.png "Level 12")
 #### Level 13
-![Level 13](./pictures/GDD/lvl13.png "Level 13")
+![Level 13](./pictures/GDD/Level/13.png "Level 13")
 #### Level 14
-![Level 14](./pictures/GDD/lvl14.png "Level 14")
+![Level 14](./pictures/GDD/Level/14.png "Level 14")
 #### Level 15
-![Level 15](./pictures/GDD/lvl15.png "Level 15")
+![Level 15](./pictures/GDD/Level/15.png "Level 15")
 #### Epilogue
-![Epilogue](./pictures/GDD/lvlEpilogue.png "Epilogue")
+![Epilogue](./pictures/GDD/Level/Epilogue.png "Epilogue")
 
