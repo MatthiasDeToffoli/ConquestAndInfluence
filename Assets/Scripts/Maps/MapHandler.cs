@@ -1,4 +1,5 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters.Enemies;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
@@ -34,11 +35,24 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// </summary>
         [RangeWithStep(0.5f, 2f,0.5f)]
         public float stepBetweenSquares = 1;
+
+        /// <summary>
+        /// The player start position
+        /// </summary>
+        public Square PlayerStartPosiion;
+
+        /// <summary>
+        /// The enemy on the map
+        /// </summary>
+        public AEnemy Enemy;
         #endregion Properties
 
         #region Methods
 
         #region Unity
+        /// <summary>
+        /// Awake of the behavior
+        /// </summary>
         protected override void Awake()
         {
             base.Awake();
@@ -123,7 +137,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         public List<Square> GetBetterPath(Vector3 pStartPos, Vector3 pTargetPos)
         {
             //If start or target positions are not valid the character can't go
-            if(!CheckIfPositionIsValid(pStartPos) || !CheckIfPositionIsValid(pStartPos))
+            if(!CheckIfPositionIsValid(pStartPos) || !CheckIfPositionIsValid(pTargetPos))
             {
                 Debug.LogError("positions invalid impossible to find a path");
             }
@@ -152,8 +166,9 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// <returns>a list of possible path</returns>
         private List<List<Square>> GetPossiblesPaths(Vector3 pPosToCheck, Vector3 pTargetPos, List<List<Square>> pPossiblePaths, bool pIsFirstCall = false)
         {
-            if(CheckIfPositionIsValid(pPosToCheck.x,pPosToCheck.y) == false)
+            if (!CheckIfPositionIsValid(pPosToCheck) && pPossiblePaths.Count > 0)
             {
+                Debug.Log("tra " + pPosToCheck);
                 //Remove if the path is not valid
                 pPossiblePaths.RemoveAt(pPossiblePaths.Count - 1);
             }
@@ -168,11 +183,12 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 //If it's not the first square add it in the current possible path
                 if(pIsFirstCall == false)
                 {
+                    Debug.Log("la");
                     pPossiblePaths[pPossiblePaths.Count - 1].Add(map[pPosToCheck.x][pPosToCheck.y]);
                 }
 
                 //If a path shorter was already found no need to continue
-                if (TestIfPathShorterAlreadyFound(pPossiblePaths))
+                if (TestIfPathShorterAlreadyFound(pPossiblePaths) && pPossiblePaths.Count > 0)
                 {
                     pPossiblePaths.RemoveAt(pPossiblePaths.Count - 1);
                     return pPossiblePaths;
@@ -187,19 +203,20 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 List<Square> lLastList = GetNewPath(pPossiblePaths.Last());
 
                 //Check Left only if we never checked this square
-                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x + 1, pPosToCheck.y) == false)
+                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x +  + stepBetweenSquares, pPosToCheck.y) == false)
                 {
-                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x + 1, pPosToCheck.y), pTargetPos, pPossiblePaths);
-
+                    
+                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x + stepBetweenSquares, pPosToCheck.y), pTargetPos, pPossiblePaths);
+                    Debug.Log("oco " + pPossiblePaths.Count);
                     //Add the old valid square in the new path
                     pPossiblePaths.Add(GetNewPath(lLastList));
                 }
                     
 
                 //Check Bottom only if we never checked this square
-                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x, pPosToCheck.y - 1) == false)
+                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x, pPosToCheck.y - stepBetweenSquares) == false)
                 {
-                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x, pPosToCheck.y - 1), pTargetPos, pPossiblePaths);
+                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x, pPosToCheck.y - stepBetweenSquares), pTargetPos, pPossiblePaths);
 
                     //Add the old valid square in the new path
                     pPossiblePaths.Add(GetNewPath(lLastList));
@@ -207,20 +224,20 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 
                 
                 //Check Right only if we never checked this square
-                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x - 1, pPosToCheck.y) == false)
+                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x - stepBetweenSquares, pPosToCheck.y) == false)
                 {
-                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x - 1, pPosToCheck.y), pTargetPos, pPossiblePaths);
+                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x - stepBetweenSquares, pPosToCheck.y), pTargetPos, pPossiblePaths);
 
                     //Add the old valid square in the new path
                     pPossiblePaths.Add(GetNewPath(lLastList));
                 }
                     
                 //Check Top only if we never checked this square
-                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x, pPosToCheck.y + 1) == false)
+                if (CheckIfSquareWasAlreadyChecked(lLastList, pPosToCheck.x, pPosToCheck.y + stepBetweenSquares) == false)
                 {
-                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x, pPosToCheck.y + 1), pTargetPos, pPossiblePaths);
+                    pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x, pPosToCheck.y + stepBetweenSquares), pTargetPos, pPossiblePaths);
                 }
-                else
+                else if(pPossiblePaths.Count > 0)
                 {
                     //if we can't check this square so the current path will never atteign the target position
                     pPossiblePaths.RemoveAt(pPossiblePaths.Count - 1);
@@ -319,7 +336,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         {
             if (map.ContainsKey(pX) && map[pX].ContainsKey(pY))
             {
-                return map[pX][pY].CanMoveOn;
+                return map[pX][pY].CanMoveOn || map[pX][pY].unicId == PlayerStartPosiion.unicId;
             }
 
             return false;
@@ -344,6 +361,57 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             foreach(KeyValuePair<Square,SquareSide> lToConvert in pSquaresToConvert)
             {
                 lToConvert.Key.AddLevelSide(lToConvert.Value);
+            }
+
+            CheckVictory();
+        }
+
+        /// <summary>
+        /// Check if the player win the current level
+        /// </summary>
+        public void CheckVictory()
+        {
+            foreach (Dictionary<float, Square> lX in map.Values)
+            {
+                if (lX.Values.Any(pElm => pElm.side != SquareSide.ALLY))
+                    return;
+            }
+
+            Debug.Log("Victory");
+        }
+
+        /// <summary>
+        /// Check if the player win against the enemy
+        /// </summary>
+        public void GetFightResult()
+        {
+            if (Enemy != null)
+            {
+                uint lNbOfAllySquares = 0;
+                uint lNbOfEnemySquares = 0;
+                foreach (Dictionary<float, Square> lX in map.Values)
+                {
+                    foreach (Square lSquare in lX.Values.Where(pElm => pElm.CanMoveOn && pElm.side != Enums.SquareSide.NEUTRAL))
+                    {
+                        if (lSquare.side == SquareSide.ALLY)
+                        {
+                            lNbOfAllySquares++;
+                        }
+                        else
+                        {
+                            lNbOfEnemySquares++;
+                        }
+                    }
+                }
+
+                if(lNbOfEnemySquares < lNbOfAllySquares)
+                {
+                    Debug.Log("Defeat");
+                }
+                else
+                {
+                    Debug.Log("Victory");
+                }
             }
         }
 

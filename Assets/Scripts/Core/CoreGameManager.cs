@@ -174,7 +174,8 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 
                 if(mPlayerCharacter != null)
                 {
-                    lIgnoredSquares.Add(mPlayerCharacter.currentPosition.unicId);
+                    string lPlayerID = mPlayerCharacter.currentPosition?.unicId;
+                    lIgnoredSquares.Add(lPlayerID);
                     mPlayerCharacter.TryToConvertCurrentPositionSquare(ref lSquaresToConvert);
                 }
 
@@ -204,6 +205,17 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             }
         }
         #endregion Controller
+        /// <summary>
+        /// Inititalise all property on the map
+        /// </summary>
+        public void MapSelected(Square pSquareWherePlayerStart)
+        {
+            if(this.mPlayerCharacter != null)
+            {
+                mPlayerCharacter.SetPosition(pSquareWherePlayerStart);
+                SetActiveController(true);
+            }
+        }
 
         /// <summary>
         /// Start an action on a square
@@ -229,7 +241,6 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             SetActiveController(true);
             mPlayerCharacter.canMove = true;
         }
-
         #endregion Methods
     }
 }

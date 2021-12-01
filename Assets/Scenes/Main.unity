@@ -2277,6 +2277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 1808034282}
+  Enemy: {fileID: 0}
 --- !u!4 &91569746
 Transform:
   m_ObjectHideFlags: 0
@@ -2684,6 +2686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 1596389246}
+  Enemy: {fileID: 0}
 --- !u!4 &124237246
 Transform:
   m_ObjectHideFlags: 0
@@ -3327,6 +3331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 2012514528}
+  Enemy: {fileID: 0}
 --- !u!4 &161805804
 Transform:
   m_ObjectHideFlags: 0
@@ -5127,6 +5133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 750473435}
+  Enemy: {fileID: 0}
 --- !u!4 &264071886
 Transform:
   m_ObjectHideFlags: 0
@@ -6704,6 +6712,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 803516629}
+  Enemy: {fileID: 0}
 --- !u!4 &337139565
 Transform:
   m_ObjectHideFlags: 0
@@ -7082,6 +7092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 1967761363}
+  Enemy: {fileID: 0}
 --- !u!4 &385098275
 Transform:
   m_ObjectHideFlags: 0
@@ -8566,6 +8578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 1269742935}
+  Enemy: {fileID: 0}
 --- !u!4 &481928017
 Transform:
   m_ObjectHideFlags: 0
@@ -9981,6 +9995,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 937123726}
+  Enemy: {fileID: 0}
 --- !u!4 &618671549
 Transform:
   m_ObjectHideFlags: 0
@@ -10984,6 +11000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 986308136}
+  Enemy: {fileID: 0}
 --- !u!4 &725427188
 Transform:
   m_ObjectHideFlags: 0
@@ -11506,6 +11524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 1074757455}
+  Enemy: {fileID: 0}
 --- !u!4 &740433716
 Transform:
   m_ObjectHideFlags: 0
@@ -12952,6 +12972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 1266799387}
+  Enemy: {fileID: 0}
 --- !u!4 &807880468
 Transform:
   m_ObjectHideFlags: 0
@@ -16054,6 +16076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 1447729727}
+  Enemy: {fileID: 0}
 --- !u!4 &997882985
 Transform:
   m_ObjectHideFlags: 0
@@ -21176,6 +21200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 2094097755}
+  Enemy: {fileID: 0}
 --- !u!4 &1247462009
 Transform:
   m_ObjectHideFlags: 0
@@ -21363,6 +21389,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 2
+  PlayerStartPosiion: {fileID: 1961505867}
+  Enemy: {fileID: 0}
 --- !u!4 &1249147208
 Transform:
   m_ObjectHideFlags: 0
@@ -23362,6 +23390,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 850312542}
+  Enemy: {fileID: 0}
 --- !u!4 &1352148352
 Transform:
   m_ObjectHideFlags: 0
@@ -28112,7 +28142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mLevel: 0
   mSide: 0
-  CanMoveOn: 0
+  CanMoveOn: 1
 --- !u!95 &1740736717
 Animator:
   serializedVersion: 3
@@ -34290,6 +34320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepBetweenSquares: 1
+  PlayerStartPosiion: {fileID: 720572340}
+  Enemy: {fileID: 0}
 --- !u!4 &2047505997
 Transform:
   m_ObjectHideFlags: 0

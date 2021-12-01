@@ -32,7 +32,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners
         protected override void OnButtonClicked()
         {
             AppManager.instance.mapManager?.SelectLevel(levelIndexToSelect);
-            gameObject.GetComponentInParent<LevelSelectorScreen>()?.Close();
+            AppManager.instance.menuManager?.SwitchScreen<LevelSelectorScreen, HUDScreen>();
         }
         #endregion Methods
     }

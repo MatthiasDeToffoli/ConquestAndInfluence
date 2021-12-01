@@ -39,6 +39,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
         /// <summary>
         /// The movement of the character
         /// </summary>
+        /// <param name="pPercentOfDay">the percent of the day, move to one square per day</param>
         public virtual void Move(float pPercentOfDay)
         {
             if(mTargetSquare == null && path != null && path.Count > 0 && pPercentOfDay == 0)
@@ -70,6 +71,17 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
                 }
             }
             
+        }
+
+        /// <summary>
+        /// set the character position
+        /// </summary>
+        /// <param name="pPosition">the position square</param>
+        public void SetPosition(Square pPosition)
+        {
+            currentPosition = pPosition;
+            transform.position.Set(pPosition.transform.position.x, pPosition.transform.position.y, transform.position.z);
+            gameObject.SetActive(true);
         }
 
         /// <summary>

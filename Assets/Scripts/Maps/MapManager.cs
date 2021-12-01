@@ -69,6 +69,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                     else
                     {
                         currentMap = lCurrentMap;
+                        AppManager.instance.coreGameManager?.MapSelected(lCurrentMap.PlayerStartPosiion);
                     }
                 }
                 else
