@@ -45,6 +45,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+.vsconfig
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -78,3 +79,4 @@ Assets/Prefabs/**/*.meta
 # personal and work files
 Documentations/IHM.psd
 **/Thumbs.db
+
