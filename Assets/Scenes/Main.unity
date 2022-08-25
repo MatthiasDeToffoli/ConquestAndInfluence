@@ -1871,6 +1871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mDaysTextHandler: {fileID: 1592308933}
   mPowersTextHandler: {fileID: 654165669}
+  startOrPauseClockBTN: {fileID: 0}
 --- !u!1 &77887048
 GameObject:
   m_ObjectHideFlags: 0
@@ -11154,7 +11155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707118260}
   - component: {fileID: 707118259}
-  - component: {fileID: 707118258}
+  - component: {fileID: 707118261}
   - component: {fileID: 707118257}
   - component: {fileID: 707118256}
   - component: {fileID: 707118255}
@@ -11242,25 +11243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initOrder: 1
   mPlayerCharacter: {fileID: 1021282248}
---- !u!114 &707118258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707118253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 257296432, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initOrder: 0
-  items:
-  - {fileID: 86487480}
-  - {fileID: 1255327348}
-  - {fileID: 995564673}
-  - {fileID: 76565065}
-  - {fileID: 860839106}
 --- !u!114 &707118259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11292,6 +11274,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &707118261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707118253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64fbd0a5f730684f8f36033b08058cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initOrder: 0
+  items:
+  - {fileID: 86487480}
+  - {fileID: 1255327348}
+  - {fileID: 995564673}
+  - {fileID: 76565065}
+  - {fileID: 860839106}
 --- !u!1 &715794883
 GameObject:
   m_ObjectHideFlags: 0
@@ -23268,6 +23269,7 @@ GameObject:
   - component: {fileID: 1287053049}
   - component: {fileID: 1287053048}
   - component: {fileID: 1287053047}
+  - component: {fileID: 1287053050}
   m_Layer: 5
   m_Name: play pauseButton
   m_TagString: Untagged
@@ -23377,6 +23379,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287053045}
   m_CullTransparentMesh: 0
+--- !u!114 &1287053050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287053045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf92366273b3de47b68496f53ba99ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1289597315
 GameObject:
   m_ObjectHideFlags: 0

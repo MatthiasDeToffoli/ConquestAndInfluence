@@ -1,10 +1,10 @@
 ﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.Pooling;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
 using Fr.Matthiasdetoffoli.ConquestAndInfluence.VisualFeeddBacks;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers;
-using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 
 namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
 {
@@ -23,7 +23,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
         /// <summary>
         /// The menu manager
         /// </summary>
-        private MenuManager mMenuManager;
+        private CustomMenuManager mMenuManager;
 
         /// <summary>
         /// The map manager
@@ -61,13 +61,13 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
         /// <summary>
         /// The menu manager
         /// </summary>
-        public MenuManager menuManager
+        public CustomMenuManager menuManager
         {
             get
             {
                 if(mMenuManager == null)
                 {
-                    mMenuManager = GetFirstManager<MenuManager>();
+                    mMenuManager = GetFirstManager<CustomMenuManager>();
                 }
 
                 return mMenuManager;

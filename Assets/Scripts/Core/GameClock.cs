@@ -177,7 +177,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             isStarted = false;
             days = 0;
             mStep = 0;
-            mSpeed = 1;
+            mSpeed = mPossibleSpeeds[0];
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
-﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners;
+using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.Screens;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -79,6 +80,11 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
                 SetPowersText(value);
             }
         }
+
+        /// <summary>
+        /// Button listener for start or pause the clock
+        /// </summary>
+        public StartPauseClockButtonListener startOrPauseClockBTN;
         #endregion Properties
 
         #region Methods

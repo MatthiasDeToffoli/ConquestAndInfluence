@@ -180,7 +180,11 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
                 }
 
                 AppManager.instance?.mapManager?.currentMap?.UpdateSquares(lIgnoredSquares, ref lSquaresToConvert);
+
+                AppManager.instance?.menuManager?.UpdateDays();
             }
+
+
         }
         #endregion Clock
 
