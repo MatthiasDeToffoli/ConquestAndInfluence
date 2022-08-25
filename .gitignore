@@ -58,6 +58,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Resources/*
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -75,6 +76,7 @@ Assets/Sprites/Roads.meta
 Assets/Sprites/Path_selections.meta
 Assets/Prefabs.meta
 Assets/Prefabs/**/*.meta
+Assets/Resources.meta
 
 # personal and work files
 Documentations/IHM.psd
