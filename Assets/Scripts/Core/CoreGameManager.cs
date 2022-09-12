@@ -62,6 +62,23 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         private PlayerCharacter mPlayerCharacter;
         #endregion Fields
 
+        #region Properties
+        /// <summary>
+        /// If the clock is started or not
+        /// </summary>
+        public bool clockIsStarted
+        {
+            get
+            {
+                if(mClock != null)
+                {
+                    return mClock.isStarted;
+                }
+                return false;
+            }
+        }
+        #endregion Properties
+
         #region Methods
         /// <summary>
         /// Listen all events
@@ -181,7 +198,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 
                 AppManager.instance?.mapManager?.currentMap?.UpdateSquares(lIgnoredSquares, ref lSquaresToConvert);
 
-                AppManager.instance?.menuManager?.UpdateDays();
+                AppManager.instance?.customMenuManager?.UpdateDays();
             }
 
 
@@ -233,6 +250,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             if(mPlayerCharacter.path != null)
             {
                 string lFeedBackId = AppManager.instance?.visualFeedBakcManager?.ShowMovingCaseVisualFeedback(mPlayerCharacter.path);
+                AppManager.instance?.customMenuManager?.SetClockPreviousState(mClock.isStarted);
                 AppManager.instance?.menuManager?.OpenScreen<ValidationPathScreen>(lFeedBackId);
             }
         }

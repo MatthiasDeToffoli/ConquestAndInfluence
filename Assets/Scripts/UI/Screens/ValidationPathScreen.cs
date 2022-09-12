@@ -15,6 +15,13 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
         private string mFeedBackId;
         #endregion Fields
 
+        #region Properties
+        /// <summary>
+        /// State of the clock before opening the validation path screen
+        /// </summary>
+        public bool clockPreviousState;
+        #endregion Properties
+
         #region Methods
         /// <summary>
         /// Open the screen
@@ -35,6 +42,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
         /// <param name="pState"></param>
         protected override void OnValidation(bool pState)
         {
+            AppManager.instance?.coreGameManager?.StartOrPauseClock(clockPreviousState);
             AppManager.instance?.visualFeedBakcManager?.UnshowMovingCaseVisualFeedback(mFeedBackId);
 
             if (pState)
@@ -46,7 +54,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
                 AppManager.instance?.coreGameManager?.SetActiveController(true);
             }
 
-            Close();
+            AppManager.instance?.customMenuManager?.CloseScreen(this);
         }
         #endregion Methods
     }

@@ -23,7 +23,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
         /// <summary>
         /// The menu manager
         /// </summary>
-        private CustomMenuManager mMenuManager;
+        private CustomMenuManager mCustomMenuManager;
 
         /// <summary>
         /// The map manager
@@ -61,16 +61,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
         /// <summary>
         /// The menu manager
         /// </summary>
-        public CustomMenuManager menuManager
+        public CustomMenuManager customMenuManager
         {
             get
             {
-                if(mMenuManager == null)
+                if(mCustomMenuManager == null)
                 {
-                    mMenuManager = GetFirstManager<CustomMenuManager>();
+                    mCustomMenuManager = GetFirstManager<CustomMenuManager>();
                 }
 
-                return mMenuManager;
+                return mCustomMenuManager;
             }
         }
 
