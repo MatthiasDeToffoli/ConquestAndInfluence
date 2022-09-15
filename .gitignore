@@ -59,6 +59,7 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Assets/Resources/*
+Assets/TextMesh Pro/*
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -77,6 +78,7 @@ Assets/Sprites/Path_selections.meta
 Assets/Prefabs.meta
 Assets/Prefabs/**/*.meta
 Assets/Resources.meta
+Assets/TextMesh Pro.meta
 
 # personal and work files
 Documentations/IHM.psd
