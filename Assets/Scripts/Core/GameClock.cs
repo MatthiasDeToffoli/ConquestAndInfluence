@@ -20,7 +20,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// <summary>
         /// the number max of step when the step is equal to it we add one day (5 seconds for 60 frames per seconds)
         /// </summary>
-        private const int MAX_STEP = 300;
+        private const int MAX_STEP = 100;
         #endregion Constants
 
         #region Events
@@ -133,7 +133,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             {
                 NotifyPercentOfDatChanged(mStep / MAX_STEP);
 
-                yield return new WaitForEndOfFrame();
+                yield return new WaitForSeconds(0.01f);
                 mStep+= 1 * speed;
                 
                 if (mStep >= MAX_STEP)
@@ -153,20 +153,34 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         }
 
         /// <summary>
+        /// Get the speed index
+        /// </summary>
+        /// <returns></returns>
+        public int GetSpeedIndex()
+        {
+            return Array.IndexOf(mPossibleSpeeds, speed);
+        }
+
+        /// <summary>
         /// change the speed of the clock
         /// </summary>
-        public void ChangeSpeed()
+        /// <returns>The new speed index</returns>
+        public int ChangeSpeed()
         {
             int lIndex = Array.IndexOf(mPossibleSpeeds, speed);
 
             if(lIndex < mPossibleSpeeds.Length - 1)
             {
-                speed = mPossibleSpeeds[lIndex + 1];
+                lIndex++;
             }
             else
             {
-                speed = mPossibleSpeeds[0];
+                lIndex = 0;   
             }
+
+            speed = mPossibleSpeeds[lIndex];
+
+            return lIndex;
         }
 
         /// <summary>
@@ -177,7 +191,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
             isStarted = false;
             days = 0;
             mStep = 0;
-            mSpeed = mPossibleSpeeds[0];
+            mSpeed = mPossibleSpeeds[2];
         }
 
         /// <summary>

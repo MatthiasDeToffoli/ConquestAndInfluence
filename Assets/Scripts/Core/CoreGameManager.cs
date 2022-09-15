@@ -154,14 +154,26 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         }
 
         /// <summary>
+        /// Get clock speed index
+        /// </summary>
+        /// <returns>The clock speed index</returns>
+        public int GetClockSpeedIndex()
+        {
+            return mClock.GetSpeedIndex();
+        }
+
+        /// <summary>
         /// Change the clock speed
         /// </summary>
-        public void ChangeClockSpeed()
+        /// <returns>The new clock speed index</returns>
+        public int ChangeClockSpeed()
         {
             if(mClock != null)
             {
-                mClock.ChangeSpeed();
+                return mClock.ChangeSpeed();
             }
+
+            return 2;
         }
 
         /// <summary>
