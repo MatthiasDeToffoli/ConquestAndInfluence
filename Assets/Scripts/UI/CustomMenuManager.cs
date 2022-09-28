@@ -74,9 +74,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI
         /// <summary>
         /// Update the number of powers
         /// </summary>
-        public void UpdatePowers()
+        /// <param name="pPowers">The powers value</param>
+        public void UpdatePowers(int pPowers)
         {
-            mHUD.powers++;
+            mHUD.powers = pPowers;
         }
 
         /// <summary>

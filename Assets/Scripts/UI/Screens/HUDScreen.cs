@@ -121,7 +121,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
             {
                 lFormatedText = string.Format("{0}s", pTextName);
             }
-            SetText(mDaysTextHandler, string.Format(pFinalFormat, pNb, lFormatedText));
+            SetText(pHandler, string.Format(pFinalFormat, pNb, lFormatedText));
         }
 
         /// <summary>

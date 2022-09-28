@@ -24,6 +24,13 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             "Can't save the square at the position x:{0} y:{0} because another square is saved at this position";
         #endregion Constants
 
+        #region Fields
+        /// <summary>
+        /// The squares of the map
+        /// </summary>
+        private Square[] mMapSquares;
+        #endregion Fields
+
         #region Properties
         /// <summary>
         /// the current map [x][y]
@@ -57,9 +64,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         {
             base.Awake();
             map = new Dictionary<float, Dictionary<float, Square>>();
+            mMapSquares = gameObject.GetComponentsInChildren<Square>(true);
 
             //Add all the square in the level
-            foreach(Square lSquare in gameObject.GetComponentsInChildren<Square>(true))
+            foreach (Square lSquare in mMapSquares)
             {
                 //Format the position before add it in the map
                 lSquare.transform.position = GetFormatedPosition(lSquare.transform.position);
@@ -168,7 +176,6 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         {
             if (!CheckIfPositionIsValid(pPosToCheck) && pPossiblePaths.Count > 0)
             {
-                Debug.Log("tra " + pPosToCheck);
                 //Remove if the path is not valid
                 pPossiblePaths.RemoveAt(pPossiblePaths.Count - 1);
             }
@@ -183,7 +190,6 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 //If it's not the first square add it in the current possible path
                 if(pIsFirstCall == false)
                 {
-                    Debug.Log("la");
                     pPossiblePaths[pPossiblePaths.Count - 1].Add(map[pPosToCheck.x][pPosToCheck.y]);
                 }
 
@@ -207,7 +213,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 {
                     
                     pPossiblePaths = GetPossiblesPaths(new Vector3(pPosToCheck.x + stepBetweenSquares, pPosToCheck.y), pTargetPos, pPossiblePaths);
-                    Debug.Log("oco " + pPossiblePaths.Count);
+
                     //Add the old valid square in the new path
                     pPossiblePaths.Add(GetNewPath(lLastList));
                 }
@@ -363,21 +369,29 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 lToConvert.Key.AddLevelSide(lToConvert.Value);
             }
 
-            CheckVictory();
+
+            UpdatePower();
         }
 
         /// <summary>
-        /// Check if the player win the current level
+        /// Update the player power
         /// </summary>
-        public void CheckVictory()
+        private void UpdatePower()
         {
-            foreach (Dictionary<float, Square> lX in map.Values)
+            int lPowers = 0;
+            IEnumerable<Square> lAllySquares = mMapSquares.Where(pElm => pElm.side == SquareSide.ALLY);
+
+            foreach (Square lSquare in lAllySquares)
             {
-                if (lX.Values.Any(pElm => pElm.side != SquareSide.ALLY))
-                    return;
+                lPowers += lSquare.level;
             }
 
-            Debug.Log("Victory");
+            AppManager.instance?.customMenuManager.UpdatePowers(lPowers);
+
+            if(lAllySquares.Count() >= mMapSquares.Where(pElm => pElm.CanMoveOn).Count())
+            {
+                Debug.Log("Victory");
+            }
         }
 
         /// <summary>

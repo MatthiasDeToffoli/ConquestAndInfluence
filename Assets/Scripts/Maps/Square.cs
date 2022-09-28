@@ -165,28 +165,31 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// <param name="pLevel">number of level to add</param>
         public void AddLevelSide(SquareSide pSide, int pLevel = 1)
         {
-            if(pLevel == 0)
+            if (CanMoveOn)
             {
-                Debug.LogWarning("You try to add 0 level to a square it's useless !");
-                return;
+                if (pLevel == 0)
+                {
+                    Debug.LogWarning("You try to add 0 level to a square it's useless !");
+                    return;
+                }
+
+                int lNewLevel = 0;
+
+                //In this case we substract pLevel
+                if ((pSide == SquareSide.ALLY && side == SquareSide.ENEMY) || (pSide == SquareSide.ENEMY && side == SquareSide.ALLY))
+                {
+                    pLevel *= -1;
+                }
+
+                lNewLevel = level + pLevel;
+
+                if (lNewLevel < MIN_LVL || side == SquareSide.NEUTRAL)
+                {
+                    side = pSide;
+                }
+
+                level = Math.Min(Math.Abs(lNewLevel), MAX_LVL);
             }
-
-            int lNewLevel = 0;
-
-            //In this case we substract pLevel
-            if ((pSide == SquareSide.ALLY && side == SquareSide.ENEMY) || (pSide == SquareSide.ENEMY && side == SquareSide.ALLY))
-            {
-                pLevel *= -1;
-            }
-
-            lNewLevel = level + pLevel;
-
-            if (lNewLevel < MIN_LVL || side == SquareSide.NEUTRAL)
-            {
-                side = pSide;
-            }
-
-            level = Math.Min(Math.Abs(lNewLevel), MAX_LVL);
         }
         #endregion Methods
     }
