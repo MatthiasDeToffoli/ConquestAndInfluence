@@ -24,7 +24,6 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners
         protected override void OnButtonClicked()
         {
             isStarted = !isStarted;
-            Debug.Log("OnButtonClicked");
             AppManager.instance?.coreGameManager?.StartOrPauseClock(isStarted);
         }
         #endregion Methods

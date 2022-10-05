@@ -85,6 +85,11 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
         /// Button listener for start or pause the clock
         /// </summary>
         public StartPauseClockButtonListener startOrPauseClockBTN;
+
+        /// <summary>
+        /// Button listener for change the clock speed
+        /// </summary>
+        public ChangeClockSpeedButtonListener clockSpeedBTN;
         #endregion Properties
 
         #region Methods

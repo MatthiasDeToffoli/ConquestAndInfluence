@@ -169,8 +169,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &129564
 Animator:
@@ -370,8 +379,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &8489177
 Animator:
@@ -491,8 +509,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &14443328
 Animator:
@@ -612,8 +639,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &18012428
 Animator:
@@ -733,8 +769,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &24308348
 Animator:
@@ -854,8 +899,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &27134293
 Animator:
@@ -975,8 +1029,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &27667346
 Animator:
@@ -1096,8 +1159,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &35875752
 Animator:
@@ -1217,8 +1289,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &42724051
 Animator:
@@ -1338,8 +1419,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &50305340
 Animator:
@@ -1459,8 +1549,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &54745682
 Animator:
@@ -1580,8 +1679,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &56750378
 Animator:
@@ -1701,8 +1809,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &70519918
 Animator:
@@ -1870,9 +1987,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beed3e8b3843a5746a9e1317fc40b885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   mDaysTextHandler: {fileID: 1592308933}
   mPowersTextHandler: {fileID: 654165669}
+  mDays: 0
+  mPowers: 0
   startOrPauseClockBTN: {fileID: 1287053050}
+  clockSpeedBTN: {fileID: 265253585}
 --- !u!1 &77887048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,8 +2042,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &77887051
 Animator:
@@ -2040,8 +2172,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &79959417
 Animator:
@@ -2161,8 +2302,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &83784158
 Animator:
@@ -2295,6 +2445,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb9c330e4a9d4d4fa6c3d1c43a2d77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   mAllowClickAndTouch: 1
   mAllowKeyboard: 0
   mTextHandler: {fileID: 876144603}
@@ -2329,8 +2482,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 1808034282}
+  PlayerStartPosition: {fileID: 1808034282}
   Enemy: {fileID: 0}
 --- !u!4 &91569746
 Transform:
@@ -2402,8 +2559,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &106747911
 Animator:
@@ -2523,8 +2689,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &109441462
 Animator:
@@ -2644,8 +2819,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &121166789
 Animator:
@@ -2748,8 +2932,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 1596389246}
+  PlayerStartPosition: {fileID: 1596389246}
   Enemy: {fileID: 0}
 --- !u!4 &124237246
 Transform:
@@ -2821,8 +3009,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &132422071
 Animator:
@@ -2942,8 +3139,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &134174723
 Animator:
@@ -3063,8 +3269,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 2
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &142538426
 Animator:
@@ -3184,8 +3399,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &149265752
 Animator:
@@ -3305,8 +3529,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &158322614
 Animator:
@@ -3489,8 +3722,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 2012514528}
+  PlayerStartPosition: {fileID: 2012514528}
   Enemy: {fileID: 0}
 --- !u!4 &161805804
 Transform:
@@ -3578,8 +3815,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &167281922
 Animator:
@@ -3699,8 +3945,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &172609260
 Animator:
@@ -3820,8 +4075,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &172890061
 Animator:
@@ -4021,8 +4285,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &188098533
 Animator:
@@ -4142,8 +4415,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &200775607
 Animator:
@@ -4263,8 +4545,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &207366380
 Animator:
@@ -4384,8 +4675,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &229961486
 Animator:
@@ -4505,8 +4805,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &233593161
 Animator:
@@ -4626,8 +4935,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &248894655
 Animator:
@@ -4747,8 +5065,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &250590288
 Animator:
@@ -4868,8 +5195,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &251474921
 Animator:
@@ -4989,8 +5325,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &256661700
 Animator:
@@ -5110,8 +5455,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &259622031
 Animator:
@@ -5231,8 +5585,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &262674335
 Animator:
@@ -5335,8 +5698,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 750473435}
+  PlayerStartPosition: {fileID: 750473435}
   Enemy: {fileID: 0}
 --- !u!4 &264071886
 Transform:
@@ -5408,6 +5775,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9e87c0a937e65488a16be8d9c8bbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   mTextMesh: {fileID: 1431473876}
 --- !u!114 &265253586
 MonoBehaviour:
@@ -5537,8 +5908,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &278453567
 Animator:
@@ -5738,8 +6118,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 2
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &285788148
 Animator:
@@ -5859,8 +6248,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &292282304
 Animator:
@@ -6069,6 +6467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 10
 --- !u!1 &299594672
 GameObject:
@@ -6116,8 +6518,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &299594675
 Animator:
@@ -6237,8 +6648,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &301872423
 Animator:
@@ -6358,8 +6778,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &305601569
 Animator:
@@ -6479,8 +6908,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &306456650
 Animator:
@@ -6600,8 +7038,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &314042039
 Animator:
@@ -6810,6 +7257,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1f2bc5ba20464a9506e47bf62a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   mScreenToCloseIsParent: 1
   mScreenToOpen: {fileID: 995564673}
   mScreenToClose: {fileID: 0}
@@ -6825,6 +7276,7 @@ GameObject:
   - component: {fileID: 323413643}
   - component: {fileID: 323413642}
   - component: {fileID: 323413641}
+  - component: {fileID: 323413644}
   m_Layer: 5
   m_Name: Return to menu button
   m_TagString: Untagged
@@ -6935,6 +7387,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323413638}
   m_CullTransparentMesh: 0
+--- !u!114 &323413644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323413638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31b6daa00e8bb147ac914053cbb8751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
+  mScreenToCloseIsParent: 1
+  mScreenToOpen: {fileID: 995564673}
+  mScreenToClose: {fileID: 0}
 --- !u!1 &329176909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,8 +7452,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &329176912
 Animator:
@@ -7085,8 +7565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 803516629}
+  PlayerStartPosition: {fileID: 803516629}
   Enemy: {fileID: 0}
 --- !u!4 &337139565
 Transform:
@@ -7151,8 +7635,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &351328070
 Animator:
@@ -7361,6 +7854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92eb8d8940acd22479ab002ede70ccdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   mScreenToCloseIsParent: 1
   mScreenToOpen: {fileID: 1158939729}
   mScreenToClose: {fileID: 0}
@@ -7473,8 +7970,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 1967761363}
+  PlayerStartPosition: {fileID: 1967761363}
   Enemy: {fileID: 0}
 --- !u!4 &385098275
 Transform:
@@ -7535,7 +8036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00019073, y: 0.0000038146973}
+  m_AnchoredPosition: {x: -0.00019073486, y: 0.0000038146973}
   m_SizeDelta: {x: 0.00062561, y: 0.0001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388626574
@@ -7681,8 +8182,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &394503249
 Animator:
@@ -7802,8 +8312,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &405123976
 Animator:
@@ -7923,8 +8442,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &406347790
 Animator:
@@ -8133,6 +8661,10 @@ MonoBehaviour:
   m_Script: {fileID: -1357632236, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
 --- !u!1 &418011647
 GameObject:
   m_ObjectHideFlags: 0
@@ -8179,8 +8711,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &418011650
 Animator:
@@ -8300,8 +8841,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &418297471
 Animator:
@@ -8421,8 +8971,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &427155105
 Animator:
@@ -8542,8 +9101,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &430957723
 Animator:
@@ -8663,8 +9231,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &440099813
 Animator:
@@ -8784,8 +9361,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &441606680
 Animator:
@@ -8905,8 +9491,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &445558418
 Animator:
@@ -9026,8 +9621,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &455586375
 Animator:
@@ -9130,8 +9734,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 1269742935}
+  PlayerStartPosition: {fileID: 1269742935}
   Enemy: {fileID: 0}
 --- !u!4 &481928017
 Transform:
@@ -9210,6 +9818,11 @@ MonoBehaviour:
   m_Script: {fileID: -990687791, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
+  <mState>k__BackingField: 0
 --- !u!114 &492333828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9338,8 +9951,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &493517426
 Animator:
@@ -9459,8 +10081,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &499677103
 Animator:
@@ -9686,8 +10317,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &528841688
 Animator:
@@ -9887,8 +10527,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &530511011
 Animator:
@@ -10088,8 +10737,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &554923285
 Animator:
@@ -10209,8 +10867,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &559035688
 Animator:
@@ -10330,8 +10997,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 1
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &575357800
 Animator:
@@ -10451,8 +11127,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &585165353
 Animator:
@@ -10579,6 +11264,11 @@ MonoBehaviour:
   m_Script: {fileID: 1859295226, guid: 2d4b3ce9c7e1fd94a986c43b56d33562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
+  <mState>k__BackingField: 0
 --- !u!114 &588499150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10707,8 +11397,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &609440209
 Animator:
@@ -10828,8 +11527,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 2
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &618367114
 Animator:
@@ -10932,8 +11640,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 937123726}
+  PlayerStartPosition: {fileID: 937123726}
   Enemy: {fileID: 0}
 --- !u!4 &618671549
 Transform:
@@ -11021,8 +11733,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &647472922
 Animator:
@@ -11142,8 +11863,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &653510950
 Animator:
@@ -11343,8 +12073,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &685423279
 Animator:
@@ -11452,6 +12191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9262d5772ef579e47a965e0e40fd07ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   initOrder: 3
 --- !u!114 &707118255
 MonoBehaviour:
@@ -11465,6 +12207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e247a0d50c4264d95c1e36bfe29d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   initOrder: 2
   items:
   - {fileID: 264071885}
@@ -11483,6 +12228,8 @@ MonoBehaviour:
   - {fileID: 1352148351}
   - {fileID: 997882984}
   - {fileID: 337139564}
+  mCurrentIndexSelected: 0
+  <currentMap>k__BackingField: {fileID: 0}
 --- !u!114 &707118256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11495,6 +12242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c4859809275864395a4e1afb7280ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   initOrder: 0
   mInitContainer:
     mGameObjectsPoolInitializer:
@@ -11514,6 +12264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4431bcacd12847ac56e6d831ddfce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   initOrder: 1
   mPlayerCharacter: {fileID: 1021282248}
 --- !u!114 &707118259
@@ -11528,10 +12281,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f19f3f26b3cda489888537698661eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   replaceIfAlreadyExist: 1
   dontDestroyGameObjectOnLoad: 1
+  <uniqueId>k__BackingField: 
+  mMenuManager: {fileID: 0}
   managers: []
   currentGameState: 0
+  mCoreGameManager: {fileID: 0}
+  mCustomMenuManager: {fileID: 0}
+  mMapManager: {fileID: 0}
+  mPoolManager: {fileID: 0}
+  mVisualFeedBakcManager: {fileID: 0}
 --- !u!4 &707118260
 Transform:
   m_ObjectHideFlags: 0
@@ -11559,6 +12322,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64fbd0a5f730684f8f36033b08058cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   initOrder: 0
   items:
   - {fileID: 86487480}
@@ -11566,6 +12332,7 @@ MonoBehaviour:
   - {fileID: 995564673}
   - {fileID: 76565065}
   - {fileID: 860839106}
+  mHUD: {fileID: 0}
 --- !u!1 &715794883
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,8 +12379,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &715794886
 Animator:
@@ -11733,8 +12509,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &720572341
 Animator:
@@ -11854,8 +12639,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &720696899
 Animator:
@@ -11958,8 +12752,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 986308136}
+  PlayerStartPosition: {fileID: 986308136}
   Enemy: {fileID: 0}
 --- !u!4 &725427188
 Transform:
@@ -12028,8 +12826,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &732118271
 Animator:
@@ -12149,8 +12956,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &734218972
 Animator:
@@ -12270,8 +13086,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &735432561
 Animator:
@@ -12391,8 +13216,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &738111012
 Animator:
@@ -12495,8 +13329,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 1074757455}
+  PlayerStartPosition: {fileID: 1074757455}
   Enemy: {fileID: 0}
 --- !u!4 &740433716
 Transform:
@@ -12568,8 +13406,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &741430994
 Animator:
@@ -12689,8 +13536,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &748112458
 Animator:
@@ -12810,8 +13666,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &748511372
 Animator:
@@ -12931,8 +13796,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &748585371
 Animator:
@@ -13052,8 +13926,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &750473436
 Animator:
@@ -13253,8 +14136,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &755203117
 Animator:
@@ -13463,6 +14355,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 14
 --- !u!1 &799292968
 GameObject:
@@ -13510,8 +14406,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &799292971
 Animator:
@@ -13631,8 +14536,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &800373675
 Animator:
@@ -13752,8 +14666,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: 1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &803516630
 Animator:
@@ -13873,8 +14796,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &804055881
 Animator:
@@ -13977,8 +14909,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 1266799387}
+  PlayerStartPosition: {fileID: 1266799387}
   Enemy: {fileID: 0}
 --- !u!4 &807880468
 Transform:
@@ -14066,8 +15002,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &816982229
 Animator:
@@ -14187,8 +15132,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &818686230
 Animator:
@@ -14308,8 +15262,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &825638830
 Animator:
@@ -14429,8 +15392,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &826975253
 Animator:
@@ -14550,8 +15522,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &831619932
 Animator:
@@ -14671,8 +15652,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &836309987
 Animator:
@@ -14792,8 +15782,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &850312543
 Animator:
@@ -15002,6 +16001,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 6
 --- !u!1 &860839104
 GameObject:
@@ -15056,8 +16059,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc3b90969d8a1b46a99b42d4fc8f288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
   mValidateBtn: {fileID: 492333827}
   mInvalidateBtn: {fileID: 588499149}
+  mFeedBackId: 
   clockPreviousState: 0
 --- !u!114 &860839107
 MonoBehaviour:
@@ -15143,8 +16150,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &864223967
 Animator:
@@ -15264,8 +16280,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &871312604
 Animator:
@@ -15465,8 +16490,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &884525635
 Animator:
@@ -15586,8 +16620,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &899846573
 Animator:
@@ -15787,8 +16830,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &906441849
 Animator:
@@ -15908,8 +16960,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &926433383
 Animator:
@@ -16029,8 +17090,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &933863262
 Animator:
@@ -16150,8 +17220,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &937123727
 Animator:
@@ -16271,8 +17350,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 1
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &949840781
 Animator:
@@ -16392,8 +17480,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &955960695
 Animator:
@@ -16513,8 +17610,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &964382071
 Animator:
@@ -16714,8 +17820,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &986308137
 Animator:
@@ -16835,8 +17950,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &988556496
 Animator:
@@ -16956,8 +18080,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &990634168
 Animator:
@@ -17137,6 +18270,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce5384fc3de6a244ad0ea087dc2627e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButtons: []
 --- !u!1 &997151606
 GameObject:
   m_ObjectHideFlags: 0
@@ -17246,8 +18383,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 1447729727}
+  PlayerStartPosition: {fileID: 1447729727}
   Enemy: {fileID: 0}
 --- !u!4 &997882985
 Transform:
@@ -17335,8 +18476,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &998644223
 Animator:
@@ -17545,6 +18695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 4
 --- !u!1 &1002174425
 GameObject:
@@ -17592,8 +18746,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1002174428
 Animator:
@@ -17713,8 +18876,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1002811410
 Animator:
@@ -17834,8 +19006,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1005884028
 Animator:
@@ -17955,8 +19136,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1006622755
 Animator:
@@ -18076,8 +19266,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 1
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1014558511
 Animator:
@@ -18286,6 +19485,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 15
 --- !u!1 &1021282247
 GameObject:
@@ -18317,8 +19520,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925d1057896ece042a75e77d419b9481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mTargetSquare: {fileID: 0}
   path: []
   currentPosition: {fileID: 750473435}
+  mCanMove: 0
+  mConvertingASquare: 0
 --- !u!212 &1021282249
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18521,6 +19730,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 3
 --- !u!1 &1032240873
 GameObject:
@@ -18657,6 +19870,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 5
 --- !u!1 &1035817513
 GameObject:
@@ -18704,8 +19921,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1035817516
 Animator:
@@ -18825,8 +20051,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1038030333
 Animator:
@@ -18946,8 +20181,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1040031226
 Animator:
@@ -19149,8 +20393,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1048443831
 Animator:
@@ -19270,8 +20523,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1056660114
 Animator:
@@ -19391,8 +20653,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1072234662
 Animator:
@@ -19512,8 +20783,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1072489622
 Animator:
@@ -19633,8 +20913,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1074757456
 Animator:
@@ -19754,8 +21043,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1080958496
 Animator:
@@ -19964,6 +21262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 1
 --- !u!1 &1087068086
 GameObject:
@@ -20011,8 +21313,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1087068089
 Animator:
@@ -20267,8 +21578,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1097011776
 Animator:
@@ -20388,8 +21708,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1103902520
 Animator:
@@ -20509,8 +21838,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1108053105
 Animator:
@@ -20630,8 +21968,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1111658467
 Animator:
@@ -20751,8 +22098,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1115737281
 Animator:
@@ -20952,8 +22308,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1123559967
 Animator:
@@ -21073,8 +22438,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1128565186
 Animator:
@@ -21194,8 +22568,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1132198235
 Animator:
@@ -21441,6 +22824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6af00f7f4080864c82e29ea74e23ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
 --- !u!1 &1161343886
 GameObject:
   m_ObjectHideFlags: 0
@@ -21487,8 +22873,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1161343889
 Animator:
@@ -21697,6 +23092,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 12
 --- !u!1 &1175827032
 GameObject:
@@ -21710,6 +23109,7 @@ GameObject:
   - component: {fileID: 1175827037}
   - component: {fileID: 1175827036}
   - component: {fileID: 1175827035}
+  - component: {fileID: 1175827038}
   m_Layer: 5
   m_Name: Restart button
   m_TagString: Untagged
@@ -21820,6 +23220,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175827032}
   m_CullTransparentMesh: 0
+--- !u!114 &1175827038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175827032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b88dc35aa5b61b644a62e3a017add1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
+  mScreenToCloseIsParent: 1
+  mScreenToOpen: {fileID: 76565065}
+  mScreenToClose: {fileID: 0}
 --- !u!1 &1177920713
 GameObject:
   m_ObjectHideFlags: 0
@@ -21946,8 +23365,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1188576459
 Animator:
@@ -22156,6 +23584,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 2
 --- !u!1 &1215825129
 GameObject:
@@ -22203,8 +23635,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1215825132
 Animator:
@@ -22324,8 +23765,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1235478755
 Animator:
@@ -22508,8 +23958,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 2094097755}
+  PlayerStartPosition: {fileID: 2094097755}
   Enemy: {fileID: 0}
 --- !u!4 &1247462009
 Transform:
@@ -22597,8 +24051,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1247682806
 Animator:
@@ -22701,8 +24164,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 2
-  PlayerStartPosiion: {fileID: 1961505867}
+  PlayerStartPosition: {fileID: 1961505867}
   Enemy: {fileID: 0}
 --- !u!4 &1249147208
 Transform:
@@ -22774,8 +24241,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1253758913
 Animator:
@@ -22940,6 +24416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b104d515fd66c9f4ca28b3648fe8bd61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
 --- !u!1 &1259061950
 GameObject:
   m_ObjectHideFlags: 0
@@ -22986,8 +24465,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1259061953
 Animator:
@@ -23107,8 +24595,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1266799388
 Animator:
@@ -23228,8 +24725,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1269742936
 Animator:
@@ -23349,8 +24855,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 1
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1270400653
 Animator:
@@ -23470,8 +24985,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1272566808
 Animator:
@@ -23591,8 +25115,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1282861806
 Animator:
@@ -23801,6 +25334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf92366273b3de47b68496f53ba99ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
 --- !u!1 &1289597315
 GameObject:
   m_ObjectHideFlags: 0
@@ -23847,8 +25384,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1289597318
 Animator:
@@ -23968,8 +25514,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1299044661
 Animator:
@@ -24173,8 +25728,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1312034620
 Animator:
@@ -24294,8 +25858,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1318693648
 Animator:
@@ -24415,8 +25988,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1342308760
 Animator:
@@ -24536,8 +26118,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1343659286
 Animator:
@@ -24657,8 +26248,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1349845313
 Animator:
@@ -24761,8 +26361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 850312542}
+  PlayerStartPosition: {fileID: 850312542}
   Enemy: {fileID: 0}
 --- !u!4 &1352148352
 Transform:
@@ -24850,8 +26454,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1356916985
 Animator:
@@ -24971,8 +26584,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1372504180
 Animator:
@@ -25092,8 +26714,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1376329966
 Animator:
@@ -25213,8 +26844,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1393193791
 Animator:
@@ -25423,6 +27063,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 0
 --- !u!1 &1412005776
 GameObject:
@@ -25470,8 +27114,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1412005779
 Animator:
@@ -25591,8 +27244,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1415478731
 Animator:
@@ -25712,8 +27374,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1420138067
 Animator:
@@ -25833,8 +27504,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1423131655
 Animator:
@@ -26089,8 +27769,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1447729728
 Animator:
@@ -26210,8 +27899,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1454945150
 Animator:
@@ -26411,8 +28109,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1475958269
 Animator:
@@ -26532,8 +28239,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1476077628
 Animator:
@@ -26653,8 +28369,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1482038832
 Animator:
@@ -26774,8 +28499,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1506067467
 Animator:
@@ -26895,8 +28629,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1513367258
 Animator:
@@ -27016,8 +28759,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1515268008
 Animator:
@@ -27137,8 +28889,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1560917415
 Animator:
@@ -27338,8 +29099,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1596389247
 Animator:
@@ -27539,8 +29309,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1628257776
 Animator:
@@ -27660,8 +29439,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1636546949
 Animator:
@@ -27781,8 +29569,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1664126700
 Animator:
@@ -27909,6 +29706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1f2bc5ba20464a9506e47bf62a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   mScreenToCloseIsParent: 1
   mScreenToOpen: {fileID: 1255327348}
   mScreenToClose: {fileID: 0}
@@ -28129,6 +29930,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 13
 --- !u!1 &1682523068
 GameObject:
@@ -28176,8 +29981,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1682523071
 Animator:
@@ -28297,8 +30111,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1689314219
 Animator:
@@ -28418,8 +30241,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1691983091
 Animator:
@@ -28708,6 +30540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 7
 --- !u!1 &1704881841
 GameObject:
@@ -28844,6 +30680,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 11
 --- !u!1 &1709389850
 GameObject:
@@ -28891,8 +30731,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1709389853
 Animator:
@@ -29012,8 +30861,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1720588017
 Animator:
@@ -29133,8 +30991,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1723000360
 Animator:
@@ -29254,8 +31121,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1729271013
 Animator:
@@ -29375,8 +31251,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1734179425
 Animator:
@@ -29496,8 +31381,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1736609588
 Animator:
@@ -29617,8 +31511,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1740736717
 Animator:
@@ -29738,8 +31641,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1741374452
 Animator:
@@ -29859,8 +31771,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1745767681
 Animator:
@@ -29980,8 +31901,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1750938625
 Animator:
@@ -30181,8 +32111,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1761628997
 Animator:
@@ -30302,8 +32241,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1770544230
 Animator:
@@ -30423,8 +32371,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1784115935
 Animator:
@@ -30544,8 +32501,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1784912384
 Animator:
@@ -30665,8 +32631,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1797406321
 Animator:
@@ -30786,8 +32761,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1805743901
 Animator:
@@ -30907,8 +32891,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1808034283
 Animator:
@@ -31028,8 +33021,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1810626620
 Animator:
@@ -31149,8 +33151,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1816052529
 Animator:
@@ -31270,8 +33281,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1820217477
 Animator:
@@ -31391,8 +33411,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1827118700
 Animator:
@@ -31512,8 +33541,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1830490676
 Animator:
@@ -31722,6 +33760,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d1f2bc5ba20464a9506e47bf62a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   mScreenToCloseIsParent: 1
   mScreenToOpen: {fileID: 76565065}
   mScreenToClose: {fileID: 0}
@@ -31771,8 +33813,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1849741684
 Animator:
@@ -31892,8 +33943,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1873641526
 Animator:
@@ -31997,6 +34057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -32080,8 +34141,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1883256369
 Animator:
@@ -32201,8 +34271,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1883791726
 Animator:
@@ -32322,8 +34401,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 1
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1887282542
 Animator:
@@ -32443,8 +34531,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 2
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1890365189
 Animator:
@@ -32564,8 +34661,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1894106288
 Animator:
@@ -32685,8 +34791,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1895119498
 Animator:
@@ -32806,8 +34921,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1897616170
 Animator:
@@ -32927,8 +35051,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1904410019
 Animator:
@@ -33048,8 +35181,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1904543708
 Animator:
@@ -33169,8 +35311,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1904705234
 Animator:
@@ -33290,8 +35441,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1905949976
 Animator:
@@ -33411,8 +35571,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1906048224
 Animator:
@@ -33532,8 +35701,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1923022741
 Animator:
@@ -33653,8 +35831,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1924971079
 Animator:
@@ -33774,8 +35961,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1932852118
 Animator:
@@ -33895,8 +36091,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1956722007
 Animator:
@@ -34105,6 +36310,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 9
 --- !u!1 &1961505865
 GameObject:
@@ -34152,8 +36361,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: 1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1961505868
 Animator:
@@ -34273,8 +36491,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &1967761364
 Animator:
@@ -34474,8 +36701,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &1988335717
 Animator:
@@ -34675,8 +36911,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2012514529
 Animator:
@@ -34796,8 +37041,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2014990720
 Animator:
@@ -34917,8 +37171,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2015336088
 Animator:
@@ -35038,8 +37301,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &2024360066
 Animator:
@@ -35159,8 +37431,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2026433304
 Animator:
@@ -35280,8 +37561,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2030383353
 Animator:
@@ -35401,8 +37691,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &2030477800
 Animator:
@@ -35522,8 +37821,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2035871800
 Animator:
@@ -35643,8 +37951,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2038494956
 Animator:
@@ -35844,8 +38161,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2038895704
 Animator:
@@ -35948,8 +38274,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0037d4474ad6f4ba783152dc6d9e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mMapSquares: []
   stepBetweenSquares: 1
-  PlayerStartPosiion: {fileID: 720572340}
+  PlayerStartPosition: {fileID: 720572340}
   Enemy: {fileID: 0}
 --- !u!4 &2047505997
 Transform:
@@ -36037,8 +38367,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2056219670
 Animator:
@@ -36158,8 +38497,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2059126857
 Animator:
@@ -36279,8 +38627,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 0
 --- !u!95 &2065206314
 Animator:
@@ -36400,8 +38757,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2068866500
 Animator:
@@ -36601,8 +38967,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 3
+  mBaseLevel: 0
   mSide: -1
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2092175938
 Animator:
@@ -36722,8 +39097,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2094097756
 Animator:
@@ -36843,8 +39227,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2095466794
 Animator:
@@ -37053,6 +39446,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101867325418274cbfec6775d05b14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  mButton: {fileID: 0}
   levelIndexToSelect: 8
 --- !u!1 &2102166780
 GameObject:
@@ -37100,8 +39497,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2102166783
 Animator:
@@ -37221,8 +39627,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7a659ba3605cf488166b01e52b5625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDidStart: 0
+  mDidAfterStart: 0
+  <ID>k__BackingField: 
+  ANIMATOR_SIDE_PROPERTY: Side
+  ANIMATOR_LEVEL_PROPERTY: Level
   mLevel: 0
+  mBaseLevel: 0
   mSide: 0
+  mBaseSide: 0
+  mAnimator: {fileID: 0}
+  <unicId>k__BackingField: 
   CanMoveOn: 1
 --- !u!95 &2102543693
 Animator:

@@ -58,7 +58,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
                 }
                 else
                 {
-                    transform.position.Set(mTargetSquare.position.x, mTargetSquare.position.y, transform.position.z);
+                    transform.position = new UnityEngine.Vector3(mTargetSquare.position.x, mTargetSquare.position.y, transform.position.z);
                     mCurrentMovement = Vector3.Zero;
                     path.RemoveAt(0);
                     currentPosition = mTargetSquare;
@@ -80,8 +80,21 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters
         public void SetPosition(Square pPosition)
         {
             currentPosition = pPosition;
-            transform.position.Set(pPosition.transform.position.x, pPosition.transform.position.y, transform.position.z);
+            transform.position = new UnityEngine.Vector3(pPosition.position.x, pPosition.position.y, pPosition.position.z);
             gameObject.SetActive(true);
+        }
+
+        /// <summary>
+        /// Reset the character
+        /// </summary>
+        /// <param name="pNewPos">position reset of the character</param>
+        public virtual void CustomReset(Square pNewPos)
+        {
+            mCurrentMovement = Vector3.Zero;
+            mTargetSquare = null;
+            path?.Clear();
+            SetPosition(pNewPos);
+
         }
 
         /// <summary>

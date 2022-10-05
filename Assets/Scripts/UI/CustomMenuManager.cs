@@ -43,7 +43,12 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI
         /// <param name="pParams">the parametters of the screen to open</param>
         public override void OpenScreen(AMenuScreen pScreenToOpen, params object[] pParams)
         {
-            AppManager.instance?.coreGameManager?.StartOrPauseClock(false);
+            if (AppManager.instance != null && AppManager.instance.coreGameManager != null)
+            {
+                AppManager.instance.coreGameManager.SetActiveController(pScreenToOpen is Screens.HUDScreen);
+                AppManager.instance.coreGameManager.StartOrPauseClock(false);
+            }
+
             mHUD.startOrPauseClockBTN.isStarted = false;
 
             base.OpenScreen(pScreenToOpen, pParams);
@@ -57,8 +62,14 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI
         /// <param name="pScreenToOpenParams">the parametters of the screen to open</param>
         public override void SwitchScreen(AMenuScreen pScreenToClose, AMenuScreen pScreenToOpen, params object[] pScreenToOpenParams)
         {
-            AppManager.instance?.coreGameManager?.StartOrPauseClock(false);
+            if(AppManager.instance != null && AppManager.instance.coreGameManager != null)
+            {
+                AppManager.instance.coreGameManager.SetActiveController(pScreenToOpen is Screens.HUDScreen);
+                AppManager.instance.coreGameManager.StartOrPauseClock(false);
+            }
+            
             mHUD.startOrPauseClockBTN.isStarted = false;
+
 
             base.SwitchScreen(pScreenToClose, pScreenToOpen, pScreenToOpenParams);
         }
@@ -66,9 +77,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI
         /// <summary>
         /// Update the number of days
         /// </summary>
-        public void UpdateDays()
+        /// <param name="pDays">The number of days</param>
+        public void UpdateDays(int pDays)
         {
-            mHUD.days++;
+            mHUD.days = pDays;
         }
 
         /// <summary>
@@ -85,9 +97,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI
         /// </summary>
         public void ResetHUD()
         {
-            mHUD.days = 0;
-            mHUD.powers = 0;
-            mHUD.startOrPauseClockBTN.isStarted = false;
+            if(mHUD != null)
+            {
+                mHUD.days = 0;
+                mHUD.powers = 0;
+                mHUD.startOrPauseClockBTN.isStarted = false;
+
+                if(AppManager.instance != null && AppManager.instance.coreGameManager != null)
+                    mHUD.clockSpeedBTN.ResetText(AppManager.instance.coreGameManager.GetClockSpeedIndex());
+            }
+            
         }
 
         /// <summary>

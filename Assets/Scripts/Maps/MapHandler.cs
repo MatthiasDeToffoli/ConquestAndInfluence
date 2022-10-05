@@ -46,7 +46,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// <summary>
         /// The player start position
         /// </summary>
-        public Square PlayerStartPosiion;
+        public Square PlayerStartPosition;
 
         /// <summary>
         /// The enemy on the map
@@ -342,7 +342,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         {
             if (map.ContainsKey(pX) && map[pX].ContainsKey(pY))
             {
-                return map[pX][pY].CanMoveOn || map[pX][pY].unicId == PlayerStartPosiion.unicId;
+                return map[pX][pY].CanMoveOn || map[pX][pY].unicId == PlayerStartPosition.unicId;
             }
 
             return false;
@@ -490,6 +490,17 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 {
                     pSquaresToConvert.Add(pToConvertSquare, pConverterSquare.side);
                 }
+            }
+        }
+
+        /// <summary>
+        /// Reset side and level of all squares
+        /// </summary>
+        public void ResetSquares()
+        {
+            foreach(Square lSquare in mMapSquares)
+            {
+                lSquare?.ResetProperties();
             }
         }
         #endregion Methods

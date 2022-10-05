@@ -1,9 +1,8 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence;
-using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners;
+﻿using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners;
 using TMPro;
 using UnityEngine;
 
-namespace Assets.Scripts.UI.ButtonListeners
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners
 {
     /// <summary>
     /// Button listener for change clock speed
@@ -48,6 +47,15 @@ namespace Assets.Scripts.UI.ButtonListeners
         protected override void OnButtonClicked()
         {
             mText = AppManager.instance?.coreGameManager?.ChangeClockSpeed();
+        }
+
+        /// <summary>
+        /// Reset the text of the button
+        /// </summary>
+        /// <param name="pSpeed"></param>
+        public void ResetText(int pSpeed)
+        {
+            mText = pSpeed;
         }
         #endregion Methods
     }

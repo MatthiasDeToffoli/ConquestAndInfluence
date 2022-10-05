@@ -43,10 +43,20 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         private int mLevel;
 
         /// <summary>
+        /// Base level of the square used for reset it
+        /// </summary>
+        private int mBaseLevel;
+
+        /// <summary>
         /// the side of the square
         /// </summary>
         [SerializeField]
         private SquareSide mSide;
+
+        /// <summary>
+        /// Base side of the square used for reset it
+        /// </summary>
+        private SquareSide mBaseSide;
 
         /// <summary>
         /// The animator of the gameobject
@@ -127,6 +137,9 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         {
             base.Awake();
 
+            mBaseLevel = mLevel;
+            mBaseSide = mSide;
+
             //get the animator
             mAnimator = gameObject.GetComponent<Animator>();
 
@@ -190,6 +203,15 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 
                 level = Math.Min(Math.Abs(lNewLevel), MAX_LVL);
             }
+        }
+
+        /// <summary>
+        /// Reset side and level to base values
+        /// </summary>
+        public void ResetProperties()
+        {
+            level = mBaseLevel;
+            side = mBaseSide;
         }
         #endregion Methods
     }

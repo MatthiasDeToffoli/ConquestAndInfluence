@@ -210,7 +210,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 
                 AppManager.instance?.mapManager?.currentMap?.UpdateSquares(lIgnoredSquares, ref lSquaresToConvert);
 
-                AppManager.instance?.customMenuManager?.UpdateDays();
+                AppManager.instance?.customMenuManager?.UpdateDays(mClock.days);
             }
 
 
@@ -241,6 +241,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         /// <summary>
         /// Inititalise all property on the map
         /// </summary>
+        /// <param name="pSquareWherePlayerStart"></param>
         public void MapSelected(Square pSquareWherePlayerStart)
         {
             if(this.mPlayerCharacter != null)
@@ -274,6 +275,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         {
             SetActiveController(true);
             mPlayerCharacter.canMove = true;
+        }
+
+        /// <summary>
+        /// Reset player position
+        /// </summary>
+        /// <param name="pSquareWherePlayerStart"></param>
+        public void ResetPlayerAndClock(Square pSquareWherePlayerStart)
+        {
+            mPlayerCharacter?.CustomReset(pSquareWherePlayerStart);
+            ResetClock();
         }
         #endregion Methods
     }

@@ -69,7 +69,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                     else
                     {
                         currentMap = lCurrentMap;
-                        AppManager.instance.coreGameManager?.MapSelected(lCurrentMap.PlayerStartPosiion);
+                        AppManager.instance.coreGameManager?.MapSelected(lCurrentMap.PlayerStartPosition);
                     }
                 }
                 else
@@ -104,6 +104,28 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             {
                 unlockLevel.Invoke(pLevelIndex);
             }
+        }
+
+        /// <summary>
+        /// Reset side and level of all squares of the current map
+        /// </summary>
+        public void ResetMap()
+        {
+            if(currentMap != null)
+            {
+                currentMap.ResetSquares();
+                AppManager.instance?.coreGameManager?.ResetPlayerAndClock(currentMap.PlayerStartPosition);
+            }
+            
+        }
+
+        /// <summary>
+        /// Clear the current map
+        /// </summary>
+        public override void ClearCurrentLevel()
+        {
+            base.ClearCurrentLevel();
+            currentMap = null;
         }
         #endregion Methods
     }
