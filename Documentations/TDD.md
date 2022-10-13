@@ -1,75 +1,83 @@
 # Technical Design Document
 
 ## Contents
-**I** *- Versions*
 
-**II** *- About it*
-* **A** *- Why this ?*
-* **B** *- What is it ?*
-	* *Victory condition*
-	* *Defeat condition*
-* **C** *- Platform target*
-* **D** *- 3C*
-	* *Camera*
-	* *Controls*
-	* *Character*
+**I** *- [Versions](#versions)*
 
-**III** *- Tools*
-* **A** *- Research*
-* **B** *- Software*
-* **C** *- Language*
-* **D** *- Libraries*
+**II** *- [About it](#about-it)*
+* **A** *- [Why this ?](#why-this-)*
+* **B** *- [What is it ?](#what-is-it-)*
+	* *[Victory condition](#victory-condition)*
+	* *[Defeat condition](#defeat-condition)*
+* **C** *- [Platform target](#platform-target)*
+* **D** *- [3C](#3c)*
+	* *[Camera](#camera)*
+	* *[Controls](#control)*
+	* *[Character](#character)*
 
-**IV** *- Project*
-* **A** *- Model*
-	* *Legend*
-	* *Diagram*
-* **B** *- Project structur*
-	* *Legend*
-	* *Assets*
-		* *Animators*
-		* *Clips*
-			* *Feedbacks*
-			* *Square*
-		* *Scenes*
-		* *Scripts*
-			* *Maps*
-			* *UI*
-		* *Sprites*
-* **C** *- Namespaces*
-* **D** *- Coding rules*
-	* *Using*
-	* *Structure of a class or a struct*
-	* *Singletons*
-	* *Brackets*
-	* *Regions*
-	* *Methods*
-	* *Comments*
-	* *Variables*
-	* *Strings*
-	* *Values*
-	* *Condition*
-	* *Loops*
-	* *Events*
-	* *Nomenclature*
-		* *Namespaces*
-		* *Classes / Structs*
-		* *Metodes*
-		* *Constants*
-		* *Properties*
-		* *Events*
-		* *Fields*
-		* *Variables*
-		* *Parameter*
-		* *List, Array, Dictionary Etc*
-		* *Enum*
+**III** *- [Tools](#tools)*
+* **A** *- [Research](#research)*
+* **B** *- [Software](#software)*
+* **C** *- [Language](#language)*
+* **D** *- [Libraries](#libraries)*
 
-**V** *- Hard points of the project*
-* **A** *-Graphism and songs*
-* **B** *-Unity 2D*
-* **C** *-How to resolved this problems ?*
-	* *Graphism and songs*
-	* *Unity 2D*
+**IV** *- [Project](#project)*
+* **A** *- [Model](#model)*
+	* *[Legend](#legend)*
+	* *[Diagram](#diagram)*
+* **B** *- [Project structur](#project-structur)*
+	* *[Legend](#legend-1)*
+	* *[Assets](#assets)*
+		* *[Animations](#animations)*
+			* *[Animators](#animators)*
+			* *[Clips](#clips)*
+				* *Feedbacks*
+				* *Square*
+		* *[Scripts](#scripts)*
+			* *[Core](#core)*
+			* *[Maps](#maps)*
+			* *[UI](#ui)*
+				* *ButtonListeners*
+		* *[Sprites](#sprites)*
+* **C** *- [Namespaces](#namespaces)*
+* **D** *- [Coding rules](#coding-rules)*
+	* *[Using](#using)*
+	* *[Namespaces](#namespaces-1)*
+	* *[Structure of a class](#structure-of-a-class)*
+	* *[Singletons](#singletons)*
+	* *[Brackets](#brackets)*
+	* *[Regions](#regions)*
+	* *[Methods](#methods)*
+	* *[Comments](#comments)*
+	* *[Variables](#variables)*
+	* *[Strings](#strings)*
+	* *[Values](#values)*
+	* *[Condition](#condition)*
+	* *[Loops](#loops)*
+	* *[Events](#events)*
+	* *[Nomenclature](#nomenclature)*
+		* *[Folder](#folder)*
+		* *[Namespaces](#namespaces-2)*
+		* *[Classes / Structs](#classes--structs)*
+		* *[Methods](#methods)*
+		* *[Constants](#constants)*
+		* *[Properties](#properties)*
+		* *[Events](#events-1)*
+		* *[Fields](#fields)*
+		* *[Variables](#variables-1)*
+		* *[Parameter](#parameter)*
+		* *[List, Array, Dictionary Etc](#list-array-dictionary-etc)*
+		* *[Enum](#enum)*
+* **E** *- [Commit Rules](#commit-rules)*
+	* *[Commit keys](#commit-keys)*
+	* *[Master](#master)*
+
+**V** *- [Hard points of the project](#hard-points-of-the-project)*
+* **A** *- [Graphism and songs](#graphism-and-songs)*
+* **B** *- [Unity 2D](#unity-2d)*
+* **C** *- [How to resolved this problems ?](#how-to-resolved-this-problems-)*
+	* *[Graphism and songs](#graphism-and-songs-1)*
+	* *[Unity 2D](#unity-2d-1)*
 	
 ## Versions
 | VX.X | Date       | Title  													  | Comments																	 								     | Author              |
@@ -89,6 +97,8 @@
 | V1.5 | 04/14/2021 | Update diagrams											  | Update some diagrams and add Core folder's diagram																 | Matthias de Toffoli |
 | V1.6 | 07/22/2021 | Add background to some images	  							  | Add a white background to some images																	   		 | Matthias de Toffoli |
 | V1.7 | 11/23/2021 | Update the diagrams 			  							  | Update the diagram for matching with the project files															 | Matthias de Toffoli |
+| V1.8 | 10/12/2022 | Update the summary 			  							  | Update the summary and add links for go directly to titles, correct some spelling mistakes						 | Matthias de Toffoli |
+| V1.9 | 10/13/2022 | Update the diagrams 			  							  | Update all the diagrams for matching with the current project													 | Matthias de Toffoli |
 
 ## About it
 ### Why this ?
@@ -116,7 +126,7 @@ Touch only
 ### Research
 No tool researchs was make for this project beause the goal is to improve my skills with Unity.
 ### Software
-Unity 3D 2020.1.0f1
+Unity 3D 2021.3.10f1
 ### Language
 C# with .Net 4.6
 ### Libraries
@@ -149,8 +159,6 @@ Will use managers, they will manage their part and single objects will be manage
 * *Square*
 
 ![Square folder diagram](./pictures/TDD/Folders/Clips_Square.png "Clips/Square folder")
-##### Scenes
-![Scenes folder diagram](./pictures/TDD/Folders/Scenes.png "Scenes folder")
 ##### Scripts
 ![Scripts folder diagram](./pictures/TDD/Folders/Scripts.png "Scripts folder")
 ###### Core
@@ -159,6 +167,8 @@ Will use managers, they will manage their part and single objects will be manage
 ![Maps folder diagram](./pictures/TDD/Folders/Maps.png "Maps folder")
 ###### UI
 ![UI folder diagram](./pictures/TDD/Folders/UI.png "UI folder")
+* *ButtonListeners*
+![ButtonListeners folder diagram](./pictures/TDD/Folders/UI_ButtonListeners.png "ButtonListeners folder")
 ##### Sprites
 ![Sprites folder diagram](./pictures/TDD/Folders/Sprites.png "Sprites folder")
 ### Namespaces
@@ -175,7 +185,7 @@ without assets and scripts folders.
 One exception for the folder Editor the namespace will finish by PersonalEditor, for not have conflict with UnityEngine.Editor.
 *With this type of namespace it will be easyer to find files.*
 
-#### Structurs of a class
+#### Structure of a class
 In the class write first the constants followed by the events, the fields,  the properties, after that the constructors the methods and finally the classes/structs. 
 ```C#
 MyClass 
@@ -191,7 +201,7 @@ MyClass
 ```
 *more legible*
 
-### Singletons
+#### Singletons
 use it less as possible.
 *use too much singletons is not a good practice*
 
@@ -230,7 +240,7 @@ Write in order of calling most as possible. Unity's methods are always after the
 
 #### Comments
 Comment most as possible,
-for classes, metodes and properties use the summary
+for classes, methods and properties use the summary
 ```C#
 /// <summary>
 /// ...
@@ -239,7 +249,7 @@ for classes, metodes and properties use the summary
 ///<return>...</return>
 ```
 complet all parts even if it's obvious (maybe it's not for others)
-For comments in metodes use simple comments with //
+For comments in methods use simple comments with //
 don't write comments at the left of a line all comments has to be in it own line, let a blank line
 before write a comment but not after.
 ```C#
@@ -272,7 +282,7 @@ Never use var
 *More legible*
 
 #### Strings
-Use strings metodes more than possible (string.format is better than str + str2)
+Use strings methods more than possible (string.format is better than str + str2)
 *More performant*
 
 #### Values
@@ -344,7 +354,7 @@ Like folders except Fr.Matthiasdetoffoli
 ##### Classes / Structs
 Upper camel case
 *More legible.*
-##### Metodes
+##### methods
 Upper camel case
 *More legible.*
 ##### Constants
@@ -395,7 +405,7 @@ For this project I will use a key word between *[]* followed by a short descript
 
 I can add *.WIP* after the key for say it's not finished. If I do that the commit used when the featur will be finished will be the same without a WIP. That's mean a commit with the key *[ADD.WIP]* will be followed by a commit *[ADD]* when the feature will be finished.
 
-#### master
+#### Master
 I will push on master only finished features. The project have to always work on master. I will use other branches for my devellopments.
 
 ## Hard points of the project

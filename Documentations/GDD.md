@@ -1,52 +1,51 @@
 # Game Design Document
 
 ## Contents
-**I** *- Versions*
+**I** *- [Versions](#versions)*
 
-**II** *- Product Description*
+**II** *- [Product Description](#product-description)*
 
-**III** *- Concept*
+**III** *- [Concept](#concept)*
 
-**IV** *- Gameplay and mechanics*
-* **A** *- Victory condition*
-* **B** *- Defeat condition*
-* **C** *- 3C*
-	* *Camera*
-	* *Control*
-	* *Character*
-* **D** *-Flowshart*
-	* *Legend*
-	* *Hero*
-	* *Messenger*
-	* *Square*
-* **E** *- UI*
-	* *Interaction*
-	* *Legend*
-	* *Start screen*
-	* *Main menu*
-	* *Level selector*
-	* *HUD*
-	* *Pause menu*
+**IV** *- [Gameplay and mechanics](#gameplay-and-mechanics)*
+* **A** *- [Victory condition](#victory-condition)*
+* **B** *- [Defeat condition](#defeat-condition)*
+* **C** *- [3C](#3c)*
+	* *[Camera](#camera)*
+	* *[Control](#control)*
+	* *[Character](#character)*
+* **D** *-[Flowshart](#flowshart)*
+	* *[Legend](#legend)*
+	* *[Hero](#hero)*
+	* *[Square](#square)*
+* **E** *- [UI](#ui)*
+	* *[Interaction](#interaction)*
+	* *[Legend](#legend-1)*
+	* *[Start screen](#start-screen)*
+	* *[Main menu](#main-menu)*
+	* *[Level selector](#level-selector)*
+	* *[HUD](#hud)*
+	* *[Pause menu](#pause-menu)*
 	
-* **F** *- Level Design*
-	* *LD Bricks*
-	* *Level 1*
-	* *Level 2*
-	* *Level 3*
-	* *Level 4*
-	* *Level 5*
-	* *Level 6*
-	* *Level 7*
-	* *Level 8*
-	* *Level 9*
-	* *Level 10*
-	* *Level 11*
-	* *Level 12*
-	* *Level 13*
-	* *Level 14*
-	* *Level 15*
-	* *Level Epilogue*
-	
+* **F** *- [Level Design](#level-design)*
+	* *[LD Bricks](#ld-bricks)*
+	* *[Level 1](#level-1)*
+	* *[Level 2](#level-2)*
+	* *[Level 3](#level-3)*
+	* *[Level 4](#level-4)*
+	* *[Level 5](#level-5)*
+	* *[Level 6](#level-6)*
+	* *[Level 7](#level-7)*
+	* *[Level 8](#level-8)*
+	* *[Level 9](#level-9)*
+	* *[Level 10](#level-10)*
+	* *[Level 11](#level-11)*
+	* *[Level 12](#level-12)*
+	* *[Level 13](#level-13)*
+	* *[Level 14](#level-14)*
+	* *[Level 15](#level-15)*
+	* *[Epilogue](#epilogue)*
+
 	
 ## Versions
 | VX.X | Date       | Title							  | Comments																										| Author              |
@@ -61,7 +60,8 @@
 | V1.2 | 04/08/2021 | Add a missing point			  | Add a missing skills for the character																			| Matthias de Toffoli |
 | V1.3 | 07/10/2021 | Add level designs				  | Add the 15 level's diagrams and the epilogue's one and update the LD Bricks										| Matthias de Toffoli |
 | V1.4 | 07/22/2021 | Add background to some images	  | Add a white background to some images																			| Matthias de Toffoli |
-| V1.4 | 11/23/2021 | Add UIs diagrams				  | Add diagrams for user interfaces and update the others															| Matthias de Toffoli |
+| V1.5 | 11/23/2021 | Add UIs diagrams				  | Add diagrams for user interfaces and update the others															| Matthias de Toffoli |
+| V1.6 | 10/12/2022 | Update the summary			  | Update the summary and add links for go directly to titles														| Matthias de Toffoli |
 
 ## Product Description
 * Pitch : It's a 2D mobile mind break game, you will conquer a square that will influence the adjacent squares for conquer them too. An opponent will do same. Every square on your side will give you power, if you have more power than your opponent you will can defeat him.
