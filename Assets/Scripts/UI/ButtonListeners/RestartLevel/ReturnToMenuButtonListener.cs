@@ -1,8 +1,6 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.RestartScreen;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
 
-namespace Assets.Scripts.UI.ButtonListeners.RestartScreen
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.RestartLevel
 {
     /// <summary>
     /// Button listener for return to menu from a level

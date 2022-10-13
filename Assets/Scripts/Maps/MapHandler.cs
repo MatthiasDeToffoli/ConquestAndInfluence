@@ -1,5 +1,4 @@
-﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Core.Characters.Enemies;
-using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Attributes;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Levels;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.MonoBehaviors;
@@ -48,10 +47,10 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// </summary>
         public Square PlayerStartPosition;
 
-        /// <summary>
-        /// The enemy on the map
-        /// </summary>
-        public AEnemy Enemy;
+        ///// <summary>
+        ///// The enemy on the map
+        ///// </summary>
+        //public AEnemy Enemy;
         #endregion Properties
 
         #region Methods
@@ -399,34 +398,34 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// </summary>
         public void GetFightResult()
         {
-            if (Enemy != null)
-            {
-                uint lNbOfAllySquares = 0;
-                uint lNbOfEnemySquares = 0;
-                foreach (Dictionary<float, Square> lX in map.Values)
-                {
-                    foreach (Square lSquare in lX.Values.Where(pElm => pElm.CanMoveOn && pElm.side != Enums.SquareSide.NEUTRAL))
-                    {
-                        if (lSquare.side == SquareSide.ALLY)
-                        {
-                            lNbOfAllySquares++;
-                        }
-                        else
-                        {
-                            lNbOfEnemySquares++;
-                        }
-                    }
-                }
+            //if (Enemy != null)
+            //{
+            //    uint lNbOfAllySquares = 0;
+            //    uint lNbOfEnemySquares = 0;
+            //    foreach (Dictionary<float, Square> lX in map.Values)
+            //    {
+            //        foreach (Square lSquare in lX.Values.Where(pElm => pElm.CanMoveOn && pElm.side != Enums.SquareSide.NEUTRAL))
+            //        {
+            //            if (lSquare.side == SquareSide.ALLY)
+            //            {
+            //                lNbOfAllySquares++;
+            //            }
+            //            else
+            //            {
+            //                lNbOfEnemySquares++;
+            //            }
+            //        }
+            //    }
 
-                if(lNbOfEnemySquares < lNbOfAllySquares)
-                {
-                    Debug.Log("Defeat");
-                }
-                else
-                {
-                    Debug.Log("Victory");
-                }
-            }
+            //    if(lNbOfEnemySquares < lNbOfAllySquares)
+            //    {
+            //        Debug.Log("Defeat");
+            //    }
+            //    else
+            //    {
+            //        Debug.Log("Victory");
+            //    }
+            //}
         }
 
         /// <summary>

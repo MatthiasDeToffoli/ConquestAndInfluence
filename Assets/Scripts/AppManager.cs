@@ -38,7 +38,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
         /// <summary>
         /// The feedback manager
         /// </summary>
-        private VisualFeedBacksManager mVisualFeedBakcManager;
+        private VisualFeedBacksManager mVisualFeedBacksManager;
         #endregion Fields
 
         #region Properties
@@ -109,16 +109,16 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence
         /// <summary>
         /// The feedback manager
         /// </summary>
-        public VisualFeedBacksManager visualFeedBakcManager
+        public VisualFeedBacksManager visualFeedBacksManager
         {
             get
             {
-                if(mVisualFeedBakcManager == null)
+                if(mVisualFeedBacksManager == null)
                 {
-                    mVisualFeedBakcManager = GetFirstManager<VisualFeedBacksManager>();
+                    mVisualFeedBacksManager = GetFirstManager<VisualFeedBacksManager>();
                 }
 
-                return mVisualFeedBakcManager;
+                return mVisualFeedBacksManager;
             }
         }
         #endregion Properties

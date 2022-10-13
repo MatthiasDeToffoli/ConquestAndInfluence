@@ -43,7 +43,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
         protected override void OnValidation(bool pState)
         {
             AppManager.instance?.coreGameManager?.StartOrPauseClock(clockPreviousState);
-            AppManager.instance?.visualFeedBakcManager?.UnshowMovingCaseVisualFeedback(mFeedBackId);
+            AppManager.instance?.visualFeedBacksManager?.UnshowMovingCaseVisualFeedback(mFeedBackId);
 
             if (pState)
             {

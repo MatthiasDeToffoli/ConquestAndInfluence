@@ -1,7 +1,6 @@
 ﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
-using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Menu.ButtonListeners;
 
-namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.RestartScreen
+namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.RestartLevel
 {
     /// <summary>
     /// Button listener for restart a level

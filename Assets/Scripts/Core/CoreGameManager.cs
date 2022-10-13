@@ -262,7 +262,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
 
             if(mPlayerCharacter.path != null)
             {
-                string lFeedBackId = AppManager.instance?.visualFeedBakcManager?.ShowMovingCaseVisualFeedback(mPlayerCharacter.path);
+                string lFeedBackId = AppManager.instance?.visualFeedBacksManager?.ShowMovingCaseVisualFeedback(mPlayerCharacter.path);
                 AppManager.instance?.customMenuManager?.SetClockPreviousState(mClock.isStarted);
                 AppManager.instance?.menuManager?.OpenScreen<ValidationPathScreen>(lFeedBackId);
             }
