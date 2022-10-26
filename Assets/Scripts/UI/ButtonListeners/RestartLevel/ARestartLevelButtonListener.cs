@@ -8,7 +8,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.RestartLe
     /// Button listener for restart a level
     /// </summary>
     /// <seealso cref="ASwitchScreenButtonListener{TMenuToOpen, TMenuToClose}"/>
-    public class ARestartLevelButtonListener<TMenuToOpen> : ASwitchScreenButtonListener<TMenuToOpen, PauseScreen>
+    public class ARestartLevelButtonListener<TMenuToOpen> : ASwitchScreenButtonListener<TMenuToOpen, AGamePausedMenuScreen>
         where TMenuToOpen : AMenuScreen
     {
         /// <summary>

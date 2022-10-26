@@ -2,11 +2,7 @@
 
 namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens
 {
-    /// <summary>
-    /// Pause screen
-    /// </summary>
-    public class PauseScreen : AGamePausedMenuScreen
+    public abstract class AGamePausedMenuScreen : AMenuScreen
     {
-        
     }
 }

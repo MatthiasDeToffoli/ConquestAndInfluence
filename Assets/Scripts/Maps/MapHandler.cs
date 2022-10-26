@@ -352,7 +352,8 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         /// </summary>
         /// <param name="pIgnoredSquaresId">ignored squares id</param>
         /// <param name="pSquaresToConvert">Dictionary contain all squares to convert and the side used to convert them</param>
-        public void UpdateSquares(IEnumerable<string> pIgnoredSquaresId, ref Dictionary<Square, SquareSide> pSquaresToConvert)
+        /// <returns><c>True</c> if the player win <c>False</c> otherwise</returns>
+        public bool UpdateSquares(IEnumerable<string> pIgnoredSquaresId, ref Dictionary<Square, SquareSide> pSquaresToConvert)
         {
             foreach (Dictionary<float,Square> lX in map.Values)
             {
@@ -369,13 +370,13 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
             }
 
 
-            UpdatePower();
+            return UpdatePower();
         }
 
         /// <summary>
         /// Update the player power
         /// </summary>
-        private void UpdatePower()
+        private bool UpdatePower()
         {
             int lPowers = 0;
             IEnumerable<Square> lAllySquares = mMapSquares.Where(pElm => pElm.side == SquareSide.ALLY);
@@ -387,10 +388,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
 
             AppManager.instance?.customMenuManager.UpdatePowers(lPowers);
 
-            if(lAllySquares.Count() >= mMapSquares.Where(pElm => pElm.CanMoveOn).Count())
-            {
-                Debug.Log("Victory");
-            }
+            return lAllySquares.Count() >= mMapSquares.Where(pElm => pElm.CanMoveOn).Count();
         }
 
         /// <summary>

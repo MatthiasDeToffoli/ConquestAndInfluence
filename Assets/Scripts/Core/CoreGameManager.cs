@@ -208,8 +208,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
                     mPlayerCharacter.TryToConvertCurrentPositionSquare(ref lSquaresToConvert);
                 }
 
-                AppManager.instance?.mapManager?.currentMap?.UpdateSquares(lIgnoredSquares, ref lSquaresToConvert);
-
+                lSquaresToConvert = AppManager.instance?.mapManager?.UpdateSquares(lIgnoredSquares, lSquaresToConvert);
                 AppManager.instance?.customMenuManager?.UpdateDays(mClock.days);
             }
 
@@ -285,6 +284,14 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Core
         {
             mPlayerCharacter?.CustomReset(pSquareWherePlayerStart);
             ResetClock();
+        }
+
+        /// <summary>
+        /// Set active false the player character
+        /// </summary>
+        public void UnactivePlayerCharacter()
+        {
+            mPlayerCharacter.gameObject.SetActive(false);
         }
         #endregion Methods
     }

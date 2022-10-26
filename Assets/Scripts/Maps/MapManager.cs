@@ -1,4 +1,6 @@
-﻿using Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils;
+﻿using Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps.Enums;
+using Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.Screens;
+using Fr.Matthiasdetoffoli.GlobalProjectCode.Classes.Utils;
 using Fr.Matthiasdetoffoli.GlobalUnityProjectCode.Classes.Managers.ManagedManager;
 using System.Collections.Generic;
 using UnityEngine;
@@ -92,6 +94,31 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
                 return currentMap.GetBetterPath(pStartPos, pTargetPos);
             }
             return null;
+        }
+
+        public Dictionary<Square, SquareSide> UpdateSquares(IEnumerable<string> pIgnoredSquaresId, Dictionary<Square, SquareSide> pSquaresToConvert)
+        {
+            if(currentMap != null)
+            {
+                bool lLevelIsWin = this.currentMap.UpdateSquares(pIgnoredSquaresId, ref pSquaresToConvert);
+
+                if (lLevelIsWin)
+                {
+                    int lLevelIndex = items.IndexOf(currentMap);
+
+                    if (lLevelIndex < items.Count - 1)
+                    {
+                        this.NotifyUnlockLevel(lLevelIndex + 1);
+                    }
+
+                    AppManager.instance.menuManager.SwitchScreen<HUDScreen, VictoryScreen>();
+                }
+            }
+            else
+            {
+                Debug.LogError("currentMap is null can't update squares");
+            }
+            return pSquaresToConvert;
         }
 
         /// <summary>

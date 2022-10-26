@@ -14,6 +14,7 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.UI.ButtonListeners.RestartLe
         protected override void OnButtonClicked()
         {
             base.OnButtonClicked();
+            AppManager.instance?.coreGameManager?.UnactivePlayerCharacter();
             AppManager.instance?.mapManager?.ClearCurrentLevel();
         }
     }
