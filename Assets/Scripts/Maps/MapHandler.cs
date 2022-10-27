@@ -435,27 +435,27 @@ namespace Fr.Matthiasdetoffoli.ConquestAndInfluence.Maps
         private void CheckSquaresToConvert(Square pSquare, IEnumerable<string> pIgnoredSquaresId, ref Dictionary<Square,SquareSide> pSquaresToConvert)
         {
             //left
-            if(CheckIfPositionIsValid(pSquare.position.x - 1, pSquare.position.y))
+            if(CheckIfPositionIsValid(pSquare.position.x - this.stepBetweenSquares, pSquare.position.y))
             {
-                AddToSquaresToConvert(pSquare, map[pSquare.position.x - 1][pSquare.position.y], pIgnoredSquaresId, ref pSquaresToConvert);
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x - this.stepBetweenSquares][pSquare.position.y], pIgnoredSquaresId, ref pSquaresToConvert);
             }
 
             //top
-            if (CheckIfPositionIsValid(pSquare.position.x, pSquare.position.y - 1))
+            if (CheckIfPositionIsValid(pSquare.position.x, pSquare.position.y - this.stepBetweenSquares))
             {
-                AddToSquaresToConvert(pSquare, map[pSquare.position.x][pSquare.position.y - 1], pIgnoredSquaresId, ref pSquaresToConvert);
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x][pSquare.position.y - this.stepBetweenSquares], pIgnoredSquaresId, ref pSquaresToConvert);
             }
 
             //right
-            if (CheckIfPositionIsValid(pSquare.position.x + 1, pSquare.position.y))
+            if (CheckIfPositionIsValid(pSquare.position.x + this.stepBetweenSquares, pSquare.position.y))
             {
-                AddToSquaresToConvert(pSquare, map[pSquare.position.x + 1][pSquare.position.y], pIgnoredSquaresId, ref pSquaresToConvert);
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x + this.stepBetweenSquares][pSquare.position.y], pIgnoredSquaresId, ref pSquaresToConvert);
             }
 
             //bottom
-            if (CheckIfPositionIsValid(pSquare.position.x, pSquare.position.y + 1))
+            if (CheckIfPositionIsValid(pSquare.position.x, pSquare.position.y + this.stepBetweenSquares))
             {
-                AddToSquaresToConvert(pSquare, map[pSquare.position.x][pSquare.position.y + 1], pIgnoredSquaresId, ref pSquaresToConvert);
+                AddToSquaresToConvert(pSquare, map[pSquare.position.x][pSquare.position.y + this.stepBetweenSquares], pIgnoredSquaresId, ref pSquaresToConvert);
             }
         }
 
